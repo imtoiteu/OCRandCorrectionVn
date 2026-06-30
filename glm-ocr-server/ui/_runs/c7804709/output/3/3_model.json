@@ -1,0 +1,264 @@
+[
+  [
+    {
+      "index": 0,
+      "label": "text",
+      "content": "c Đâu tur, Tai chính xây dụng tieu chí xác định nhà đau tur cá nhân và doanh nghiêp khối nghiêp sáng tao.",
+      "bbox_2d": [
+        94,
+        30,
+        922,
+        82
+      ],
+      "polygon": [
+        [
+          94,
+          30
+        ],
+        [
+          94,
+          81
+        ],
+        [
+          921,
+          81
+        ],
+        [
+          921,
+          36
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "label": "text",
+      "content": "d) TIép túc triên khai Công Thông tin hõ trơ khoi nghiêp quóc gia, tô chúc sàng loc, chôn lua doanh nghiêp khoi nghiêp sáng tao tiêu biên, chát luông dê dura thông tin đến với các nhà dâu tu trong nuóc và quóc tê.",
+      "bbox_2d": [
+        93,
+        83,
+        922,
+        157
+      ],
+      "polygon": [
+        [
+          93,
+          83
+        ],
+        [
+          93,
+          152
+        ],
+        [
+          921,
+          157
+        ],
+        [
+          921,
+          88
+        ],
+        [
+          886,
+          83
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "label": "text",
+      "content": "d) Hồ trơ việc thành lập, hoạt động của các cầu læ bô, mang luoi các \"nhà đầu tu thiên than\" trong nước và kết nói với mạng luoi các \"nhà đầu tu thiên than\" toàn cầu để tăng cuồng dài.edu cho khởi nghiép trong và ngoài Việt Nam.",
+      "bbox_2d": [
+        91,
+        161,
+        922,
+        255
+      ],
+      "polygon": [
+        [
+          91,
+          161
+        ],
+        [
+          91,
+          254
+        ],
+        [
+          921,
+          254
+        ],
+        [
+          921,
+          166
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "label": "text",
+      "content": "e) Phối hợp với Bô Kế hoạch và Đâu tu và các dịa phường tổ chúc các buổi hội thảo, trao đối thuòng xuyên với các táp doàn lón trong nuóc, nuóc ngoiài để thu hút dâu tu cho khối nghiép sáng tao.",
+      "bbox_2d": [
+        91,
+        260,
+        920,
+        331
+      ],
+      "polygon": [
+        [
+          91,
+          260
+        ],
+        [
+          91,
+          330
+        ],
+        [
+          919,
+          330
+        ],
+        [
+          919,
+          260
+        ]
+      ]
+    },
+    {
+      "index": 4,
+      "label": "text",
+      "content": "g) Phoi hwp với Phòng Thươngmqi và Công nghiêp Viêt Nam, các Bô,\nban, ngành, địa phương tích cuc tham gia và hõ trơ doanh nghiêp khoi nghiêp\nvà các tô chúc hõ trơ của Viêt Nam, tham gia các hoaq dông của Mang luoi\nkhoi nghiêp toàn cau (GEN Vietnam) do Phòng Thươngmqi và Công nghiêp\nViêt Nam làm dau môi để học hoi, chia sè kinh nghiêm vê chính sách hõ trơ\nkhoi nghiêp trên toàn cau và két nói doanh nghiêp khoi nghiêp sáng tao cua\nViêt Nam với các trung tâm hõ trơ khoi nghiêp trên thẻ giói.",
+      "bbox_2d": [
+        90,
+        336,
+        919,
+        497
+      ],
+      "polygon": [
+        [
+          90,
+          336
+        ],
+        [
+          90,
+          496
+        ],
+        [
+          918,
+          496
+        ],
+        [
+          918,
+          341
+        ]
+      ]
+    },
+    {
+      "index": 5,
+      "label": "paragraph_title",
+      "content": "2. Giao Bô Tài chính:",
+      "bbox_2d": [
+        155,
+        502,
+        388,
+        525
+      ],
+      "polygon": [
+        [
+          155,
+          507
+        ],
+        [
+          155,
+          524
+        ],
+        [
+          387,
+          524
+        ],
+        [
+          387,
+          507
+        ],
+        [
+          383,
+          502
+        ],
+        [
+          205,
+          502
+        ],
+        [
+          189,
+          502
+        ],
+        [
+          185,
+          502
+        ],
+        [
+          179,
+          502
+        ],
+        [
+          175,
+          502
+        ]
+      ]
+    },
+    {
+      "index": 6,
+      "label": "text",
+      "content": "a) Chủ tri, phoi hóp với Bô Khoa học và Công nghê nghiên cuú, xây dung ban hành cο ché tài chính thực hiện Để án 844 nhàm thúc day môi truòng khối nghiệp sáng tao, tao điềuKIEN thuan loi cho các doanh nghiệp khối nghiejp sáng tao hoакт dông và phát triên, trong đó có các nối dung chi phù hóp với khối nghiejp sáng tao nhur chi cho dài diên các doanh nghiejp khối nghiejp sáng tao tiêu bieu tham gia các vuron uorm/khu làm việc chung nối tiêng trên the giói; chi các hoagt dông của dài dienh khối nghiejp sáng tao cua Viett Nam tai một so hê sinh thái khối nghiejp sáng tao; chi vé may bay, công lao dông phù hóp de môi chuyên gia hô trơ khối nghiejp sáng tao chat luông cao đến tham gia dào tao, huán luyên, tham gia suKIEN khối nghiejp quóc gia; cho phép việc tai trơ truc tiép cho doanh nghiejp khối nghiejp sáng tao doi với các nối dung quan trong như tim hiêu thi truòng, thuche chuyên gia, tra công lao dông và thurong mai hóa công nghề, sân phạm và dich vu mói.",
+      "bbox_2d": [
+        88,
+        532,
+        919,
+        828
+      ],
+      "polygon": [
+        [
+          88,
+          537
+        ],
+        [
+          88,
+          827
+        ],
+        [
+          918,
+          827
+        ],
+        [
+          918,
+          537
+        ]
+      ]
+    },
+    {
+      "index": 7,
+      "label": "text",
+      "content": "b) Chủ tri, phối hợp với Bô Khoa học và Công nghê xây dung cơ ché tài chính cho Quý NATIF, trinh Chính phủ ban hành trong năm 2019. Theo đó, đối với các hoạt động hỗ trợ cho doanh nghiệp khối nghiệp sáng tao can quy định cu thể về các hình thúc hỗ trợ, han muc hỗ tr投稿 các nhóm dư án. Xây dung các nội dung chi và định muc chi phủ hopf với hoạt động dắc thù của doanh nghiệp khối nghiejp sáng tao. Dòng thôi, xây dung quy trinh dánh gia, thàm dính các dư án để dâm bao việc hỗ trợ có hiệu qua.",
+      "bbox_2d": [
+        86,
+        832,
+        918,
+        992
+      ],
+      "polygon": [
+        [
+          91,
+          832
+        ],
+        [
+          91,
+          992
+        ],
+        [
+          917,
+          992
+        ],
+        [
+          917,
+          832
+        ]
+      ]
+    }
+  ]
+]

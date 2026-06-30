@@ -1,0 +1,50 @@
+# ── Secrets / environment ──────────────────────────────────────────────────
+# NEVER commit real keys. .env holds live GROQ_API_KEY / GEMINI_API_KEY.
+.env
+.env.*
+!.env.example
+
+# ── User data (private; not for the repo) ──────────────────────────────────
+# SQLite DB holds user accounts, password hashes, OCR results, chat history.
+*.db
+*.sqlite
+*.sqlite3
+# Uploaded user documents (IDOR-sensitive private files).
+uploads/
+# Generated OCR outputs / artifacts.
+artifacts/
+
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual environments ───────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Model weights / caches (shared from SmartDocs; not vendored here) ───────
+models/
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# ── Logs / temp ────────────────────────────────────────────────────────────
+*.log
+*.tmp
+/tmp/
+
+# ── OS / editor cruft ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

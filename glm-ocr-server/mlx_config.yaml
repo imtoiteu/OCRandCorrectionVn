@@ -1,0 +1,36 @@
+# Test config: point GLM-OCR SDK at local mlx-vlm server (self-hosted mode)
+server:
+  host: "0.0.0.0"
+  port: 5002
+  debug: false
+
+logging:
+  level: INFO
+
+pipeline:
+  maas:
+    enabled: false
+
+  ocr_api:
+    api_host: localhost
+    api_port: 8080
+    model: mlx-community/GLM-OCR-bf16   # required for mlx-vlm
+    api_path: /chat/completions         # no /v1 prefix for mlx-vlm
+    verify_ssl: false
+    connect_timeout: 60
+    request_timeout: 300
+    retry_max_attempts: 2
+
+  max_workers: 4
+
+  page_loader:
+    max_tokens: 8192
+    temperature: 0.0
+    pdf_dpi: 200
+
+  result_formatter:
+    output_format: both
+
+  layout:
+    model_dir: PaddlePaddle/PP-DocLayoutV3_safetensors
+    device: cpu

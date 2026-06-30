@@ -1,0 +1,338 @@
+[
+  [
+    {
+      "index": 0,
+      "label": "text",
+      "bbox_2d": [
+        204,
+        57,
+        828,
+        147
+      ],
+      "polygon": [
+        [
+          204,
+          66
+        ],
+        [
+          204,
+          147
+        ],
+        [
+          637,
+          147
+        ],
+        [
+          827,
+          138
+        ],
+        [
+          827,
+          57
+        ],
+        [
+          424,
+          57
+        ],
+        [
+          380,
+          57
+        ]
+      ],
+      "content": "# HÓA DỘN THANH TOÁN\n\nSố HD: 160120",
+      "native_label": "doc_title"
+    },
+    {
+      "index": 1,
+      "label": "text",
+      "bbox_2d": [
+        64,
+        180,
+        352,
+        223
+      ],
+      "polygon": [
+        [
+          64,
+          185
+        ],
+        [
+          64,
+          222
+        ],
+        [
+          347,
+          222
+        ],
+        [
+          351,
+          218
+        ],
+        [
+          351,
+          180
+        ],
+        [
+          144,
+          180
+        ]
+      ],
+      "content": "Mā HD: #Q9P94",
+      "native_label": "text"
+    },
+    {
+      "index": 2,
+      "label": "text",
+      "bbox_2d": [
+        64,
+        222,
+        422,
+        263
+      ],
+      "polygon": [
+        [
+          64,
+          222
+        ],
+        [
+          64,
+          262
+        ],
+        [
+          421,
+          262
+        ],
+        [
+          421,
+          222
+        ]
+      ],
+      "content": "Bàn: 36 · Thé(21-40)",
+      "native_label": "text"
+    },
+    {
+      "index": 3,
+      "label": "text",
+      "bbox_2d": [
+        497,
+        174,
+        831,
+        219
+      ],
+      "polygon": [
+        [
+          497,
+          174
+        ],
+        [
+          497,
+          218
+        ],
+        [
+          830,
+          218
+        ],
+        [
+          830,
+          174
+        ]
+      ],
+      "content": "TN: Nhân Viên Ly",
+      "native_label": "text"
+    },
+    {
+      "index": 4,
+      "label": "text",
+      "bbox_2d": [
+        64,
+        264,
+        322,
+        303
+      ],
+      "polygon": [
+        [
+          64,
+          264
+        ],
+        [
+          64,
+          302
+        ],
+        [
+          321,
+          302
+        ],
+        [
+          321,
+          264
+        ]
+      ],
+      "content": "07:53",
+      "native_label": "text"
+    },
+    {
+      "index": 5,
+      "label": "text",
+      "bbox_2d": [
+        498,
+        219,
+        890,
+        262
+      ],
+      "polygon": [
+        [
+          498,
+          219
+        ],
+        [
+          498,
+          262
+        ],
+        [
+          889,
+          262
+        ],
+        [
+          889,
+          219
+        ]
+      ],
+      "content": "16 thg 3,2022",
+      "native_label": "text"
+    },
+    {
+      "index": 6,
+      "label": "text",
+      "bbox_2d": [
+        498,
+        262,
+        744,
+        303
+      ],
+      "polygon": [
+        [
+          498,
+          262
+        ],
+        [
+          498,
+          302
+        ],
+        [
+          743,
+          302
+        ],
+        [
+          743,
+          262
+        ]
+      ],
+      "content": "08:13",
+      "native_label": "text"
+    },
+    {
+      "index": 7,
+      "label": "table",
+      "bbox_2d": [
+        70,
+        303,
+        970,
+        807
+      ],
+      "polygon": [
+        [
+          70,
+          303
+        ],
+        [
+          81,
+          777
+        ],
+        [
+          136,
+          792
+        ],
+        [
+          481,
+          806
+        ],
+        [
+          944,
+          806
+        ],
+        [
+          969,
+          303
+        ]
+      ],
+      "content": "<table border=\"1\"><tr><td>TT</td><td>Tên món</td><td>SL</td><td>Đơn giá</td><td>Thành tiện</td></tr><tr><td>1</td><td>Phở gà Đế nhật Tràng An</td><td>2</td><td>295,000</td><td>590,000</td></tr><tr><td colspan=\"4\">Thành tiện:</td><td>590,000</td></tr><tr><td colspan=\"4\">Tông tiện:</td><td>590,000</td></tr><tr><td colspan=\"4\">+Thanh toán tiện mát</td><td>590,000</td></tr><tr><td colspan=\"5\">ĐJA chi: Đường Nguyễn Văn Thoại, Phương Phước Mỹ, Quân Sơn Trà, Đà Nẵng, Việt Nam</td></tr></table>",
+      "native_label": "table"
+    },
+    {
+      "index": 8,
+      "label": "text",
+      "bbox_2d": [
+        292,
+        827,
+        670,
+        922
+      ],
+      "polygon": [
+        [
+          298,
+          832
+        ],
+        [
+          292,
+          917
+        ],
+        [
+          343,
+          921
+        ],
+        [
+          669,
+          921
+        ],
+        [
+          669,
+          842
+        ],
+        [
+          664,
+          837
+        ],
+        [
+          649,
+          832
+        ],
+        [
+          580,
+          832
+        ],
+        [
+          564,
+          832
+        ],
+        [
+          530,
+          832
+        ],
+        [
+          498,
+          832
+        ],
+        [
+          403,
+          827
+        ],
+        [
+          303,
+          827
+        ]
+      ],
+      "content": "Câm on Quý Khách\n\nPowered by iPOS.vn",
+      "native_label": "text"
+    }
+  ]
+]
