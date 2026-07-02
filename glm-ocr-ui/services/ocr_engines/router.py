@@ -3,30 +3,34 @@ from __future__ import annotations
 from config import cfg
 
 from .glm_adapter import GLMOCREngine
+from .glm_vietocr_adapter import GLMVietOCREngine
 from .paddle_adapter import PaddleOCREngine
 from .paddle_modern_adapter import PaddleOCRModernEngine
 from .vietocr_adapter import VietOCREngine
 
 _ENGINES = {
-    "paddleocr": PaddleOCREngine(),
-    "vietocr": VietOCREngine(),
+    "paddleocr":      PaddleOCREngine(),
+    "vietocr":        VietOCREngine(),
     "paddleocr_modern": PaddleOCRModernEngine(),
-    "glmocr": GLMOCREngine(),
+    "glmocr":         GLMOCREngine(),
+    "glm_vietocr":    GLMVietOCREngine(),
 }
 _ALIASES = {
-    "paddle": "paddleocr",
-    "paddleocr": "paddleocr",
-    "vietocr": "vietocr",
+    "paddle":          "paddleocr",
+    "paddleocr":       "paddleocr",
+    "vietocr":         "vietocr",
     "paddleocr_modern": "paddleocr_modern",
-    "modern": "paddleocr_modern",
-    "ppstructure": "paddleocr_modern",
-    "glmocr": "glmocr",
-    "glm": "glmocr",
-    "glm_ocr": "glmocr",
-    "auto": "paddleocr",  # Explicitly allow 'auto' alias
+    "modern":          "paddleocr_modern",
+    "ppstructure":     "paddleocr_modern",
+    "glmocr":          "glmocr",
+    "glm":             "glmocr",
+    "glm_ocr":         "glmocr",
+    "glm_vietocr":     "glm_vietocr",
+    "glm_layout_vietocr": "glm_vietocr",   # friendly alias
+    "auto":            "paddleocr",         # explicit fallback
 }
 _DEFAULT_ENGINE = _ALIASES.get(cfg.OCR_ENGINE, "paddleocr")
-_ALIASES["auto"] = _DEFAULT_ENGINE  # Map auto to whatever the configured default is
+_ALIASES["auto"] = _DEFAULT_ENGINE   # map auto → configured default
 
 
 def normalize_engine_name(engine_name: str | None = None) -> str:

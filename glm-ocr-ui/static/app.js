@@ -47,6 +47,21 @@ async function copyWithToast(text, successMsg) {
   return ok;
 }
 
+// Safe JSON parse — if the server returns an HTML error page instead of JSON
+// (Flask 500 without a custom error handler), .json() throws a SyntaxError that
+// appears as "Unexpected token '<'". safeJson() catches that and returns a
+// structured error object so the caller can show a readable toast.
+async function safeJson(resp) {
+  const text = await resp.text();
+  try {
+    return JSON.parse(text);
+  } catch (_) {
+    // Strip HTML tags to extract the useful part of the error message.
+    const plain = text.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 200);
+    return { success: false, error: `Server error (HTTP ${resp.status}): ${plain}` };
+  }
+}
+
 // ── API ────────────────────────────────────────────────
 const API = {
   async upload(file) {
@@ -55,14 +70,16 @@ const API = {
     return r.json();
   },
   async ocrPage(fileId, page, engine = 'auto', aiEnhancement = false, previewOnly = false) {
-    return (await fetch('/api/ocr/page', { method:'POST',
+    const r = await fetch('/api/ocr/page', { method:'POST',
       headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ file_id: fileId, page, engine: engine, ai_enhancement: aiEnhancement, preview_only: previewOnly }) })).json();
+      body: JSON.stringify({ file_id: fileId, page, engine: engine, ai_enhancement: aiEnhancement, preview_only: previewOnly }) });
+    return safeJson(r);
   },
   async ocrAll(fileId, engine = 'auto', aiEnhancement = false) {
-    return (await fetch('/api/ocr/all', { method:'POST',
+    const r = await fetch('/api/ocr/all', { method:'POST',
       headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({ file_id: fileId, engine: engine, ai_enhancement: aiEnhancement }) })).json();
+      body: JSON.stringify({ file_id: fileId, engine: engine, ai_enhancement: aiEnhancement }) });
+    return safeJson(r);
   },
   async readText(fileId) {
     return (await fetch('/api/read-text', { method:'POST',
@@ -259,6 +276,8 @@ const OCRView = {
       dlBlob(this._buildJsonExport(), 'ocr-result.json', 'application/json'));
     document.getElementById('ocr-dl-txt').addEventListener('click', () =>
       dlTxt(this._plainText || State.ocrText || '', 'ocr-result.txt'));
+    // Download DOCX — converts current markdown via pandoc on the server.
+    document.getElementById('ocr-dl-docx').addEventListener('click', () => this._exportDocx());
 
     // ── Structured-output view tabs (Text / Markdown / HTML / Table) ──────────
     document.querySelectorAll('#ocr-view-tabs .ocr-vtab').forEach(btn => {
@@ -595,7 +614,9 @@ const OCRView = {
     if (raw) raw.value = md;
 
     // JSON: prefer the engine's structured raw_json; else the results + layout blocks.
-    const jsonObj = (data && data.raw_json) || {
+    // raw_json may be an array (GLM pages), an object (hybrid engine), or absent.
+    const rawJ = data && data.raw_json;
+    const jsonObj = rawJ != null ? rawJ : {
       results, layout_blocks: (data && data.layout_blocks) || undefined,
     };
     this._jsonText = JSON.stringify(jsonObj, null, 2);
@@ -760,6 +781,57 @@ const OCRView = {
     return JSON.stringify(out.length ? out : (this._jsonText ? JSON.parse(this._jsonText) : []), null, 2);
   },
 
+  // Export current OCR markdown as a Word DOCX file via the backend pandoc route.
+  async _exportDocx() {
+    const md = this._markdown || this._plainText || '';
+    if (!md.trim()) {
+      Toast.show('No OCR text to export.', 'info');
+      return;
+    }
+    // Derive a clean filename stem from the document name shown in the toolbar.
+    const nameEl = document.getElementById('ocr-file-name');
+    const rawName = nameEl ? nameEl.textContent.trim() : '';
+    const stem = rawName.replace(/\.[^.]+$/, '').replace(/[^\w\-]/g, '-').slice(0, 80) || 'ocr-result';
+
+    const btn = document.getElementById('ocr-dl-docx');
+    const origHtml = btn ? btn.innerHTML : '';
+    if (btn) { btn.disabled = true; btn.innerHTML = '<span class="spin"></span> DOCX'; }
+
+    try {
+      const resp = await fetch('/api/ocr/export-docx', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ markdown: md, filename: stem }),
+      });
+
+      if (!resp.ok) {
+        // Server returned JSON error
+        let msg = `DOCX export failed (${resp.status})`;
+        try {
+          const j = await resp.json();
+          if (j && j.error) msg = j.error;
+        } catch (_) {}
+        Toast.show(msg, 'error');
+        return;
+      }
+
+      // Stream the blob and trigger browser download
+      const blob = await resp.blob();
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = `${stem}.docx`;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 2000);
+      Toast.show('DOCX exported.', 'success');
+    } catch (err) {
+      Toast.show('DOCX export error: ' + err.message, 'error');
+    } finally {
+      if (btn) { btn.disabled = false; btn.innerHTML = origHtml; }
+    }
+  },
+
   async _loadImagesForDoc(docId) {
     try {
       const r = await API.getOcrImages(docId);
@@ -847,9 +919,11 @@ const OCRView = {
     const pageData = this.pages[this.currentPage]?.[cacheKey];
     if (!pageData || !pageData.results) return;
 
-    // Filter boxes whose bounding rectangle intersects the drawn selection
+    // Filter boxes whose bounding rectangle intersects the drawn selection.
+    // Skip items with no geometry (box=null) — they can't be spatially hit-tested.
     const subset = pageData.results.filter(item => {
       const box = item.box;
+      if (!box || !box.length) return false;  // no-geometry block — skip
       const xmin = Math.min(...box.map(pt => pt[0]));
       const ymin = Math.min(...box.map(pt => pt[1]));
       const xmax = Math.max(...box.map(pt => pt[0]));
@@ -935,7 +1009,7 @@ const OCRView = {
       // hidden from the selector but still valid internally — keep it as the active
       // engine, but only reflect it in the dropdown when a matching option exists
       // (so a restored Modern doc doesn't blank out the 3-option selector).
-      if (['paddleocr', 'vietocr', 'paddleocr_modern', 'glmocr'].includes(eng)) {
+      if (['paddleocr', 'vietocr', 'paddleocr_modern', 'glmocr', 'glm_vietocr'].includes(eng)) {
         this.ocrEngine = eng;
         const sel = document.getElementById('ocr-engine-select');
         if (sel && [...sel.options].some(o => o.value === eng)) sel.value = eng;

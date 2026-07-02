@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets & local config
+.env
+*.db
+*.sqlite3
+
+# Uploads / user data (never commit user files)
+glm-ocr-ui/uploads/
+glm-ocr-ui/static/uploads/
+
+# Model weights (large binary files)
+models/**/*.pth
+models/**/*.bin
+models/**/*.safetensors
+models/**/*.gguf
+models/**/*.pkl
+models/**/*.pt
+
+# GLM-OCR server venv / cache
+glm-ocr-server/.venv/
+glm-ocr-server/__pycache__/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+
+# Antigravity / Claude agent scratch
+.claude/
+.agents/
+.gemini/
+
+# Logs
+*.log

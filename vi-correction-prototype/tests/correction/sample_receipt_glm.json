@@ -1,0 +1,100 @@
+[
+  [
+    {
+      "index": 0,
+      "label": "doc_title",
+      "native_label": "doc_title",
+      "bbox_2d": [120, 40, 480, 90],
+      "polygon": [[120, 40], [480, 40], [480, 90], [120, 90]],
+      "content": "HÓA DỘN THANH TOÁN"
+    },
+    {
+      "index": 1,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 110, 400, 140],
+      "polygon": [[60, 110], [400, 110], [400, 140], [60, 140]],
+      "content": "Mā HD: #Q9P94"
+    },
+    {
+      "index": 2,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 145, 400, 175],
+      "polygon": [[60, 145], [400, 145], [400, 175], [60, 175]],
+      "content": "Số HD: 160120"
+    },
+    {
+      "index": 3,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 180, 300, 210],
+      "polygon": [[60, 180], [300, 180], [300, 210], [60, 210]],
+      "content": "Bàn: 36"
+    },
+    {
+      "index": 4,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 215, 300, 245],
+      "polygon": [[60, 215], [300, 215], [300, 245], [60, 245]],
+      "content": "Khu vực: 21-40"
+    },
+    {
+      "index": 5,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 250, 340, 280],
+      "polygon": [[60, 250], [340, 250], [340, 280], [60, 280]],
+      "content": "Gìo vào: 07:53"
+    },
+    {
+      "index": 6,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 285, 340, 315],
+      "polygon": [[60, 285], [340, 285], [340, 315], [60, 315]],
+      "content": "Glo ra: 08:13"
+    },
+    {
+      "index": 7,
+      "label": "table",
+      "native_label": "table",
+      "bbox_2d": [60, 330, 520, 470],
+      "polygon": [[60, 330], [520, 330], [520, 470], [60, 470]],
+      "content": "<table><tr><th>Tên món</th><th>Thành tiện</th></tr><tr><td>Cà phê</td><td>295,000</td></tr><tr><td>Trà sữa</td><td>590,000</td></tr></table>"
+    },
+    {
+      "index": 8,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 480, 420, 510],
+      "polygon": [[60, 480], [420, 480], [420, 510], [60, 510]],
+      "content": "Tông tiện: 590,000"
+    },
+    {
+      "index": 9,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 515, 460, 545],
+      "polygon": [[60, 515], [460, 515], [460, 545], [60, 545]],
+      "content": "+Thanh toán tiện mát: 295,000"
+    },
+    {
+      "index": 10,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [60, 555, 560, 600],
+      "polygon": [[60, 555], [560, 555], [560, 600], [60, 600]],
+      "content": "ĐJA chi: 123 Phương Phước Mỹ, Quân Sơn Trà"
+    },
+    {
+      "index": 11,
+      "label": "text",
+      "native_label": "text",
+      "bbox_2d": [220, 610, 400, 640],
+      "polygon": [[220, 610], [400, 610], [400, 640], [220, 640]],
+      "content": "iPOS.vn"
+    }
+  ]
+]

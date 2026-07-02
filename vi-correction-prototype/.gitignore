@@ -1,0 +1,7 @@
+# isolated prototype — do not commit heavy artifacts
+.venv/
+vendor/
+__pycache__/
+*.pyc
+# generated corrected outputs from the test harness
+tests/correction/*.corrected.*.json

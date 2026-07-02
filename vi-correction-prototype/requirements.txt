@@ -1,0 +1,20 @@
+# vicorrect prototype — dependencies
+#
+# The correction MODULE itself (masking / classification / segmentation /
+# pipeline / validation) is pure Python and needs nothing beyond the stdlib.
+# The dependencies below are only for the model-backed PROVIDERS.
+
+# Provider B (bmd1905/vietnamese-correction-v2) — transformers text2text pipeline.
+# Install CPU torch with:  pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.2.0     # BARTpho tokenizer
+numpy>=1.26
+
+# Provider A (mrlasdt/vietnamese-ocr-error-corrector) — cloned into vendor/mrlasdt.
+# Its own requirements (needed only if pretrained weights are obtained):
+lmdb
+unidecode
+unicodedata2
+nltk
+pyyaml

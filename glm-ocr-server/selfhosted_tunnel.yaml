@@ -1,0 +1,36 @@
+# GLM-OCR SDK config — self-hosted via SSH reverse tunnel to MacBook MLX server.
+# The VPS reaches the MacBook mlx-vlm server at 127.0.0.1:18080 (reverse tunnel).
+# Used by SmartDocs glm_adapter (glmocr.cli parse --config <this> --mode selfhosted).
+
+logging:
+  level: WARNING
+
+pipeline:
+  maas:
+    enabled: false
+
+  ocr_api:
+    api_host: 127.0.0.1
+    api_port: 18080
+    model: mlx-community/GLM-OCR-bf16   # must match the model the MLX server serves
+    api_scheme: http
+    api_path: /chat/completions         # mlx-vlm: no /v1 prefix (per repo mlx_config.yaml)
+    api_mode: openai
+    verify_ssl: false
+    connect_timeout: 60
+    request_timeout: 300
+    retry_max_attempts: 2
+
+  max_workers: 4
+
+  page_loader:
+    max_tokens: 8192
+    temperature: 0.0
+    pdf_dpi: 200
+
+  result_formatter:
+    output_format: both
+
+  layout:
+    model_dir: PaddlePaddle/PP-DocLayoutV3_safetensors
+    device: cpu

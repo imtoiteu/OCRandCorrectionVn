@@ -15,6 +15,7 @@ from models import (db, User, Document, DocumentArtifact, ActivityLog,
                     seed_admin, log_activity, save_artifact)
 from auth import auth_bp
 from admin_bp import admin_bp
+from correction_bp import correction_bp
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
 app.config["SECRET_KEY"] = cfg.SECRET_KEY or secrets.token_hex(32)
@@ -76,6 +77,7 @@ def _too_large(e):
 
 app.register_blueprint(auth_bp)
 app.register_blueprint(admin_bp)
+app.register_blueprint(correction_bp)
 
 
 # ── Display timezone (admin templates) ───────────────────────────────────────
@@ -430,43 +432,46 @@ def ocr_page():
     except ValueError as e:
         return jsonify({"success": False, "error": str(e)}), 400
     engine_fallback = selected_engine != effective_engine
-    if suffix == ".pdf":
-        pil = ocr_service.pdf_page_to_pil(str(path), page)
-        if data.get("preview_only"):
-            return jsonify({
-                "success": True,
-                "page_image_b64": ocr_service.pil_to_b64(pil, "PNG"),
-                "img_width": pil.width,
-                "img_height": pil.height,
-                "results": [],
-                "preview_only": True
-            })
-        with tempfile.NamedTemporaryFile(suffix=".png", delete=False, dir=UPLOAD_FOLDER) as t:
-            pil.save(t.name, format="PNG"); tmp = t.name
-        try:
-            res = _run_page_ocr(path, page, apply_ai, tmp, effective_engine)
-        finally:
-            try: os.unlink(tmp)
-            except: pass
-        res["page_image_b64"] = ocr_service.pil_to_b64(pil, "PNG")
-    else:
-        from PIL import Image
-        pil = Image.open(str(path))
-        # Preview-only for images: return the page image WITHOUT running OCR or
-        # persisting. Otherwise opening a document would re-OCR with the current
-        # (default) engine and overwrite the stored artifact — clobbering a prior
-        # VietOCR result. Mirrors the PDF preview branch above.
-        if data.get("preview_only"):
-            return jsonify({
-                "success": True,
-                "page_image_b64": ocr_service.pil_to_b64(pil, "JPEG" if suffix in {".jpg",".jpeg"} else "PNG"),
-                "img_width": pil.width,
-                "img_height": pil.height,
-                "results": [],
-                "preview_only": True
-            })
-        res = _run_page_ocr(path, page, apply_ai, str(path), effective_engine)
-        res["page_image_b64"] = ocr_service.pil_to_b64(pil, "JPEG" if suffix in {".jpg",".jpeg"} else "PNG")
+    try:
+        if suffix == ".pdf":
+            pil = ocr_service.pdf_page_to_pil(str(path), page)
+            if data.get("preview_only"):
+                return jsonify({
+                    "success": True,
+                    "page_image_b64": ocr_service.pil_to_b64(pil, "PNG"),
+                    "img_width": pil.width,
+                    "img_height": pil.height,
+                    "results": [],
+                    "preview_only": True
+                })
+            with tempfile.NamedTemporaryFile(suffix=".png", delete=False, dir=UPLOAD_FOLDER) as t:
+                pil.save(t.name, format="PNG"); tmp = t.name
+            try:
+                res = _run_page_ocr(path, page, apply_ai, tmp, effective_engine)
+            finally:
+                try: os.unlink(tmp)
+                except: pass
+            res["page_image_b64"] = ocr_service.pil_to_b64(pil, "PNG")
+        else:
+            from PIL import Image
+            pil = Image.open(str(path))
+            if data.get("preview_only"):
+                return jsonify({
+                    "success": True,
+                    "page_image_b64": ocr_service.pil_to_b64(pil, "JPEG" if suffix in {".jpg",".jpeg"} else "PNG"),
+                    "img_width": pil.width,
+                    "img_height": pil.height,
+                    "results": [],
+                    "preview_only": True
+                })
+            res = _run_page_ocr(path, page, apply_ai, str(path), effective_engine)
+            res["page_image_b64"] = ocr_service.pil_to_b64(pil, "JPEG" if suffix in {".jpg",".jpeg"} else "PNG")
+    except Exception as e:
+        import traceback
+        import logging as _log
+        _log.getLogger(__name__).error("OCR page error: %s", traceback.format_exc())
+        return jsonify({"success": False,
+                        "error": f"OCR failed ({effective_engine}): {e}"}), 500
     res["selected_engine"] = selected_engine
     res["ocr_engine"] = res.get("ocr_engine", effective_engine)
     res["processing_time_ms"] = res.get("elapsed_ms")
@@ -475,18 +480,12 @@ def ocr_page():
     else:
         res["inference_status"] = res.get("inference_status", "ok")
     _mark_ocr_done(fid)
-    # A2/F2: for single-page images this page IS the whole document, so persist its
-    # text and auto-index it. For PDFs we wait for /api/ocr/all (full document) to
-    # avoid persisting/indexing a partial page.
     if suffix != ".pdf":
         page_text = "\n".join(
             str(r.get("text") or "") for r in (res.get("results") or []) if str(r.get("text") or "").strip()
         )
         _persist_and_index(fid, "ocr", page_text, meta=f"engine={res.get('ocr_engine','?')}")
-        # Persist the structured snapshot so the viewer can fully restore on reopen.
         _persist_ocr_layout(fid, _build_ocr_layout([res], selected_engine, effective_engine))
-        # Persist richer representations (markdown/html/tables/blocks) when the engine
-        # provides them (PaddleOCR Modern). No-op for legacy engines.
         _persist_ocr_structured(fid, [res])
     detail = (
         f"Page {page} of file_id={fid} [ai={apply_ai}] "
@@ -744,6 +743,81 @@ def download_document(doc_id):
     matches = list(UPLOAD_FOLDER.glob(f"{doc.file_id}.*"))
     if not matches: return jsonify({"success": False, "error": "File missing from disk"}), 404
     return send_file(str(matches[0]), as_attachment=True, download_name=doc.filename)
+
+
+# ── DOCX export ──────────────────────────────────────────────────────────
+# Discover pandoc once at import time so the 404 message is accurate.
+import shutil as _shutil
+_PANDOC = _shutil.which("pandoc") or "/opt/homebrew/bin/pandoc"
+if not Path(_PANDOC).exists():
+    _PANDOC = None
+
+
+@app.route("/api/ocr/export-docx", methods=["POST"])
+@login_required
+def export_docx():
+    """Convert OCR markdown to DOCX via pandoc and stream it back.
+
+    Request JSON:
+      markdown  str   – markdown text to convert (required)
+      filename  str   – desired download stem, e.g. "ngay-thanh-xuan" (optional)
+
+    Returns the .docx file as an attachment, or a JSON error.
+    """
+    import subprocess as _sp
+
+    if _PANDOC is None:
+        return jsonify({
+            "success": False,
+            "error": (
+                "pandoc is not installed. Install it with: brew install pandoc  "
+                "and restart the server."
+            ),
+        }), 501
+
+    data = request.get_json(force=True) or {}
+    markdown_text: str = data.get("markdown", "").strip()
+    if not markdown_text:
+        return jsonify({"success": False, "error": "No markdown content to export."}), 400
+
+    stem: str = (data.get("filename") or "ocr-result").strip()
+    # Sanitise: keep only alphanumerics, hyphens and underscores
+    import re as _re
+    stem = _re.sub(r"[^\w\-]", "-", stem)[:80] or "ocr-result"
+    download_name = f"{stem}.docx"
+
+    tmp_dir = tempfile.mkdtemp(prefix="docx_export_")
+    try:
+        md_path   = Path(tmp_dir) / "input.md"
+        docx_path = Path(tmp_dir) / download_name
+
+        md_path.write_text(markdown_text, encoding="utf-8")
+
+        cmd = [
+            _PANDOC,
+            str(md_path),
+            "-o", str(docx_path),
+            "--from", "markdown+smart+tex_math_dollars",
+            "--to", "docx",
+            "--standalone",
+        ]
+        result = _sp.run(cmd, capture_output=True, text=True, timeout=30)
+        if result.returncode != 0:
+            err = (result.stderr or result.stdout or "unknown error").strip()[:300]
+            import logging as _log
+            _log.getLogger(__name__).error("pandoc DOCX export failed: %s", err)
+            return jsonify({"success": False, "error": f"pandoc error: {err}"}), 500
+
+        return send_file(
+            str(docx_path),
+            as_attachment=True,
+            download_name=download_name,
+            mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        )
+    except _sp.TimeoutExpired:
+        return jsonify({"success": False, "error": "pandoc timed out (>30 s)."}), 500
+    finally:
+        _shutil.rmtree(tmp_dir, ignore_errors=True)
 
 
 # ── Boot ─────────────────────────────────────────────

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnamese OCR Correction · SmartDocs</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/vendor/marked.min.js"></script>
+  <style>
+    /* ── Reset / base ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* Full-viewport two-column layout */
+    .vc-root {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      font-size: 14px;
+      color: #1e293b;
+      background: #f1f5f9;
+    }
+
+    /* ── Top bar ───────────────────────────────────────────────── */
+    .vc-topbar {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background: #1e293b;
+      color: #f1f5f9;
+      border-bottom: 2px solid #334155;
+    }
+    .vc-topbar h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #f1f5f9;
+    }
+    .vc-topbar-note { font-size: 12px; color: #94a3b8; margin-left: 8px; }
+    a.vc-back { font-size: 13px; color: #93c5fd; text-decoration: none; }
+    a.vc-back:hover { color: #dbeafe; text-decoration: underline; }
+
+    /* ── Two-column body ───────────────────────────────────────── */
+    .vc-body {
+      flex: 1 1 0;
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 0;
+      overflow: hidden;       /* children handle their own scroll */
+    }
+
+    /* ── Left panel — controls (sticky, scrollable) ────────────── */
+    .vc-left {
+      overflow-y: auto;
+      padding: 16px;
+      border-right: 1px solid #cbd5e1;
+      background: #f8fafc;
+    }
+
+    /* ── Right panel — results (scrollable) ───────────────────── */
+    .vc-right {
+      overflow-y: auto;
+      padding: 16px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── Card ─────────────────────────────────────────────────── */
+    .vc-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px;
+      background: #fff;
+      margin-bottom: 12px;
+    }
+    .vc-card:last-child { margin-bottom: 0; }
+    .vc-card h3 {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1e293b;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    /* ── Form rows ────────────────────────────────────────────── */
+    .vc-row { margin-bottom: 10px; }
+    .vc-row label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    .vc-row select,
+    .vc-row input[type="text"],
+    .vc-row input[type="number"],
+    .vc-row textarea {
+      width: 100%;
+      padding: 7px 9px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font-size: 13px;
+      color: #1e293b;
+      background: #fff;
+    }
+    .vc-row select:focus,
+    .vc-row input:focus,
+    .vc-row textarea:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+    }
+    textarea.vc-input {
+      min-height: 110px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px;
+      resize: vertical;
+    }
+    .vc-inline { display: flex; gap: 8px; }
+    .vc-inline > * { flex: 1; }
+
+    /* ── Buttons ──────────────────────────────────────────────── */
+    .vc-btn {
+      background: #2563eb;
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      padding: 9px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: background .15s;
+    }
+    .vc-btn:hover:not(:disabled) { background: #1d4ed8; }
+    .vc-btn:disabled { opacity: .45; cursor: not-allowed; }
+    .vc-btn.secondary { background: #334155; }
+    .vc-btn.secondary:hover:not(:disabled) { background: #1e293b; }
+
+    /* ── Status line ──────────────────────────────────────────── */
+    .vc-status { margin-top: 8px; font-size: 12px; min-height: 16px; color: #64748b; }
+    .vc-status.err  { color: #b91c1c; font-weight: 600; }
+    .vc-status.ok   { color: #065f46; font-weight: 600; }
+    .vc-status.busy { color: #1d4ed8; }
+
+    /* ── Result tabs ──────────────────────────────────────────── */
+    .vc-tabs {
+      display: flex;
+      gap: 2px;
+      border-bottom: 2px solid #e2e8f0;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .vc-tab {
+      padding: 7px 14px;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      color: #64748b;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      transition: color .15s, border-color .15s;
+    }
+    .vc-tab:hover { color: #1e293b; }
+    .vc-tab.active { color: #2563eb; border-bottom-color: #2563eb; font-weight: 700; }
+
+    .vc-pane { display: none; }
+    .vc-pane.active { display: flex; flex-direction: column; gap: 10px; }
+
+    /* ── Markdown rendered view ───────────────────────────────── */
+    .vc-md-view {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 16px;
+      min-height: 180px;
+      max-height: 520px;
+      overflow-y: auto;
+      background: #f8fafc;
+      color: #1e293b;       /* ← was white-on-white; now explicit dark */
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .vc-md-view[contenteditable="true"] {
+      outline: 2px solid #93c5fd;
+      background: #fff;
+    }
+    .vc-md-view p  { margin: 0 0 .6em; }
+    .vc-md-view h1,.vc-md-view h2,.vc-md-view h3 { color: #0f172a; margin: .8em 0 .3em; }
+    .vc-md-view table { border-collapse: collapse; width: 100%; }
+    .vc-md-view td,.vc-md-view th { border: 1px solid #cbd5e1; padding: 4px 8px; color: #1e293b; }
+
+    /* ── Editable textareas ───────────────────────────────────── */
+    textarea.vc-edit {
+      width: 100%;
+      min-height: 260px;
+      max-height: 520px;
+      padding: 12px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      resize: vertical;
+      color: #1e293b;         /* ← explicit dark text */
+      background: #f8fafc;
+    }
+    textarea.vc-edit:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+      background: #fff;
+    }
+
+    /* ── JSON / code block ────────────────────────────────────── */
+    pre.vc-pre {
+      background: #0f172a;
+      color: #e2e8f0;         /* light text on dark background */
+      padding: 14px;
+      border-radius: 8px;
+      overflow: auto;
+      max-height: 520px;
+      font-size: 12px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      margin: 0;
+    }
+
+    /* ── Report / diff area ───────────────────────────────────── */
+    .vc-report {
+      margin-top: 4px;
+      font-size: 12px;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      background: #f8fafc;
+      color: #1e293b;
+    }
+    .vc-report b { color: #0f172a; }
+
+    /* Validation badges */
+    .vc-check {
+      display: inline-block;
+      margin: 2px 5px 2px 0;
+      padding: 2px 8px;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .vc-check.ok  { background: #dcfce7; color: #14532d; border: 1px solid #86efac; }
+    .vc-check.bad { background: #fee2e2; color: #7f1d1d; border: 1px solid #fca5a5; }
+
+    /* Changed-spans table */
+    .vc-spans { border-collapse: collapse; width: 100%; margin-top: 6px; }
+    .vc-spans td {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 5px 8px;
+      vertical-align: top;
+      color: #1e293b;
+    }
+    .vc-spans td:first-child { white-space: nowrap; color: #475569; font-size: 11px; }
+
+    /* Diff colors — dark enough to read on white/near-white background */
+    .vc-del {
+      color: #991b1b;         /* dark red */
+      background: #fef2f2;
+      padding: 1px 3px;
+      border-radius: 3px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px;
+      word-break: break-word;
+    }
+    .vc-add {
+      color: #14532d;         /* dark green */
+      background: #f0fdf4;
+      padding: 1px 3px;
+      border-radius: 3px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+      font-size: 12px;
+      word-break: break-word;
+    }
+
+    /* Muted notes */
+    .vc-note { font-size: 11px; color: #64748b; }
+
+    /* Image viewer */
+    .vc-imgs img {
+      max-width: 100%;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    /* Edit/Preview toggle row */
+    .vc-md-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .vc-md-toolbar button {
+      padding: 4px 11px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      background: #fff;
+      color: #334155;
+      font-weight: 600;
+    }
+    .vc-md-toolbar button:hover { background: #f1f5f9; }
+
+    /* Save row */
+    .vc-save-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #e2e8f0;
+      margin-top: 4px;
+    }
+    .vc-save-row .vc-btn { max-width: 200px; }
+  </style>
+</head>
+<body>
+<div class="vc-root">
+
+  <!-- ── Top bar ────────────────────────────────────────────── -->
+  <div class="vc-topbar">
+    <h1>🇻🇳 Vietnamese OCR Correction <span class="vc-topbar-note" id="vc-enabled-note"></span></h1>
+    <a class="vc-back" href="/">← Back to SmartDocs</a>
+  </div>
+
+  <!-- ── Two-column body ────────────────────────────────────── -->
+  <div class="vc-body">
+
+    <!-- ── LEFT: settings panel ─────────────────────────────── -->
+    <div class="vc-left">
+
+      <div class="vc-card">
+        <h3>1 · Input</h3>
+        <div class="vc-row">
+          <label>Source</label>
+          <select id="vc-source">
+            <option value="document">Existing OCR document</option>
+            <option value="json">Paste OCR JSON</option>
+            <option value="text">Paste Markdown / text</option>
+          </select>
+        </div>
+        <div class="vc-row" id="vc-doc-row">
+          <label>Document (must have OCR JSON)</label>
+          <select id="vc-doc"></select>
+        </div>
+        <div class="vc-row" id="vc-paste-row" style="display:none;">
+          <label id="vc-paste-label">OCR JSON</label>
+          <textarea id="vc-paste" class="vc-input" placeholder='[[{"index":0,"label":"text","content":"HÓA DỘN"}]]'></textarea>
+        </div>
+      </div>
+
+      <div class="vc-card">
+        <h3>2 · Provider &amp; model</h3>
+        <div class="vc-row">
+          <label>Provider</label>
+          <select id="vc-provider"></select>
+        </div>
+        <div class="vc-row">
+          <label>Model</label>
+          <select id="vc-model"></select>
+        </div>
+        <div class="vc-row">
+          <label>Local model path (optional — overrides HF id)</label>
+          <input type="text" id="vc-model-path" placeholder="../models/nano-protonx-legal-tc">
+        </div>
+        <div class="vc-inline">
+          <div class="vc-row">
+            <label>Device</label>
+            <select id="vc-device">
+              <option value="mps">mps (Mac)</option>
+              <option value="cpu">cpu</option>
+              <option value="cuda">cuda</option>
+            </select>
+          </div>
+          <div class="vc-row">
+            <label>Beams</label>
+            <input id="vc-beams" type="number" min="1" value="4">
+          </div>
+          <div class="vc-row">
+            <label>Max tokens</label>
+            <input id="vc-maxtok" type="number" min="16" value="160">
+          </div>
+        </div>
+        <button class="vc-btn" id="vc-run">Run Vietnamese Correction</button>
+        <div class="vc-status" id="vc-status"></div>
+        <p class="vc-note" style="margin-top:8px;">Raw OCR is never modified. Correction adds <code>corrected_content</code>.</p>
+      </div>
+
+    </div><!-- /vc-left -->
+
+    <!-- ── RIGHT: results panel ─────────────────────────────── -->
+    <div class="vc-right">
+
+      <div class="vc-tabs">
+        <button class="vc-tab active" data-pane="md">Corrected Markdown</button>
+        <button class="vc-tab" data-pane="src">Corrected Text</button>
+        <button class="vc-tab" data-pane="json">Corrected JSON</button>
+        <button class="vc-tab" data-pane="img">Image</button>
+      </div>
+
+      <!-- Markdown pane -->
+      <div class="vc-pane active" id="pane-md">
+        <div class="vc-md-toolbar">
+          <button id="vc-md-edit">✎ Edit</button>
+          <span class="vc-note">Edit the corrected Markdown if the model missed anything.</span>
+        </div>
+        <div class="vc-md-view" id="vc-md-view">—</div>
+        <textarea class="vc-edit" id="vc-md-editor" style="display:none;"></textarea>
+      </div>
+
+      <!-- Source/Text pane -->
+      <div class="vc-pane" id="pane-src">
+        <textarea class="vc-edit" id="vc-src-editor" placeholder="Corrected plain text (editable)"></textarea>
+      </div>
+
+      <!-- JSON pane -->
+      <div class="vc-pane" id="pane-json">
+        <pre class="vc-pre"><code id="vc-json">—</code></pre>
+      </div>
+
+      <!-- Image pane -->
+      <div class="vc-pane" id="pane-img">
+        <div class="vc-imgs" id="vc-imgs">
+          <span class="vc-note">Image view matches the OCR annotated image (existing documents only).</span>
+        </div>
+      </div>
+
+      <!-- Save row (always visible at bottom of right panel) -->
+      <div class="vc-save-row">
+        <button class="vc-btn secondary" id="vc-save" disabled>Save corrected result</button>
+        <span class="vc-status" id="vc-save-status"></span>
+      </div>
+
+      <!-- Report / diff -->
+      <div class="vc-report" id="vc-report"></div>
+
+    </div><!-- /vc-right -->
+
+  </div><!-- /vc-body -->
+</div><!-- /vc-root -->
+<script src="/static/correction.js"></script>
+</body>
+</html>

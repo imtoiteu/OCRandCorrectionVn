@@ -25,6 +25,10 @@
      padding:6px 12px;border-radius:8px;font-size:13px;font-weight:500;color:#f59e0b;
      text-decoration:none;background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2)"
      title="Admin Panel">⚙️ Admin</a>
+  <a href="/correction" style="display:inline-flex;align-items:center;gap:5px;
+     padding:6px 12px;border-radius:8px;font-size:13px;font-weight:500;color:#2563eb;
+     text-decoration:none;background:rgba(37,99,235,.08);border:1px solid rgba(37,99,235,.2)"
+     title="Vietnamese OCR Correction">🇻🇳 Sửa lỗi OCR</a>
   <div class="nav-spacer"></div>
   <!-- Language selector -->
   <div class="lang-switcher">
@@ -132,6 +136,7 @@
              available in the backend OCR router but are not surfaced in this dropdown. -->
         <select id="ocr-engine-select" class="lang-select" style="margin-right: 12px; height: 26px;">
           <option value="glmocr" selected data-i18n="ocr_engine_recommended">⭐ Recommended</option>
+          <option value="glm_vietocr">🔀 GLM Layout + VietOCR Text</option>
           <option value="vietocr" data-i18n="ocr_engine_vietnamese">🇻🇳 Vietnamese</option>
           <option value="paddleocr" data-i18n="ocr_engine_standard">📄 Standard</option>
         </select>
@@ -189,6 +194,7 @@
           <button class="btn btn-ghost btn-sm" id="ocr-dl-md" data-i18n="ocr_dl_md">⬇ MD</button>
           <button class="btn btn-ghost btn-sm" id="ocr-dl-json" data-i18n="ocr_dl_json">⬇ JSON</button>
           <button class="btn btn-ghost btn-sm" id="ocr-dl-txt" data-i18n="ocr_dl_txt">⬇ TXT</button>
+          <button class="btn btn-ghost btn-sm" id="ocr-dl-docx" title="Export as Word document (.docx)">⬇ DOCX</button>
         </div>
         <div class="slbl" style="margin-top:4px" data-i18n="ocr_detections">Kết quả phát hiện</div>
         <div id="det-list">

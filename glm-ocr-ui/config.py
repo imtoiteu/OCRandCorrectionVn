@@ -299,6 +299,23 @@ class _Config:
         self.GLM_OCR_API_URL: str  = os.environ.get("GLM_OCR_API_URL", "http://localhost:8080")
         self.GLM_TIMEOUT:     int  = int(os.environ.get("GLM_TIMEOUT", "300"))
 
+        # ── Vietnamese OCR post-correction (optional, user-triggered) ────────────
+        # Corrects Vietnamese natural-language spans in OCR output block-by-block,
+        # preserving geometry/structure and adding `corrected_content`. Does NOT
+        # touch the OCR engine or raw results. Model runs only when the user asks.
+        _truthy = ("1", "true", "yes", "on")
+        self.VI_CORRECTION_ENABLED: bool = os.environ.get("VI_CORRECTION_ENABLED", "true").strip().lower() in _truthy
+        # provider: protonx | bmd1905 | mock
+        self.VI_CORRECTION_PROVIDER: str = os.environ.get("VI_CORRECTION_PROVIDER", "protonx").strip().lower()
+        # model id: nano | distilled | full | bmd1905 | mock
+        self.VI_CORRECTION_MODEL: str = os.environ.get("VI_CORRECTION_MODEL", "nano").strip().lower()
+        # optional local model directory (e.g. ./models/nano-protonx-legal-tc). Blank = use HF id.
+        self.VI_CORRECTION_MODEL_PATH: str = os.environ.get("VI_CORRECTION_MODEL_PATH", "").strip()
+        # cpu | mps | cuda  (mps falls back to cpu if unavailable; GPU never required)
+        self.VI_CORRECTION_DEVICE: str = os.environ.get("VI_CORRECTION_DEVICE", "cpu").strip().lower()
+        self.VI_CORRECTION_MAX_NEW_TOKENS: int = int(os.environ.get("VI_CORRECTION_MAX_NEW_TOKENS", "160"))
+        self.VI_CORRECTION_NUM_BEAMS:      int = int(os.environ.get("VI_CORRECTION_NUM_BEAMS", "4"))
+
         # ── Qwen / AI Rewrite ────────────────────────────────────────────────
         # For Qwen on MPS: Apple's MPS driver crashes with tensors > 4GB.
         # When MPS is selected as the global device, Qwen still runs on CPU
