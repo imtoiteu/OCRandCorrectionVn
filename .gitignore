@@ -49,3 +49,17 @@ glm-ocr-server/__pycache__/
 
 # Logs
 *.log
+
+# Python virtual environments
+.venv/
+.venv-sdk/
+.venv-mlx/
+
+# Environment files
+.env
+
+# Model/cache files
+models/
+__pycache__/
+*.pyc
+.DS_Store
