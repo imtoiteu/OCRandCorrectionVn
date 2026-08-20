@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="940" viewBox="0 0 1400 940" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_0E8088" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#0E8088"/></marker>
+<marker id="arr_3F61A8" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#3F61A8"/></marker>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_5A5A5A" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#5A5A5A"/></marker>
+<marker id="arr_D79B00" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#D79B00"/></marker>
+</defs>
+<rect x="0" y="0" width="1400" height="940" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 3.9 – Mô hình triển khai hệ thống trong môi trường thử nghiệm</text>
+<line x1="40" y1="48" x2="1360" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Test-environment deployment exactly as documented in RUN_MACOS.md and implemented in config.py / tools/glm_serve.sh</text>
+<rect x="40" y="92" width="1000" height="646" rx="11" fill="#FFF5EB" stroke="#D79B00" stroke-width="1.6"/>
+<path d="M40.0,130.0 L40.0,103.0 A11,11 0 0 1 51.0,92.0 L1029.0,92.0 A11,11 0 0 1 1040.0,103.0 L1040.0,130.0 Z" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="54.0" y="120.0" font-size="14.5" font-weight="700" fill="#10202E">Test machine  —  macOS Apple Silicon (M1 / M2 / M3 / M4) · Python 3.10 · Homebrew</text>
+<path d="M1080.0,215.0 L1018.0,226.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<rect x="1032.2" y="211.7" width="33.6" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="1049.0" y="223.7" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP</text>
+<path d="M552.0,226.0 L540.0,226.0 L540.0,310.0 L299.0,310.0 L299.0,328.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
+<rect x="424.0" y="301.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="458.5" y="313.2" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess</text>
+<path d="M299.0,328.0 L299.0,302.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
+<rect x="235.0" y="306.2" width="128.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="299.0" y="318.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP  localhost:8080</text>
+<path d="M785.0,302.0 L785.0,328.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
+<rect x="750.5" y="306.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
+<text x="785.0" y="318.2" font-size="10.5" fill="#243B4A" text-anchor="middle">in-process</text>
+<path d="M785.0,302.0 L785.0,436.0 L214.0,436.0 L214.0,450.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
+<rect x="525.0" y="427.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="559.5" y="439.2" font-size="10.5" fill="#243B4A" text-anchor="middle">SQLAlchemy</text>
+<path d="M785.0,302.0 L785.0,436.0 L534.0,436.0 L534.0,450.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
+<rect x="690.9" y="427.2" width="57.2" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="719.5" y="439.2" font-size="10.5" fill="#243B4A" text-anchor="middle">file I/O</text>
+<rect x="64.0" y="150.0" width="470.0" height="152.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="299.0" y="188.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Terminal 1   —   GLM-OCR MLX model server</text>
+<text x="299.0" y="200.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="299.0" y="211.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM_ROOT=&quot;$PWD/glm-ocr-server&quot;</text>
+<text x="299.0" y="223.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM_MLX_PYTHON=&quot;$PWD/glm-ocr-server/.venv-mlx/bin/python&quot;</text>
+<text x="299.0" y="234.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">bash glm-ocr-ui/tools/glm_serve.sh</text>
+<text x="299.0" y="246.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="299.0" y="257.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">exec python -m mlx_vlm.server --trust-remote-code --port 8080</text>
+<text x="299.0" y="269.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">model held resident between requests</text>
+<rect x="552.0" y="150.0" width="466.0" height="152.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="785.0" y="194.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Terminal 2   —   SmartDocs web application</text>
+<text x="785.0" y="205.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="785.0" y="217.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">cd glm-ocr-ui  ·  source .venv/bin/activate</text>
+<text x="785.0" y="228.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">python app.py</text>
+<text x="785.0" y="240.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="785.0" y="252.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Flask threaded development server</text>
+<text x="785.0" y="263.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">http://localhost:5001   (HOST 0.0.0.0, PORT 5001)</text>
+<rect x="64.0" y="328.0" width="470.0" height="96.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="299.0" y="361.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR SDK  —  glm-ocr-server/.venv-sdk</text>
+<text x="299.0" y="373.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">started per OCR request by glm_adapter.py:</text>
+<text x="299.0" y="384.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">python -m glmocr.cli parse &lt;page.png&gt; --config mlx_config.yaml --mode selfhosted</text>
+<text x="299.0" y="396.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-DocLayoutV3 runs on the CPU (mlx_config.yaml: layout.device = cpu)</text>
+<rect x="552.0" y="328.0" width="466.0" height="96.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
+<text x="785.0" y="361.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">In-process OCR engines (inside the Flask interpreter)</text>
+<text x="785.0" y="373.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR PP-OCRv5 · PP-StructureV3 + PP-OCRv6_medium</text>
+<text x="785.0" y="384.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR vgg_transformer</text>
+<text x="785.0" y="396.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">cfg.DEVICE resolved automatically: CUDA → MPS → CPU</text>
+<path d="M64.0,459.0 a150.0,9.0 0 0 0 300.0,0 v70.0 a150.0,9.0 0 0 1 -300.0,0 z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<ellipse cx="214.0" cy="459.0" rx="150.0" ry="9.0" fill="#F0F0F0" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="214.0" y="484.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
+<text x="214.0" y="495.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">created by db.create_all()</text>
+<text x="214.0" y="507.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">seeded accounts:</text>
+<text x="214.0" y="518.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">admin / admin123 · user / user123</text>
+<rect x="384.0" y="450.0" width="300.0" height="88.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="534.0" y="479.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">uploads/</text>
+<text x="534.0" y="491.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">original files, UUID-named</text>
+<text x="534.0" y="502.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">+ transient page .png files</text>
+<text x="534.0" y="514.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MAX_UPLOAD_MB = 50</text>
+<rect x="704.0" y="450.0" width="314.0" height="88.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="861.0" y="485.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models/  ·  HF cache  ·  PaddleX cache</text>
+<text x="861.0" y="496.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">OFFLINE=0 on the first run to fetch models,</text>
+<text x="861.0" y="508.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">then OFFLINE=1 for offline operation</text>
+<rect x="64.0" y="562.0" width="954.0" height="152.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="541.0" y="606.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">.env keys that define this environment  (glm-ocr-ui/.env, from .env.example and RUN_MACOS.md)</text>
+<text x="541.0" y="617.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="541.0" y="629.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">HOST=0.0.0.0   PORT=5001   OFFLINE=0/1   DEVICE=auto   MODEL_DIR=./models   OCR_ENGINE=paddle</text>
+<text x="541.0" y="640.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM_ROOT=&lt;repo&gt;/glm-ocr-server        GLM_SDK_PYTHON=&lt;repo&gt;/glm-ocr-server/.venv-sdk/bin/python</text>
+<text x="541.0" y="652.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM_MLX_PYTHON=&lt;repo&gt;/glm-ocr-server/.venv-mlx/bin/python     GLM_CONFIG_YAML=&lt;repo&gt;/glm-ocr-server/mlx_config.yaml</text>
+<text x="541.0" y="664.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM_OCR_API_URL=http://localhost:8080   GLM_TIMEOUT=300</text>
+<text x="541.0" y="675.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VI_CORRECTION_ENABLED=true   VI_CORRECTION_PROVIDER=protonx   VI_CORRECTION_MODEL=nano   VI_CORRECTION_DEVICE=cpu</text>
+<rect x="1080.0" y="150.0" width="280.0" height="130.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="1220.0" y="193.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Tester</text>
+<text x="1220.0" y="205.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">web browser on the same machine</text>
+<text x="1220.0" y="218.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(http://localhost:5001)</text>
+<text x="1220.0" y="230.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">or on another machine in the same</text>
+<text x="1220.0" y="242.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">network (HOST = 0.0.0.0)</text>
+<path d="M1080.0,310.0 h286.0 l14.0,14.0 v286.0 h-300.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1366.0,310.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="1230.0" y="370.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL COMPLETION REQUIRED</text>
+<text x="1230.0" y="381.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1230.0" y="393.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">The report asks Figure 3.9 to show the WebApp on port</text>
+<text x="1230.0" y="405.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">5002 and a DesktopApp with the three backend modes</text>
+<text x="1230.0" y="416.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Bundled Core, Existing WebApp Runtime and Remote</text>
+<text x="1230.0" y="428.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Server.</text>
+<text x="1230.0" y="439.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1230.0" y="451.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Neither exists in this repository: the application</text>
+<text x="1230.0" y="462.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">port is 5001 (config.py default and RUN_MACOS.md), and</text>
+<text x="1230.0" y="474.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">there is no desktop application, no runtime-mode</text>
+<text x="1230.0" y="486.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">selector and no remote-server client code.</text>
+<text x="1230.0" y="497.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1230.0" y="509.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Port 5002 appears only in</text>
+<text x="1230.0" y="520.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/glmocr/config.yaml and mlx_config.yaml</text>
+<text x="1230.0" y="532.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">as the default port of the optional glmocr.server HTTP</text>
+<text x="1230.0" y="544.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">wrapper, which SmartDocs does not use — it calls the</text>
+<text x="1230.0" y="555.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">CLI instead.</text>
+<path d="M40.0,762.0 h1306.0 l14.0,14.0 v48.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,762.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="790.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Access rule visible in the deployment: the browser talks only to Flask on :5001. The MLX model server on :8080 is reached exclusively by the transient glmocr subprocess, and the database and the uploads directory are reached exclusively</text>
+<text x="700.0" y="802.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">by app.py / models.py, so authorisation, document status and the activity log stay consistent regardless of the client.</text>
+<path d="M40.0,838.0 h1306.0 l14.0,14.0 v48.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,838.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="866.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Not part of the test environment: no container runtime, no reverse proxy, no production WSGI server, no external database and no cloud OCR service. The GLM cloud (MaaS) path of the SDK is disabled by mlx_config.yaml</text>
+<text x="700.0" y="878.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(pipeline.maas.enabled = false) and the adapter always passes --mode selfhosted.</text>
+</svg>

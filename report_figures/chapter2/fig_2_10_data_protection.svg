@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="1040" viewBox="0 0 1320 1040" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_B85450" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#B85450"/></marker>
+</defs>
+<rect x="0" y="0" width="1320" height="1040" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.10 – Mô hình các lớp bảo vệ dữ liệu của hệ thống</text>
+<line x1="40" y1="48" x2="1280" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Defence-in-depth layers — only mechanisms that are actually implemented are shown; each layer names its source location</text>
+<path d="M660.0,848.0 L660.0,872.0" fill="none" stroke="#B85450" stroke-width="1.7" marker-end="url(#arr_B85450)"/>
+<rect x="60.0" y="92.0" width="1200.0" height="84.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="660.0" y="124.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 1 · Transport &amp; session hardening</text>
+<text x="660.0" y="137.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SECRET_KEY (env or secrets.token_hex(32)) · SESSION_COOKIE_HTTPONLY = True · SAMESITE = &quot;Lax&quot; · SESSION_COOKIE_SECURE gated on cfg.SESSION_COOKIE_SECURE · identical flags for the remember-me cookie   [app.py,</text>
+<text x="660.0" y="149.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">config.py]</text>
+<rect x="60.0" y="188.0" width="1200.0" height="84.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="660.0" y="220.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 2 · Authentication</text>
+<text x="660.0" y="233.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Flask-Login session · werkzeug generate_password_hash / check_password_hash · is_active check on login · @login_required on every page and API route · unauthorized_handler returns 401 JSON for /api/* and redirects</text>
+<text x="660.0" y="245.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">browsers to /login   [auth.py, app.py, models.py]</text>
+<rect x="60.0" y="284.0" width="1200.0" height="84.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="660.0" y="323.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 3 · Authorization (role based)</text>
+<text x="660.0" y="335.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">users.role ∈ {&quot;admin&quot;, &quot;user&quot;} · admin_required decorators in auth.py and admin_bp.py · abort(403) with a dedicated 403 template · admins may not disable or delete their own account   [auth.py, admin_bp.py]</text>
+<rect x="60.0" y="380.0" width="1200.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
+<text x="660.0" y="412.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 4 · Document access control</text>
+<text x="660.0" y="425.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">_resolve_owned_file() resolves file_id through the Document table and rejects foreign documents (403) or unknown ids (404); the same owner-or-admin check is repeated on every /api/documents/&lt;id&gt; endpoint and on the</text>
+<text x="660.0" y="437.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">correction endpoints   [app.py, correction_bp.py]</text>
+<rect x="60.0" y="476.0" width="1200.0" height="84.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="660.0" y="508.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 5 · Upload validation &amp; path safety</text>
+<text x="660.0" y="521.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">MAX_CONTENT_LENGTH (MAX_UPLOAD_MB, default 50 MB) with a JSON 413 handler · _safe_basename() strips directory parts and control characters while preserving Vietnamese Unicode · extension allowlist · the on-disk name</text>
+<text x="660.0" y="533.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">is always a server-generated UUID, never user input · lookups never glob the raw file_id, so &quot;../&quot; strings match no document   [app.py]</text>
+<rect x="60.0" y="572.0" width="1200.0" height="84.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
+<text x="660.0" y="604.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 6 · Process &amp; model isolation</text>
+<text x="660.0" y="617.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">The GLM-OCR engine runs as a separate subprocess in its own virtual environment; the child environment is stripped of HF_HOME / HF_HUB_CACHE / TRANSFORMERS_CACHE and forced to HF_HUB_OFFLINE=1 · execution is bounded</text>
+<text x="660.0" y="629.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">by GLM_TIMEOUT and a TCP health check · failures return a structured error instead of raising   [glm_adapter.py, config.py]</text>
+<rect x="60.0" y="668.0" width="1200.0" height="84.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="660.0" y="700.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 7 · Output sanitization &amp; data locality</text>
+<text x="660.0" y="713.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">sanitizeHtml() removes script/style/iframe/object/embed/link/meta and on* / javascript: attributes before rendering engine-produced HTML · markdown_normalize repairs unmatched $$ delimiters · OFFLINE=1 blocks model</text>
+<text x="660.0" y="725.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">downloads and mlx_config.yaml disables the cloud MaaS path, so document content never leaves the host   [static/app.js, services/markdown_normalize.py, mlx_config.yaml]</text>
+<rect x="60.0" y="764.0" width="1200.0" height="84.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="660.0" y="796.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Layer 8 · Auditing</text>
+<text x="660.0" y="809.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">activity_logs records (user_id, action, detail, ip_address, created_at) for login, logout, upload, ocr, delete_doc, vi_correct and every admin action · log_activity() never raises · the admin log viewer filters by</text>
+<text x="660.0" y="821.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">action, user and free text   [models.py, app.py, admin_bp.py]</text>
+<rect x="400.0" y="872.0" width="520.0" height="72.0" rx="9" fill="#F8CECC" stroke="#B85450" stroke-width="1.6"/>
+<text x="660.0" y="898.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">PROTECTED ASSETS</text>
+<text x="660.0" y="911.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Uploaded originals (uploads/) · OCR and correction artifacts (document_artifacts) ·</text>
+<text x="660.0" y="924.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">user accounts (users) · audit trail (activity_logs)</text>
+<path d="M60.0,960.0 h1186.0 l14.0,14.0 v48.0 h-1200.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1246.0,960.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="660.0" y="988.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Not implemented in this repository, and therefore deliberately absent from the figure: TLS termination, encryption at rest, CSRF tokens, rate limiting, database backup/restore automation, and any external identity</text>
+<text x="660.0" y="1000.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">provider. SESSION_COOKIE_SECURE only marks the cookie — TLS itself must be provided by the deployment environment.</text>
+</svg>

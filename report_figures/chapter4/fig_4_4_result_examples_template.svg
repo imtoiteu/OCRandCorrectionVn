@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+</defs>
+<rect x="0" y="0" width="1400" height="900" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.4 – Minh họa kết quả OCR trên một số nhóm tài liệu  (khung trình bày)</text>
+<line x1="40" y1="48" x2="1360" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">COMPOSITION TEMPLATE — no OCR output is reproduced here. The boxes name the sample files that exist in the repository and where each capture must be inserted.</text>
+<path d="M40.0,92.0 h1306.0 l14.0,14.0 v44.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1346.0,92.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="700.0" y="117.8" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">This figure cannot be generated from source code: it shows recognition output on real documents. The template below lists the sample material that already exists in the repository so the captures can be produced consistently.</text>
+<text x="700.0" y="130.7" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">Do not reuse the stored reference outputs as if they were results of this system without re-running them.</text>
+<rect x="40.0" y="176.0" width="300.0" height="44.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="190.0" y="201.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">a)  Clear printed text</text>
+<rect x="40.0" y="232.0" width="300.0" height="130.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="190.0" y="272.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Source in the repository</text>
+<text x="190.0" y="283.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/examples/source/page.png</text>
+<text x="190.0" y="294.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="190.0" y="305.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Existing GLM-OCR reference output</text>
+<text x="190.0" y="316.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">examples/result/page/page.json · page.md</text>
+<text x="190.0" y="327.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">layout_vis/layout_page0.jpg</text>
+<rect x="40.0" y="376.0" width="300.0" height="190.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="190.0" y="433.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">INSERT CAPTURE</text>
+<text x="190.0" y="445.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="190.0" y="456.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">left: the original document</text>
+<text x="190.0" y="468.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">right: the OCR result produced by</text>
+<text x="190.0" y="479.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">this system</text>
+<text x="190.0" y="491.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="190.0" y="502.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">mark two or three correct and</text>
+<text x="190.0" y="514.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">incorrect positions on the image</text>
+<rect x="40.0" y="580.0" width="300.0" height="96.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="190.0" y="608.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Caption to write</text>
+<text x="190.0" y="619.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• engine used (selected_engine)</text>
+<text x="190.0" y="630.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• page processing time (processing_time_ms)</text>
+<text x="190.0" y="641.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• region count / mean confidence</text>
+<text x="190.0" y="652.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the specific error type observed</text>
+<rect x="380.0" y="176.0" width="300.0" height="44.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="530.0" y="201.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">b)  Table / structured layout</text>
+<rect x="380.0" y="232.0" width="300.0" height="130.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="530.0" y="272.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Source in the repository</text>
+<text x="530.0" y="283.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/examples/source/table.png</text>
+<text x="530.0" y="294.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="530.0" y="305.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Existing GLM-OCR reference output</text>
+<text x="530.0" y="316.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">examples/result/table/table.json · table.md</text>
+<text x="530.0" y="327.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">plus ui/_runs/0359de69/ (recorded run)</text>
+<rect x="380.0" y="376.0" width="300.0" height="190.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="530.0" y="433.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">INSERT CAPTURE</text>
+<text x="530.0" y="445.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="530.0" y="456.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">left: the original document</text>
+<text x="530.0" y="468.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">right: the OCR result produced by</text>
+<text x="530.0" y="479.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">this system</text>
+<text x="530.0" y="491.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="530.0" y="502.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">mark two or three correct and</text>
+<text x="530.0" y="514.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">incorrect positions on the image</text>
+<rect x="380.0" y="580.0" width="300.0" height="96.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="530.0" y="608.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Caption to write</text>
+<text x="530.0" y="619.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• engine used (selected_engine)</text>
+<text x="530.0" y="630.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• page processing time (processing_time_ms)</text>
+<text x="530.0" y="641.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• region count / mean confidence</text>
+<text x="530.0" y="652.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the specific error type observed</text>
+<rect x="720.0" y="176.0" width="300.0" height="44.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="870.0" y="201.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">c)  Handwriting  (difficult case)</text>
+<rect x="720.0" y="232.0" width="300.0" height="130.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="870.0" y="277.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Source in the repository</text>
+<text x="870.0" y="288.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/examples/source/handwritten.png</text>
+<text x="870.0" y="299.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="870.0" y="310.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Existing GLM-OCR reference output</text>
+<text x="870.0" y="321.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">examples/result/handwritten/handwritten.json · .md</text>
+<rect x="720.0" y="376.0" width="300.0" height="190.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="870.0" y="433.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">INSERT CAPTURE</text>
+<text x="870.0" y="445.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="870.0" y="456.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">left: the original document</text>
+<text x="870.0" y="468.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">right: the OCR result produced by</text>
+<text x="870.0" y="479.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">this system</text>
+<text x="870.0" y="491.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="870.0" y="502.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">mark two or three correct and</text>
+<text x="870.0" y="514.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">incorrect positions on the image</text>
+<rect x="720.0" y="580.0" width="300.0" height="96.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="870.0" y="608.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Caption to write</text>
+<text x="870.0" y="619.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• engine used (selected_engine)</text>
+<text x="870.0" y="630.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• page processing time (processing_time_ms)</text>
+<text x="870.0" y="641.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• region count / mean confidence</text>
+<text x="870.0" y="652.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the specific error type observed</text>
+<rect x="1060.0" y="176.0" width="300.0" height="44.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="1210.0" y="201.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">d)  Low-quality photograph  —  MISSING</text>
+<rect x="1060.0" y="232.0" width="300.0" height="130.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1210.0" y="272.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">No low-quality photograph exists in the repository.</text>
+<text x="1210.0" y="283.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">A real photograph taken by the author must be added</text>
+<text x="1210.0" y="294.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">and uploaded through the application.</text>
+<text x="1210.0" y="305.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1210.0" y="316.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">The report requires at least one difficult case, so this</text>
+<text x="1210.0" y="327.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">sample cannot be skipped.</text>
+<rect x="1060.0" y="376.0" width="300.0" height="190.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="1210.0" y="433.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">INSERT CAPTURE</text>
+<text x="1210.0" y="445.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1210.0" y="456.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">left: the original document</text>
+<text x="1210.0" y="468.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">right: the OCR result produced by</text>
+<text x="1210.0" y="479.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">this system</text>
+<text x="1210.0" y="491.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1210.0" y="502.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">mark two or three correct and</text>
+<text x="1210.0" y="514.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">incorrect positions on the image</text>
+<rect x="1060.0" y="580.0" width="300.0" height="96.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="1210.0" y="608.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Caption to write</text>
+<text x="1210.0" y="619.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• engine used (selected_engine)</text>
+<text x="1210.0" y="630.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• page processing time (processing_time_ms)</text>
+<text x="1210.0" y="641.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• region count / mean confidence</text>
+<text x="1210.0" y="652.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the specific error type observed</text>
+<path d="M40.0,700.0 h1306.0 l14.0,14.0 v70.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,700.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="739.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">How to obtain each capture reproducibly: upload the sample through POST /api/upload, run OCR with a named engine, then use the OCR workspace to place the page canvas (with the recognition boxes shown) next to the Markdown or Raw tab. The</text>
+<text x="700.0" y="751.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">values needed for the caption are visible in the statistics strip and are also recorded in activity_logs, so the figure and the text can be kept consistent.</text>
+<path d="M40.0,800.0 h1306.0 l14.0,14.0 v52.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1346.0,800.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="700.0" y="830.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Honesty requirement stated in the report: at least one difficult case must be included, and the examples must not be selected only from successful runs. The repository provides three usable samples; the low-quality photograph has to be</text>
+<text x="700.0" y="842.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">supplied by the author.</text>
+</svg>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="980" viewBox="0 0 1340 980" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_3F61A8" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#3F61A8"/></marker>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_9673A6" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#9673A6"/></marker>
+<marker id="arr_B85450" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#B85450"/></marker>
+</defs>
+<rect x="0" y="0" width="1340" height="980" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.9 – Sơ đồ điều hướng chính của giao diện người dùng</text>
+<line x1="40" y1="48" x2="1300" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Reconstructed from the Flask routes and the hash router in static/app.js (Router.register / Router.goto / Router._render)</text>
+<rect x="330" y="96" width="640" height="466" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
+<path d="M330.0,132.0 L330.0,107.0 A11,11 0 0 1 341.0,96.0 L959.0,96.0 A11,11 0 0 1 970.0,107.0 L970.0,132.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="344.0" y="122.0" font-size="14.5" font-weight="700" fill="#10202E">Single-page application  —  GET /   (static/index.html)</text>
+<rect x="330" y="700" width="640" height="220" rx="11" fill="#EEF3FB" stroke="#3F61A8" stroke-width="1.6"/>
+<path d="M330.0,736.0 L330.0,711.0 A11,11 0 0 1 341.0,700.0 L959.0,700.0 A11,11 0 0 1 970.0,711.0 L970.0,736.0 Z" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="344.0" y="726.0" font-size="14.5" font-weight="700" fill="#10202E">Admin console  —  server-rendered Jinja pages, role = &quot;admin&quot; only</text>
+<path d="M290.0,287.0 L312.0,287.0 L312.0,180.0 L356.0,180.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<rect x="259.8" y="206.9" width="104.4" height="31.2" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="312.0" y="218.9" font-size="10.5" fill="#243B4A" text-anchor="middle">successful login</text>
+<text x="312.0" y="232.5" font-size="10.5" fill="#243B4A" text-anchor="middle">→ redirect to /</text>
+<path d="M481.0,210.0 L481.0,250.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<path d="M356.0,180.0 L344.0,180.0 L344.0,392.0 L356.0,392.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<path d="M606.0,282.0 L640.0,282.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<path d="M606.0,392.0 L640.0,392.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<path d="M648.0,534.0 L648.0,630.0 L496.0,630.0 L496.0,754.0" fill="none" stroke="#9673A6" stroke-width="1.7" marker-end="url(#arr_9673A6)"/>
+<rect x="417.3" y="621.2" width="281.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
+<text x="558.0" y="633.2" font-size="10.5" fill="#243B4A" text-anchor="middle">Admin link — rendered only when role = &quot;admin&quot;</text>
+<path d="M496.0,808.0 L496.0,828.0" fill="none" stroke="#9673A6" stroke-width="1.7"/>
+<path d="M636.0,781.0 L660.0,781.0" fill="none" stroke="#9673A6" stroke-width="1.7"/>
+<path d="M636.0,855.0 L660.0,855.0" fill="none" stroke="#9673A6" stroke-width="1.7"/>
+<path d="M330.0,810.0 L306.0,810.0 L306.0,126.0 L481.0,126.0 L481.0,150.0" fill="none" stroke="#9673A6" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_9673A6)"/>
+<rect x="233.1" y="371.7" width="145.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
+<text x="306.0" y="383.7" font-size="10.5" fill="#243B4A" text-anchor="middle">&quot;← Ứng dụng&quot;  →  /#home</text>
+<path d="M356.0,502.0 L322.0,502.0 L322.0,732.0 L290.0,732.0" fill="none" stroke="#3F61A8" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_3F61A8)"/>
+<rect x="293.4" y="607.2" width="57.2" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="322.0" y="619.2" font-size="10.5" fill="#243B4A" text-anchor="middle">Sign out</text>
+<path d="M1060.0,300.0 L970.0,329.0" fill="none" stroke="#9673A6" stroke-width="1.7" marker-end="url(#arr_9673A6)" marker-start="url(#arr_9673A6)"/>
+<rect x="986.4" y="305.7" width="57.2" height="17.6" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
+<text x="1015.0" y="317.7" font-size="10.5" fill="#243B4A" text-anchor="middle">URL only</text>
+<path d="M1060.0,791.0 L970.0,810.0" fill="none" stroke="#B85450" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_B85450)"/>
+<rect x="980.5" y="791.7" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#B85450" stroke-width="0.8" opacity="0.96"/>
+<text x="1015.0" y="803.7" font-size="10.5" fill="#243B4A" text-anchor="middle">abort(403)</text>
+<rect x="60.0" y="250.0" width="230.0" height="74.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="175.0" y="283.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Login page</text>
+<text x="175.0" y="297.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">GET / POST  /login</text>
+<rect x="60.0" y="700.0" width="230.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="175.0" y="728.9" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Logout</text>
+<text x="175.0" y="741.7" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">GET /logout → /login</text>
+<rect x="356.0" y="150.0" width="250.0" height="60.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="481.0" y="176.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">#home</text>
+<text x="481.0" y="190.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Home (tool cards)</text>
+<rect x="356.0" y="250.0" width="250.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="481.0" y="278.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">#ocr</text>
+<text x="481.0" y="292.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">OCR workspace</text>
+<rect x="356.0" y="360.0" width="250.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="481.0" y="388.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">#documents</text>
+<text x="481.0" y="402.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Document library</text>
+<rect x="640.0" y="250.0" width="300.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="790.0" y="273.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Result tabs — shown after Run OCR / OCR All</text>
+<text x="790.0" y="284.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Markdown · Raw · Images · JSON</text>
+<text x="790.0" y="295.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(+ downloads .md .txt .json .docx)</text>
+<rect x="640.0" y="360.0" width="300.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="790.0" y="383.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">#ocr/&lt;file_id&gt;  (deep link)</text>
+<text x="790.0" y="394.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">reopens a document and restores</text>
+<text x="790.0" y="406.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">its saved artifacts</text>
+<rect x="356.0" y="470.0" width="584.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="648.0" y="499.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Persistent navigation bar</text>
+<text x="648.0" y="511.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Home · OCR · Documents · [Admin] · language · Sign out</text>
+<rect x="356.0" y="754.0" width="280.0" height="54.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="496.0" y="778.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/</text>
+<text x="496.0" y="790.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Dashboard + recent activity</text>
+<rect x="660.0" y="754.0" width="280.0" height="54.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="800.0" y="778.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/logs</text>
+<text x="800.0" y="790.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Activity logs (filters)</text>
+<rect x="356.0" y="828.0" width="280.0" height="54.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="496.0" y="852.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/users</text>
+<text x="496.0" y="864.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">User management</text>
+<rect x="660.0" y="828.0" width="280.0" height="54.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="800.0" y="852.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/files</text>
+<text x="800.0" y="864.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">All documents</text>
+<rect x="1060.0" y="250.0" width="270.0" height="100.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
+<text x="1195.0" y="284.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Correction page</text>
+<text x="1195.0" y="297.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /correction</text>
+<text x="1195.0" y="309.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(separate page; reachable by URL,</text>
+<text x="1195.0" y="321.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">&quot;← Back to SmartDocs&quot; link)</text>
+<rect x="1060.0" y="754.0" width="270.0" height="74.0" rx="9" fill="#F8CECC" stroke="#B85450" stroke-width="1.6"/>
+<text x="1195.0" y="781.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">403 page</text>
+<text x="1195.0" y="794.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">templates/403.html</text>
+<text x="1195.0" y="806.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(non-admin access)</text>
+<path d="M60.0,900.0 h1216.0 l14.0,14.0 v42.0 h-1230.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1276.0,900.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="675.0" y="925.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">The /correction page is reachable by URL only — no link to it exists in the SPA navigation bar (static/index.html). Browser Back / Forward work natively because location.hash is the single source of SPA view state; the</text>
+<text x="675.0" y="937.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">only SPA deep link is #ocr/&lt;file_id&gt;.</text>
+</svg>

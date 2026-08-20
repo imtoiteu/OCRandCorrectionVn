@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="900" viewBox="0 0 1320 900" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_0E8088" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#0E8088"/></marker>
+<marker id="arr_3F61A8" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#3F61A8"/></marker>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_5A5A5A" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#5A5A5A"/></marker>
+<marker id="arr_9673A6" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#9673A6"/></marker>
+<marker id="arr_999999" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#999999"/></marker>
+<marker id="arr_D79B00" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#D79B00"/></marker>
+</defs>
+<rect x="0" y="0" width="1320" height="900" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.2 – Biểu đồ ngữ cảnh của hệ thống số hóa tài liệu</text>
+<line x1="40" y1="48" x2="1280" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">System boundary and external actors / processes / data stores actually present in the repository</text>
+<path d="M260.0,201.0 L510.7,336.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)" marker-start="url(#arr_3F61A8)"/>
+<rect x="283.0" y="252.9" width="204.7" height="31.2" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="385.4" y="264.9" font-size="10.5" fill="#243B4A" text-anchor="middle">→  Account, document, OCR request</text>
+<text x="385.4" y="278.5" font-size="10.5" fill="#243B4A" text-anchor="middle">←  Status, results, history</text>
+<path d="M1040.0,201.0 L789.3,336.0" fill="none" stroke="#9673A6" stroke-width="1.7" marker-end="url(#arr_9673A6)" marker-start="url(#arr_9673A6)"/>
+<rect x="797.5" y="252.9" width="234.2" height="31.2" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
+<text x="914.6" y="264.9" font-size="10.5" fill="#243B4A" text-anchor="middle">→  User management, log / file queries</text>
+<text x="914.6" y="278.5" font-size="10.5" fill="#243B4A" text-anchor="middle">←  Logs, statistics, system state</text>
+<path d="M510.8,486.0 L317.7,590.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)" marker-start="url(#arr_0E8088)"/>
+<rect x="311.9" y="522.4" width="204.7" height="31.2" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
+<text x="414.2" y="534.4" font-size="10.5" fill="#243B4A" text-anchor="middle">→  Normalized page image</text>
+<text x="414.2" y="548.0" font-size="10.5" fill="#243B4A" text-anchor="middle">←  Text blocks, boxes, confidence</text>
+<path d="M650.0,486.0 L650.0,574.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)" marker-start="url(#arr_D79B00)"/>
+<rect x="532.9" y="514.4" width="234.2" height="31.2" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="650.0" y="526.4" font-size="10.5" fill="#243B4A" text-anchor="middle">→  Page image + CLI arguments</text>
+<text x="650.0" y="540.0" font-size="10.5" fill="#243B4A" text-anchor="middle">←  JSON / Markdown / layout_vis / imgs</text>
+<path d="M650.0,648.0 L650.0,700.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)" marker-start="url(#arr_D79B00)"/>
+<rect x="532.9" y="658.4" width="234.2" height="31.2" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="650.0" y="670.4" font-size="10.5" fill="#243B4A" text-anchor="middle">→  HTTP /chat/completions (per region)</text>
+<text x="650.0" y="684.0" font-size="10.5" fill="#243B4A" text-anchor="middle">←  Recognized region content</text>
+<path d="M792.4,486.0 L989.9,590.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)" marker-start="url(#arr_5A5A5A)"/>
+<rect x="779.9" y="522.4" width="222.4" height="31.2" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="891.1" y="534.4" font-size="10.5" fill="#243B4A" text-anchor="middle">→  Original file, artifacts, records</text>
+<text x="891.1" y="548.0" font-size="10.5" fill="#243B4A" text-anchor="middle">←  Stored documents and artifacts</text>
+<path d="M870.0,392.7 L1000.0,381.8" fill="none" stroke="#999999" stroke-width="1.7" marker-end="url(#arr_999999)" marker-start="url(#arr_999999)"/>
+<rect x="862.1" y="378.4" width="145.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#999999" stroke-width="0.8" opacity="0.96"/>
+<text x="935.0" y="390.4" font-size="10.5" fill="#243B4A" text-anchor="middle">→  Markdown    ←  .docx</text>
+<rect x="430.0" y="336.0" width="440.0" height="150.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="650.0" y="399.2" font-size="13.0" font-weight="700" fill="#15202B" text-anchor="middle">Document Digitization System</text>
+<text x="650.0" y="415.0" font-size="13.0" font-weight="700" fill="#15202B" text-anchor="middle">SmartDocs Web Application  (glm-ocr-ui, Flask :5001)</text>
+<text x="650.0" y="430.9" font-size="13.0" font-weight="700" fill="#15202B" text-anchor="middle">app.py · auth.py · admin_bp.py · correction_bp.py</text>
+<circle cx="195.0" cy="131.0" r="8.0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
+<line x1="195.0" y1="139.0" x2="195.0" y2="157.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="183.0" y1="145.0" x2="207.0" y2="145.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="195.0" y1="157.0" x2="185.0" y2="169.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="195.0" y1="157.0" x2="205.0" y2="169.0" stroke="#33475B" stroke-width="1.6"/>
+<text x="195.0" y="183.0" font-size="12.5" font-weight="700" fill="#15202B" text-anchor="middle">User</text>
+<circle cx="1105.0" cy="131.0" r="8.0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
+<line x1="1105.0" y1="139.0" x2="1105.0" y2="157.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="1093.0" y1="145.0" x2="1117.0" y2="145.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="1105.0" y1="157.0" x2="1095.0" y2="169.0" stroke="#33475B" stroke-width="1.6"/>
+<line x1="1105.0" y1="157.0" x2="1115.0" y2="169.0" stroke="#33475B" stroke-width="1.6"/>
+<text x="1105.0" y="183.0" font-size="12.5" font-weight="700" fill="#15202B" text-anchor="middle">Administrator</text>
+<rect x="60.0" y="590.0" width="300.0" height="116.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
+<text x="210.0" y="631.3" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">In-process OCR runtimes</text>
+<text x="210.0" y="644.7" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR (PP-OCRv5)</text>
+<text x="210.0" y="658.1" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">PP-StructureV3 (PP-OCRv6)</text>
+<text x="210.0" y="671.5" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR (vgg_transformer)</text>
+<rect x="470.0" y="574.0" width="360.0" height="74.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="650.0" y="607.7" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR SDK subprocess</text>
+<text x="650.0" y="621.1" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/.venv-sdk · glmocr.cli parse</text>
+<rect x="470.0" y="700.0" width="360.0" height="74.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="650.0" y="733.7" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR MLX model server</text>
+<text x="650.0" y="747.1" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">http://localhost:8080 · mlx-community/GLM-OCR-bf16</text>
+<rect x="940.0" y="590.0" width="320.0" height="116.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1100.0" y="631.3" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">Data area</text>
+<text x="1100.0" y="644.7" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
+<text x="1100.0" y="658.1" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">uploads/  (UUID-named originals)</text>
+<text x="1100.0" y="671.5" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">models/  (local model store)</text>
+<rect x="1000.0" y="336.0" width="260.0" height="70.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="1130.0" y="367.7" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">pandoc executable</text>
+<text x="1130.0" y="381.1" font-size="11.0" font-weight="400" fill="#15202B" text-anchor="middle">(Markdown → DOCX export)</text>
+<path d="M60.0,792.0 h1186.0 l14.0,14.0 v48.0 h-1200.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1246.0,792.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="660.0" y="820.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">The GLM-OCR path is optional and Apple-Silicon only: config.py resolves GLM_ROOT / GLM_SDK_PYTHON / GLM_OCR_API_URL, and glm_adapter.py refuses to run when the SDK venv is missing or nothing is listening on the MLX</text>
+<text x="660.0" y="832.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">port. Cloud (MaaS) OCR is disabled — mlx_config.yaml sets pipeline.maas.enabled: false.</text>
+</svg>

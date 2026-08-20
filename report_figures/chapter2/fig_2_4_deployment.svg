@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="800" viewBox="0 0 1340 800" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_0E8088" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#0E8088"/></marker>
+<marker id="arr_3F61A8" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#3F61A8"/></marker>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_5A5A5A" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#5A5A5A"/></marker>
+<marker id="arr_999999" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#999999"/></marker>
+<marker id="arr_D79B00" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#D79B00"/></marker>
+</defs>
+<rect x="0" y="0" width="1340" height="800" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.4 – Kiến trúc triển khai của hệ thống</text>
+<line x1="40" y1="48" x2="1300" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Deployment view — processes, ports and communication paths defined by app.py, config.py, tools/glm_serve.sh and RUN_MACOS.md</text>
+<rect x="50" y="100" width="300" height="230" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
+<path d="M50.0,134.0 L50.0,111.0 A11,11 0 0 1 61.0,100.0 L339.0,100.0 A11,11 0 0 1 350.0,111.0 L350.0,134.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="64.0" y="124.0" font-size="14.5" font-weight="700" fill="#10202E">Client device</text>
+<rect x="430" y="100" width="800" height="530" rx="11" fill="#FFF5EB" stroke="#D79B00" stroke-width="1.6"/>
+<path d="M430.0,138.0 L430.0,111.0 A11,11 0 0 1 441.0,100.0 L1219.0,100.0 A11,11 0 0 1 1230.0,111.0 L1230.0,138.0 Z" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="444.0" y="128.0" font-size="14.5" font-weight="700" fill="#10202E">Application host  —  macOS Apple Silicon · Python 3.10  (RUN_MACOS.md)</text>
+<rect x="460" y="516" width="740" height="96" rx="11" fill="#F8F8F8" stroke="#5A5A5A" stroke-width="1.6"/>
+<path d="M460.0,546.0 L460.0,527.0 A11,11 0 0 1 471.0,516.0 L1189.0,516.0 A11,11 0 0 1 1200.0,527.0 L1200.0,546.0 Z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="474.0" y="536.0" font-size="14.5" font-weight="700" fill="#10202E">Local storage on the host</text>
+<path d="M324.0,190.0 L460.0,199.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<rect x="316.2" y="178.9" width="151.6" height="31.2" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="392.0" y="190.9" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP  (localhost or LAN)</text>
+<text x="392.0" y="204.5" font-size="10.5" fill="#243B4A" text-anchor="middle">JSON + multipart upload</text>
+<path d="M830.0,240.0 L830.0,254.0 L638.0,254.0 L638.0,268.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
+<rect x="684.8" y="245.2" width="98.5" height="17.6" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
+<text x="734.0" y="257.2" font-size="10.5" fill="#243B4A" text-anchor="middle">in-process call</text>
+<path d="M830.0,240.0 L830.0,254.0 L1022.0,254.0 L1022.0,268.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
+<rect x="859.0" y="238.4" width="133.9" height="31.2" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="926.0" y="250.4" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess.run()</text>
+<text x="926.0" y="264.0" font-size="10.5" fill="#243B4A" text-anchor="middle">sanitized environment</text>
+<path d="M1022.0,348.0 L1022.0,392.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
+<rect x="896.0" y="361.2" width="251.9" height="17.6" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="1022.0" y="373.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP localhost:8080  ·  /chat/completions</text>
+<path d="M460.0,199.0 L452.0,199.0 L452.0,432.0 L460.0,432.0" fill="none" stroke="#999999" stroke-width="1.7" marker-end="url(#arr_999999)"/>
+<rect x="382.1" y="306.7" width="139.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#999999" stroke-width="0.8" opacity="0.96"/>
+<text x="452.0" y="318.7" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess.run(pandoc)</text>
+<path d="M1200.0,199.0 L1216.0,199.0 L1216.0,564.0 L1200.0,564.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
+<rect x="1143.2" y="372.7" width="145.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="1216.0" y="384.7" font-size="10.5" fill="#243B4A" text-anchor="middle">SQLAlchemy  ·  file I/O</text>
+<path d="M638.0,348.0 L638.0,494.0 L1069.0,494.0 L1069.0,552.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
+<rect x="772.0" y="485.2" width="74.9" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="809.5" y="497.2" font-size="10.5" fill="#243B4A" text-anchor="middle">model files</text>
+<rect x="76.0" y="152.0" width="248.0" height="76.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="200.0" y="180.4" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Web browser</text>
+<text x="200.0" y="193.3" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">SPA + server-rendered admin pages</text>
+<text x="200.0" y="206.1" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">(no frontend build step)</text>
+<rect x="76.0" y="244.0" width="248.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="200.0" y="267.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">http://&lt;host&gt;:5001</text>
+<text x="200.0" y="278.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Session cookie</text>
+<text x="200.0" y="290.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(HttpOnly · SameSite=Lax)</text>
+<rect x="460.0" y="158.0" width="740.0" height="82.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="830.0" y="189.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Process 1 · Flask application server</text>
+<text x="830.0" y="202.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">glm-ocr-ui/.venv/bin/python app.py</text>
+<text x="830.0" y="215.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">app.run(host=cfg.HOST 0.0.0.0, port=cfg.PORT 5001, threaded=True, debug=False)</text>
+<rect x="460.0" y="268.0" width="356.0" height="80.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
+<text x="638.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">In-process OCR runtimes</text>
+<text x="638.0" y="311.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(same interpreter as Flask)</text>
+<text x="638.0" y="323.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR · PP-StructureV3 · VietOCR</text>
+<rect x="844.0" y="268.0" width="356.0" height="80.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="1022.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Process 3 (transient) · GLM-OCR SDK</text>
+<text x="1022.0" y="311.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">.venv-sdk · python -m glmocr.cli parse</text>
+<text x="1022.0" y="323.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">spawned per OCR call · timeout GLM_TIMEOUT</text>
+<rect x="460.0" y="392.0" width="356.0" height="80.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="638.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">pandoc executable (optional)</text>
+<text x="638.0" y="435.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">resolved with shutil.which() at import;</text>
+<text x="638.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">/api/ocr/export-docx returns 501 if absent</text>
+<rect x="844.0" y="392.0" width="356.0" height="80.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="1022.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Process 2 · GLM-OCR MLX model server</text>
+<text x="1022.0" y="435.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">.venv-mlx · python -m mlx_vlm.server</text>
+<text x="1022.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">listens on :8080 · model held resident</text>
+<path d="M478.0,561.0 a113.0,9.0 0 0 0 226.0,0 v32.0 a113.0,9.0 0 0 1 -226.0,0 z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<ellipse cx="591.0" cy="561.0" rx="113.0" ry="9.0" fill="#F0F0F0" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="591.0" y="578.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
+<text x="591.0" y="590.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cfg.DB_PATH)</text>
+<rect x="722.0" y="552.0" width="216.0" height="50.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="830.0" y="574.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">uploads/ {uuid4}{suffix}</text>
+<text x="830.0" y="586.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cfg.UPLOAD_DIR)</text>
+<rect x="956.0" y="552.0" width="226.0" height="50.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1069.0" y="574.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">models/ + HF cache</text>
+<text x="1069.0" y="586.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cfg.MODEL_DIR)</text>
+<path d="M50.0,660.0 h1226.0 l14.0,14.0 v78.0 h-1240.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1276.0,660.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="670.0" y="696.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Deployment facts taken from the repository: there is no container, reverse proxy, production WSGI server, message queue or managed cloud service for the web application — app.py starts Flask&#x27;s own threaded development</text>
+<text x="670.0" y="709.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">server. The Dockerfiles and docker start scripts under glm-ocr-server/apps/ belong to the upstream GLM-OCR demo (FastAPI backend + React frontend) and are not used by SmartDocs. Processes 2 and 3 are optional: without them</text>
+<text x="670.0" y="721.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">only the PaddleOCR / VietOCR engines are available.</text>
+</svg>

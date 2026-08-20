@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1020" viewBox="0 0 1400 1020" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_0E8088" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#0E8088"/></marker>
+<marker id="arr_3F61A8" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#3F61A8"/></marker>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_5A5A5A" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#5A5A5A"/></marker>
+<marker id="arr_D6B656" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#D6B656"/></marker>
+<marker id="arr_D79B00" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#D79B00"/></marker>
+</defs>
+<rect x="0" y="0" width="1400" height="1020" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.1 – Bố trí các thành phần trong môi trường thử nghiệm</text>
+<line x1="40" y1="48" x2="1360" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Test topology and the points at which the implementation produces observable evidence during a test run</text>
+<rect x="40" y="92" width="900" height="660" rx="11" fill="#FFF5EB" stroke="#D79B00" stroke-width="1.6"/>
+<path d="M40.0,130.0 L40.0,103.0 A11,11 0 0 1 51.0,92.0 L929.0,92.0 A11,11 0 0 1 940.0,103.0 L940.0,130.0 Z" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="54.0" y="120.0" font-size="14.5" font-weight="700" fill="#10202E">Test machine  —  macOS Apple Silicon · Python 3.10  (RUN_MACOS.md)</text>
+<rect x="980" y="274" width="380" height="478" rx="11" fill="#FFFAEB" stroke="#D6B656" stroke-width="1.6"/>
+<path d="M980.0,310.0 L980.0,285.0 A11,11 0 0 1 991.0,274.0 L1349.0,274.0 A11,11 0 0 1 1360.0,285.0 L1360.0,310.0 Z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="994.0" y="300.0" font-size="14.5" font-weight="700" fill="#10202E">Evidence produced by the implementation</text>
+<path d="M264.0,234.0 L490.0,264.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<rect x="360.2" y="240.2" width="33.6" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="377.0" y="252.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP</text>
+<path d="M1170.0,242.0 L1170.0,256.0 L950.0,256.0 L950.0,300.0 L916.0,302.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
+<rect x="943.3" y="247.2" width="169.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="1028.0" y="259.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP over the local network</text>
+<path d="M490.0,340.0 L490.0,352.0 L270.0,352.0 L270.0,370.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
+<rect x="342.5" y="343.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
+<text x="377.0" y="355.2" font-size="10.5" fill="#243B4A" text-anchor="middle">in-process</text>
+<path d="M490.0,340.0 L490.0,352.0 L710.0,352.0 L710.0,370.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
+<rect x="530.1" y="343.2" width="145.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<text x="603.0" y="355.2" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess + HTTP :8080</text>
+<path d="M270.0,462.0 L196.0,492.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
+<path d="M270.0,462.0 L480.0,492.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
+<path d="M710.0,462.0 L774.0,492.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
+<path d="M916.0,302.0 L964.0,302.0 L964.0,513.0 L980.0,513.0" fill="none" stroke="#D6B656" stroke-width="1.7" marker-end="url(#arr_D6B656)"/>
+<rect x="941.3" y="382.7" width="45.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#D6B656" stroke-width="0.8" opacity="0.96"/>
+<text x="964.0" y="394.7" font-size="10.5" fill="#243B4A" text-anchor="middle">writes</text>
+<rect x="64.0" y="150.0" width="400.0" height="84.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="264.0" y="182.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Test client — web browser</text>
+<text x="264.0" y="195.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">http://localhost:5001</text>
+<text x="264.0" y="207.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">seeded accounts: user / user123 · admin / admin123</text>
+<rect x="64.0" y="264.0" width="852.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="490.0" y="298.9" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">SmartDocs Flask application  —  port 5001  (single threaded development server process)</text>
+<text x="490.0" y="311.7" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">authentication · ownership checks · OCR routes · document library · admin console · correction API</text>
+<rect x="64.0" y="370.0" width="412.0" height="92.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
+<text x="270.0" y="400.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">In-process OCR engines</text>
+<text x="270.0" y="413.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR PP-OCRv5</text>
+<text x="270.0" y="425.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">PP-StructureV3 + PP-OCRv6_medium</text>
+<text x="270.0" y="437.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR vgg_transformer</text>
+<rect x="504.0" y="370.0" width="412.0" height="92.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
+<text x="710.0" y="400.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR path (optional)</text>
+<text x="710.0" y="413.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">glmocr CLI in .venv-sdk (per request)</text>
+<text x="710.0" y="425.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">→ MLX server :8080 in .venv-mlx</text>
+<text x="710.0" y="437.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">model mlx-community/GLM-OCR-bf16</text>
+<path d="M64.0,501.0 a132.0,9.0 0 0 0 264.0,0 v70.0 a132.0,9.0 0 0 1 -264.0,0 z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<ellipse cx="196.0" cy="501.0" rx="132.0" ry="9.0" fill="#F0F0F0" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="196.0" y="526.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
+<text x="196.0" y="537.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">users · documents</text>
+<text x="196.0" y="549.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">document_artifacts</text>
+<text x="196.0" y="560.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">activity_logs</text>
+<rect x="348.0" y="492.0" width="264.0" height="88.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="480.0" y="521.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">uploads/</text>
+<text x="480.0" y="533.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">original documents</text>
+<text x="480.0" y="544.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">+ transient page .png</text>
+<text x="480.0" y="556.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MAX_UPLOAD_MB = 50</text>
+<rect x="632.0" y="492.0" width="284.0" height="88.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="774.0" y="527.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models/ · HF cache · PaddleX cache</text>
+<text x="774.0" y="538.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR weights</text>
+<text x="774.0" y="550.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">OFFLINE flag controls downloads</text>
+<rect x="64.0" y="608.0" width="852.0" height="116.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="490.0" y="645.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Test material already present in the repository</text>
+<text x="490.0" y="657.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/examples/source/     page.png · paper.png · table.png · seal.png · code.png · handwritten.png · GLM-4.5V.pdf</text>
+<text x="490.0" y="668.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/examples/result/&lt;name&gt;/     &lt;name&gt;.json · &lt;name&gt;.md · layout_vis/ · imgs/   (GLM-OCR reference outputs)</text>
+<text x="490.0" y="680.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server/ui/_runs/&lt;id&gt;/     input/ · output/ · result .zip   (recorded GLM-OCR runs)</text>
+<text x="490.0" y="692.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">vi-correction-prototype/tests/correction/sample_receipt_glm.json   (structured OCR JSON for the correction pipeline)</text>
+<rect x="980.0" y="150.0" width="380.0" height="92.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
+<text x="1170.0" y="175.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Optional second client</text>
+<text x="1170.0" y="187.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Another machine on the same network;</text>
+<text x="1170.0" y="198.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">reachable because cfg.HOST = 0.0.0.0.</text>
+<text x="1170.0" y="210.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">No remote-server mode exists in the code —</text>
+<text x="1170.0" y="222.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">the browser is the only remote client.</text>
+<rect x="1002.0" y="322.0" width="336.0" height="74.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1170.0" y="350.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Per-page timing</text>
+<text x="1170.0" y="361.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">adapter elapsed_ms → response field</text>
+<text x="1170.0" y="372.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">processing_time_ms</text>
+<rect x="1002.0" y="406.0" width="336.0" height="74.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1170.0" y="434.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Engine actually used</text>
+<text x="1170.0" y="445.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">selected_engine · ocr_engine</text>
+<text x="1170.0" y="456.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(kept per page in the response)</text>
+<rect x="1002.0" y="490.0" width="336.0" height="74.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1170.0" y="518.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">inference_status</text>
+<text x="1170.0" y="529.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">ok | error |</text>
+<text x="1170.0" y="540.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">fallback_to_paddle_for_pdf</text>
+<rect x="1002.0" y="574.0" width="336.0" height="84.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1170.0" y="602.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">activity_logs rows (action = ocr)</text>
+<text x="1170.0" y="613.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">detail contains mode, engine,</text>
+<text x="1170.0" y="624.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">processing_time_ms, inference_status,</text>
+<text x="1170.0" y="635.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">page count — viewable at /admin/logs</text>
+<rect x="1002.0" y="668.0" width="336.0" height="70.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="1170.0" y="694.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">document_artifacts</text>
+<text x="1170.0" y="705.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">persisted outputs of each run,</text>
+<text x="1170.0" y="716.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">comparable between engines</text>
+<path d="M40.0,776.0 h1306.0 l14.0,14.0 v48.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,776.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="804.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Every component in the figure runs on one machine. The browser never contacts the MLX model server or the database directly: the only network endpoint exposed to a tester is Flask on :5001, and :8080 is contacted only by the transient</text>
+<text x="700.0" y="816.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">glmocr subprocess on localhost.</text>
+<path d="M40.0,852.0 h1306.0 l14.0,14.0 v62.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,852.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="887.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Test-environment limitations to state in the report: the application runs on Flask&#x27;s development server (single process, threaded), the database is a local SQLite file, and the GLM-OCR engine is available only on Apple Silicon with both</text>
+<text x="700.0" y="899.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">virtual environments installed and the MLX server running. On a machine without them, the engine drop-down still offers &quot;Recommended&quot;, but the request returns a structured error instead of a result.</text>
+</svg>

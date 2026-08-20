@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="960" viewBox="0 0 1400 960" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+</defs>
+<rect x="0" y="0" width="1400" height="960" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.5 – So sánh thời gian xử lý theo công cụ và số trang  (khung biểu đồ, chưa có dữ liệu)</text>
+<line x1="40" y1="48" x2="1360" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">NO MEASUREMENT DATA EXISTS IN THE REPOSITORY — the chart frame is provided empty, together with the procedure for collecting the values</text>
+<path d="M40.0,92.0 h1306.0 l14.0,14.0 v60.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1346.0,92.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="700.0" y="125.8" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">The repository contains no OCR benchmark results. There is no timing data set, no benchmark script for the OCR engines, and no stored measurement file. tools/eval_results/*.json holds latency figures for candidate Qwen</text>
+<text x="700.0" y="138.7" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">chat/rewrite language models, not for OCR. Plotting anything here without running the measurements would fabricate results, so the chart is delivered as an empty, editable frame.</text>
+<rect x="140.0" y="210.0" width="600.0" height="390.0" rx="0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
+<text x="440.0" y="408.9" font-size="12.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<rect x="240.0" y="370.0" width="400.0" height="70.0" rx="0" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
+<text x="440.0" y="395.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">NO DATA</text>
+<text x="440.0" y="408.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Draw one series per OCR engine here after running</text>
+<text x="440.0" y="421.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">the measurement procedure given below.</text>
+<rect x="20.0" y="300.0" width="110.0" height="210.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="75.0" y="359.3" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">Processing time</text>
+<text x="75.0" y="371.5" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">per document</text>
+<text x="75.0" y="383.7" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">(seconds)</text>
+<text x="75.0" y="395.9" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle"></text>
+<text x="75.0" y="408.1" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">vertical scale to</text>
+<text x="75.0" y="420.3" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">be</text>
+<text x="75.0" y="432.5" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">set from the</text>
+<text x="75.0" y="444.7" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">measured</text>
+<text x="75.0" y="456.9" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">values</text>
+<rect x="150.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="200.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">1</text>
+<rect x="270.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="320.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">2</text>
+<rect x="390.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="440.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">5</text>
+<rect x="510.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="560.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">10</text>
+<rect x="630.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="680.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">20</text>
+<rect x="340.0" y="640.0" width="200.0" height="30.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
+<text x="440.0" y="658.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">Number of pages</text>
+<rect x="780.0" y="210.0" width="300.0" height="190.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
+<text x="930.0" y="271.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Series — one per OCR engine</text>
+<text x="930.0" y="283.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="930.0" y="295.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  PaddleOCR Legacy      (paddleocr)</text>
+<text x="930.0" y="308.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  PaddleOCR Modern    (paddleocr_modern)</text>
+<text x="930.0" y="320.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  VietOCR                        (vietocr)</text>
+<text x="930.0" y="332.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  GLM-OCR                     (glmocr)</text>
+<text x="930.0" y="344.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  GLM Layout + VietOCR (glm_vietocr)</text>
+<rect x="780.0" y="418.0" width="300.0" height="192.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
+<text x="930.0" y="461.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Report the first run separately</text>
+<text x="930.0" y="472.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="930.0" y="483.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">The first request with an engine also loads its model:</text>
+<text x="930.0" y="494.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• PaddleOCR / PP-StructureV3 download and initialise</text>
+<text x="930.0" y="505.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">their pipelines on first use</text>
+<text x="930.0" y="516.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• VietOCR loads the .pth weights</text>
+<text x="930.0" y="527.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the MLX server holds GLM-OCR resident, but the</text>
+<text x="930.0" y="538.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glmocr subprocess and PP-DocLayoutV3 start per call</text>
+<text x="930.0" y="549.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="930.0" y="560.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Mixing that first measurement into the steady-state</text>
+<text x="930.0" y="571.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">curve distorts the scale.</text>
+<rect x="1120.0" y="210.0" width="240.0" height="400.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
+<text x="1240.0" y="314.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Where the numbers come from</text>
+<text x="1240.0" y="325.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(already implemented)</text>
+<text x="1240.0" y="335.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1240.0" y="346.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">1. Each adapter measures its own</text>
+<text x="1240.0" y="357.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">wall-clock time and returns</text>
+<text x="1240.0" y="368.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">elapsed_ms.</text>
+<text x="1240.0" y="379.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1240.0" y="390.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">2. app.py copies it to</text>
+<text x="1240.0" y="401.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">processing_time_ms in the</text>
+<text x="1240.0" y="412.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">response for /api/ocr/page.</text>
+<text x="1240.0" y="423.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1240.0" y="434.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">3. For /api/ocr/all the values are</text>
+<text x="1240.0" y="445.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">summed and written into the</text>
+<text x="1240.0" y="456.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">activity_logs detail string</text>
+<text x="1240.0" y="467.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">together with the engine and</text>
+<text x="1240.0" y="478.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">the page count.</text>
+<text x="1240.0" y="489.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1240.0" y="500.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">4. /admin/logs lists those rows and</text>
+<text x="1240.0" y="511.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">can be filtered by action = &quot;ocr&quot;.</text>
+<path d="M40.0,690.0 h1306.0 l14.0,14.0 v116.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
+<path d="M1346.0,690.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
+<text x="700.0" y="709.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Measurement procedure to run before this figure can be completed</text>
+<text x="700.0" y="721.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="700.0" y="733.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">1.  Choose a fixed set of documents with 1, 2, 5, 10 and 20 pages and upload each one once.</text>
+<text x="700.0" y="745.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">2.  For every engine, warm it up on a throw-away document; record that first measurement separately.</text>
+<text x="700.0" y="758.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">3.  Run POST /api/ocr/all with the engine parameter set explicitly, three times per (document, engine) pair.</text>
+<text x="700.0" y="770.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">4.  Read processing_time_ms (or the summed value in the activity_logs detail string) and take the median.</text>
+<text x="700.0" y="782.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">5.  Record the fixed conditions with the numbers: machine model, cfg.DEVICE, OFFLINE flag, whether the MLX</text>
+<text x="700.0" y="794.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">server was already running, and the exact page size / resolution of the documents.</text>
+<text x="700.0" y="806.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">6.  Note that VietOCR falls back to PaddleOCR for PDF input, so its multi-page column measures the fallback.</text>
+<path d="M40.0,836.0 h1306.0 l14.0,14.0 v60.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1346.0,836.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="700.0" y="870.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Fairness constraint that follows from the implementation: results are cached in memory per (file hash, page, file state, engine), so repeating the same page with the same engine in one server session returns the cached result instead of</text>
+<text x="700.0" y="882.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">re-running inference. Restart the application, or use different documents, between repetitions.</text>
+</svg>

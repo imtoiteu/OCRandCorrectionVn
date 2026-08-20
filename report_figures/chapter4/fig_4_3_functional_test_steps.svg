@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1090" viewBox="0 0 1420 1090" font-family="Helvetica, Arial, sans-serif">
+<defs>
+<marker id="arr_445" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#445"/></marker>
+<marker id="arr_4B6E9C" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#4B6E9C"/></marker>
+</defs>
+<rect x="0" y="0" width="1420" height="1090" fill="#FFFFFF"/>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.3 – Một số bước kiểm thử chức năng xử lý tài liệu</text>
+<line x1="40" y1="48" x2="1380" y2="48" stroke="#10202E" stroke-width="1.5"/>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Functional test procedure derived from the implemented request flow; each step lists the API call and the evidence the system produces</text>
+<path d="M190.0,228.0 L190.0,238.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,314.0 L190.0,324.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,400.0 L190.0,410.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,486.0 L190.0,496.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,572.0 L190.0,582.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,658.0 L190.0,668.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,744.0 L190.0,754.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,830.0 L190.0,840.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<path d="M190.0,916.0 L190.0,926.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
+<rect x="40.0" y="100.0" width="300.0" height="38.0" rx="0" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="122.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Test step</text>
+<rect x="360.0" y="100.0" width="480.0" height="38.0" rx="0" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="122.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Action performed and API call exercised</text>
+<rect x="860.0" y="100.0" width="520.0" height="38.0" rx="0" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="122.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Evidence produced by the implementation</text>
+<rect x="40.0" y="152.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="193.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">a)  Log in</text>
+<rect x="360.0" y="152.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="181.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Open http://localhost:5001 → the login form is served</text>
+<text x="600.0" y="192.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">for any unauthenticated request.</text>
+<text x="600.0" y="203.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /login  (user / user123)</text>
+<rect x="860.0" y="152.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="187.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: redirect to /, navigation bar shows the user</text>
+<text x="1120.0" y="198.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">name and role; activity_logs gains action = &quot;login&quot;.</text>
+<rect x="40.0" y="238.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="279.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">b)  Upload a document</text>
+<rect x="360.0" y="238.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="273.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">OCR view → drop zone or file picker.</text>
+<text x="600.0" y="284.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/upload  (multipart)</text>
+<rect x="860.0" y="238.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="267.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: 200 with file_id, page_count, is_pdf;</text>
+<text x="1120.0" y="278.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">file appears in uploads/ as {uuid}{suffix};</text>
+<text x="1120.0" y="289.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Document row status = &quot;uploaded&quot;; log action = &quot;upload&quot;.</text>
+<rect x="40.0" y="324.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="365.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">c)  Preview and navigate pages</text>
+<rect x="360.0" y="324.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="359.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/page with preview_only = true</text>
+<text x="600.0" y="370.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(page navigation buttons for a PDF)</text>
+<rect x="860.0" y="324.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="359.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: page_image_b64 rendered on the canvas,</text>
+<text x="1120.0" y="370.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">results = [], no OCR performed, no artifact written.</text>
+<rect x="40.0" y="410.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="451.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">d)  Select the OCR tool</text>
+<rect x="360.0" y="410.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="439.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Engine drop-down: Recommended (glmocr) ·</text>
+<text x="600.0" y="450.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">GLM Layout + VietOCR Text · Vietnamese (vietocr) ·</text>
+<text x="600.0" y="461.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Standard (paddleocr)</text>
+<rect x="860.0" y="410.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="439.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: the chosen value is sent as the &quot;engine&quot;</text>
+<text x="1120.0" y="450.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">field and echoed back as selected_engine;</text>
+<text x="1120.0" y="461.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">the choice is kept for the whole session.</text>
+<rect x="40.0" y="496.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="537.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">e)  Run recognition and follow the status</text>
+<rect x="360.0" y="496.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="525.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/page  (Run OCR)  or</text>
+<text x="600.0" y="536.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/all  (OCR All) · Stop button aborts</text>
+<text x="600.0" y="547.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">the fetch on the client side</text>
+<rect x="860.0" y="496.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="525.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: processing_time_ms and inference_status per</text>
+<text x="1120.0" y="536.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">page; statistics strip shows regions, mean confidence,</text>
+<text x="1120.0" y="547.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">time and page count; log action = &quot;ocr&quot; with details.</text>
+<rect x="40.0" y="582.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="623.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">f)  Inspect the result representations</text>
+<rect x="360.0" y="582.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="611.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Result tabs: Markdown · Raw · Images · JSON;</text>
+<text x="600.0" y="622.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">clicking a region highlights the matching box</text>
+<text x="600.0" y="633.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">on the page canvas</text>
+<rect x="860.0" y="582.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="611.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: artifacts ocr, ocr_layout, ocr_json,</text>
+<text x="1120.0" y="622.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">ocr_markdown, ocr_images written to document_artifacts</text>
+<text x="1120.0" y="633.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(one row per kind, upserted).</text>
+<rect x="40.0" y="668.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="709.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">g)  Export the result</text>
+<rect x="360.0" y="668.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="703.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Download .md / .txt / .json;</text>
+<text x="600.0" y="714.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/export-docx  (pandoc)</text>
+<rect x="860.0" y="668.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="703.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: files downloaded; a missing pandoc returns</text>
+<text x="1120.0" y="714.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">501 with an explanatory message rather than failing.</text>
+<rect x="40.0" y="754.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="795.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">h)  Reopen from the document library</text>
+<rect x="360.0" y="754.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="783.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">#documents → open a document →</text>
+<text x="600.0" y="794.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">#ocr/&lt;file_id&gt; → GET /api/documents/&lt;id&gt;/text</text>
+<text x="600.0" y="805.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">and /ocr-images</text>
+<rect x="860.0" y="754.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="789.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: the previous OCR result, overlay boxes and</text>
+<text x="1120.0" y="800.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">images are restored without re-running OCR.</text>
+<rect x="40.0" y="840.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="881.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">i)  Optional — Vietnamese correction</text>
+<rect x="360.0" y="840.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="875.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">GET /correction → pick a document that has ocr_json →</text>
+<text x="600.0" y="886.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/correction/run → POST /api/correction/save</text>
+<rect x="860.0" y="840.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="869.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: counts, timing and a validation report;</text>
+<text x="1120.0" y="880.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">corrected_json / corrected_md stored beside — never</text>
+<text x="1120.0" y="891.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">overwriting — the raw OCR artifacts.</text>
+<rect x="40.0" y="926.0" width="300.0" height="76.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
+<text x="190.0" y="967.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">j)  Administration checks</text>
+<rect x="360.0" y="926.0" width="480.0" height="76.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
+<text x="600.0" y="961.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">/admin/ dashboard · /admin/users · /admin/logs ·</text>
+<text x="600.0" y="972.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">/admin/files   (admin / admin123)</text>
+<rect x="860.0" y="926.0" width="520.0" height="76.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1120.0" y="961.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Evidence: every action above appears in the log list;</text>
+<text x="1120.0" y="972.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">a non-admin account receives 403 from the same URLs.</text>
+<path d="M40.0,1024.0 h1326.0 l14.0,14.0 v30.0 h-1340.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
+<path d="M1366.0,1024.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
+<text x="710.0" y="1049.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Screenshot note: the report presents Figure 4.3 as captures a) upload, b) engine selection, c) recognition result, d) processing history — see MANUAL_COMPLETION.md.</text>
+</svg>
