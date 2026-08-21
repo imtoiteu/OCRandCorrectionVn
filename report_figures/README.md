@@ -1,8 +1,7 @@
 # Report figures — OCRandCorrectionVn
 
-Editable diagrams for [`BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx`](../BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx)
-(at the repository root), generated from the source code of the repository — not
-from the report text.
+Editable diagrams for `BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx`, generated from the
+source code of the repository (not from the report text).
 
 ```
 report_figures/
@@ -12,6 +11,8 @@ report_figures/
 ├── build_ch2.py           figure definitions, Chapter 2
 ├── build_ch3.py           figure definitions, Chapter 3
 ├── build_ch4.py           figure definitions, Chapter 4
+├── rasterize.py           SVG -> PNG for embedding (librsvg, Vietnamese-safe)
+├── insert_figures.py      inserts the PNGs into the .docx above their captions
 ├── chapter2/   10 figures  (2.1 – 2.10)
 ├── chapter3/    6 figures  (3.1, 3.2, 3.6, 3.7, 3.8, 3.9)
 └── chapter4/    5 figures  (4.1 – 4.5)
@@ -52,6 +53,31 @@ and regenerate both:
 ```bash
 python3 build_ch2.py && python3 build_ch3.py && python3 build_ch4.py
 ```
+
+## The figures inside the report
+
+The 21 figures are already embedded in
+[`BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx`](../BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx),
+each centred directly above its own `Hình X.Y.` caption. Figures 3.3, 3.4, 3.5,
+3.10 and 3.11 were deliberately left empty — see `MANUAL_COMPLETION.md`.
+
+To rebuild that embedding after editing a diagram:
+
+```bash
+python3 rasterize.py . /tmp/fig_png 2.0            # SVG -> PNG at 2x
+python3 insert_figures.py ../BAO_CAO_....docx out.docx /tmp/fig_png
+```
+
+Two details worth knowing:
+
+* `rasterize.py` renders through **librsvg**, not ImageMagick's internal SVG
+  renderer, and swaps the font stack to Liberation Sans. ImageMagick resolves
+  `Helvetica` to Nimbus Sans, which has no Vietnamese coverage and silently drops
+  every diacritic.
+* It also removes the title band from the picture, because the Word caption sits
+  immediately below it and would otherwise print the same title twice. The
+  provenance subtitle is kept. The `.svg` and `.drawio` files are untouched and
+  still carry their titles, so they remain usable standalone.
 
 ## Visual conventions (consistent across all chapters)
 
