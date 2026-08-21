@@ -10,16 +10,16 @@
 <rect x="0" y="0" width="1420" height="1120" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.2 – Quy trình chuẩn bị dữ liệu và đánh giá kết quả OCR</text>
 <line x1="40" y1="48" x2="1380" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Filled boxes are supported by code or data in the repository; red-outlined boxes are NOT implemented and must be done manually</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Khối tô màu là bước đã có mã hoặc dữ liệu trong kho; khối viền đỏ nền trắng là bước CHƯA hiện thực hóa, phải làm thủ công</text>
 <rect x="40" y="156" width="660" height="476" rx="11" fill="#EFF6EE" stroke="#82B366" stroke-width="1.6"/>
 <path d="M40.0,190.0 L40.0,167.0 A11,11 0 0 1 51.0,156.0 L689.0,156.0 A11,11 0 0 1 700.0,167.0 L700.0,190.0 Z" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="54.0" y="180.0" font-size="14.5" font-weight="700" fill="#10202E">Data preparation</text>
+<text x="54.0" y="180.0" font-size="14.5" font-weight="700" fill="#10202E">Chuẩn bị dữ liệu</text>
 <rect x="740" y="156" width="640" height="476" rx="11" fill="#E0F4F5" stroke="#0E8088" stroke-width="1.6"/>
 <path d="M740.0,190.0 L740.0,167.0 A11,11 0 0 1 751.0,156.0 L1369.0,156.0 A11,11 0 0 1 1380.0,167.0 L1380.0,190.0 Z" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="754.0" y="180.0" font-size="14.5" font-weight="700" fill="#10202E">Measurement and scoring</text>
+<text x="754.0" y="180.0" font-size="14.5" font-weight="700" fill="#10202E">Đo đạc và chấm điểm</text>
 <rect x="40" y="668" width="1340" height="218" rx="11" fill="#FFFAEB" stroke="#D6B656" stroke-width="1.6"/>
 <path d="M40.0,702.0 L40.0,679.0 A11,11 0 0 1 51.0,668.0 L1369.0,668.0 A11,11 0 0 1 1380.0,679.0 L1380.0,702.0 Z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
-<text x="54.0" y="692.0" font-size="14.5" font-weight="700" fill="#10202E">Aggregation and reporting</text>
+<text x="54.0" y="692.0" font-size="14.5" font-weight="700" fill="#10202E">Tổng hợp và báo cáo</text>
 <path d="M370.0,266.0 L370.0,280.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M370.0,342.0 L370.0,356.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M370.0,414.0 L370.0,428.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
@@ -36,72 +36,72 @@
 <path d="M1060.0,624.0 L712.0,716.0" fill="none" stroke="#B85450" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_B85450)"/>
 <path d="M40.0,92.0 h1326.0 l14.0,14.0 v30.0 h-1340.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1366.0,92.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="710.0" y="117.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">LEGEND      coloured fill = implemented in the repository (the responsible file is named in the box)            red outline on white = no implementation exists — the step must be performed manually</text>
+<text x="710.0" y="117.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">CHÚ GIẢI      khối tô màu = đã hiện thực hóa trong kho mã nguồn (có ghi tệp chịu trách nhiệm)            khối viền đỏ nền trắng = chưa có mã, phải thực hiện thủ công</text>
 <rect x="62.0" y="204.0" width="616.0" height="62.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="226.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Select the documents to evaluate</text>
-<text x="370.0" y="237.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Samples available in the repository:</text>
+<text x="370.0" y="226.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Chọn tài liệu để đánh giá</text>
+<text x="370.0" y="237.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Mẫu có sẵn trong kho mã nguồn:</text>
 <text x="370.0" y="249.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">examples/source/*.png · GLM-4.5V.pdf</text>
 <rect x="62.0" y="280.0" width="616.0" height="62.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="302.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Group them by document type</text>
-<text x="370.0" y="313.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">printed page · scientific paper · table ·</text>
-<text x="370.0" y="325.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">seal · source code · handwriting</text>
+<text x="370.0" y="302.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Phân nhóm theo loại tài liệu</text>
+<text x="370.0" y="313.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">văn bản in · bài báo khoa học · bảng biểu ·</text>
+<text x="370.0" y="325.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">con dấu · mã nguồn · chữ viết tay</text>
 <rect x="62.0" y="356.0" width="616.0" height="58.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="376.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Upload each document through the SPA</text>
-<text x="370.0" y="387.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/upload → Document row +</text>
+<text x="370.0" y="376.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tải từng tài liệu lên qua SPA</text>
+<text x="370.0" y="387.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/upload → bản ghi Document +</text>
 <text x="370.0" y="399.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">uploads/{uuid}{suffix}</text>
 <rect x="62.0" y="428.0" width="616.0" height="62.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="450.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Run OCR once per engine on the same file</text>
-<text x="370.0" y="461.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">engine parameter of /api/ocr/page and</text>
-<text x="370.0" y="473.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/api/ocr/all (drop-down or API)</text>
+<text x="370.0" y="450.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Chạy OCR lần lượt bằng từng công cụ trên cùng tệp</text>
+<text x="370.0" y="461.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">tham số engine của /api/ocr/page và</text>
+<text x="370.0" y="473.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/api/ocr/all (hộp chọn hoặc API)</text>
 <rect x="62.0" y="504.0" width="616.0" height="62.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="526.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Results are persisted automatically</text>
+<text x="370.0" y="526.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Kết quả được lưu tự động</text>
 <text x="370.0" y="537.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">document_artifacts: ocr, ocr_json,</text>
 <text x="370.0" y="549.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">ocr_markdown, ocr_layout, ocr_images</text>
 <rect x="62.0" y="580.0" width="616.0" height="44.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="599.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Optional: run the Vietnamese correction</text>
+<text x="370.0" y="599.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tùy chọn: chạy hiệu chỉnh tiếng Việt</text>
 <text x="370.0" y="610.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/correction/run → corrected_json</text>
 <rect x="762.0" y="204.0" width="596.0" height="68.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="1060.0" y="229.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">AUTOMATIC — processing time</text>
-<text x="1060.0" y="240.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Every adapter records elapsed_ms; app.py copies it to processing_time_ms and</text>
-<text x="1060.0" y="252.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">writes it into the activity_logs detail string for each page and for OCR-All.</text>
+<text x="1060.0" y="229.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">TỰ ĐỘNG — thời gian xử lý</text>
+<text x="1060.0" y="240.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Mọi bộ thích nghi đều ghi elapsed_ms; app.py chép sang processing_time_ms và</text>
+<text x="1060.0" y="252.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">ghi vào chuỗi detail của activity_logs cho từng trang cũng như cho lần OCR toàn bộ.</text>
 <rect x="762.0" y="284.0" width="596.0" height="68.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="1060.0" y="309.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">AUTOMATIC — recognition metadata</text>
-<text x="1060.0" y="320.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">region count, mean confidence (PaddleOCR engines only), page count,</text>
-<text x="1060.0" y="332.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">inference_status and the engine actually used are returned with every response.</text>
+<text x="1060.0" y="309.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">TỰ ĐỘNG — thông tin kèm kết quả nhận dạng</text>
+<text x="1060.0" y="320.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">số vùng, độ tin cậy trung bình (chỉ với công cụ PaddleOCR), số trang,</text>
+<text x="1060.0" y="332.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">inference_status và công cụ thực sự đã dùng đều trả về cùng mỗi phản hồi.</text>
 <rect x="762.0" y="364.0" width="596.0" height="76.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="1060.0" y="387.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">AUTOMATIC — correction quality signals (vi_correction)</text>
+<text x="1060.0" y="387.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">TỰ ĐỘNG — chỉ báo chất lượng hiệu chỉnh (vi_correction)</text>
 <text x="1060.0" y="399.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">counts {blocks, units, sent, changed, skipped} · timing {provider_seconds,</text>
-<text x="1060.0" y="410.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">total_seconds} · validation report (structure preserved, placeholders intact)</text>
-<text x="1060.0" y="422.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">plus scripts/bench_spans.py for per-span latency in the prototype.</text>
+<text x="1060.0" y="410.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">total_seconds} · báo cáo kiểm tra (giữ nguyên cấu trúc, placeholder còn nguyên)</text>
+<text x="1060.0" y="422.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">kèm scripts/bench_spans.py đo độ trễ theo từng đoạn trong bản thử nghiệm.</text>
 <rect x="762.0" y="452.0" width="596.0" height="62.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="1060.0" y="474.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL — create the ground truth</text>
-<text x="1060.0" y="485.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">No transcription, annotation tool or reference-text file for the Vietnamese</text>
-<text x="1060.0" y="497.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">corpus exists in the repository.</text>
+<text x="1060.0" y="474.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">THỦ CÔNG — tạo dữ liệu chuẩn</text>
+<text x="1060.0" y="485.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Kho mã nguồn không có bản gõ lại, công cụ gán nhãn hay tệp văn bản tham</text>
+<text x="1060.0" y="497.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">chiếu nào cho tập tài liệu tiếng Việt.</text>
 <rect x="762.0" y="526.0" width="596.0" height="46.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="1060.0" y="546.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL — text normalisation before scoring</text>
-<text x="1060.0" y="557.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">No normalisation routine for evaluation exists in the repository.</text>
+<text x="1060.0" y="546.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">THỦ CÔNG — chuẩn hóa văn bản trước khi chấm điểm</text>
+<text x="1060.0" y="557.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Kho mã nguồn không có hàm chuẩn hóa phục vụ đánh giá.</text>
 <rect x="762.0" y="584.0" width="596.0" height="40.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="1060.0" y="606.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL — compute CER and WER (no implementation exists: no jiwer, no edit-distance code)</text>
+<text x="1060.0" y="606.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">THỦ CÔNG — tính CER và WER (chưa có mã: không có jiwer, không có hàm khoảng cách soạn thảo)</text>
 <rect x="62.0" y="716.0" width="420.0" height="68.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="272.0" y="735.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Export the raw evidence</text>
-<text x="272.0" y="747.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/admin/logs (activity_logs, filterable) ·</text>
-<text x="272.0" y="758.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/api/documents/&lt;id&gt;/text (all artifacts) ·</text>
-<text x="272.0" y="770.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">downloads .md / .txt / .json / .docx</text>
+<text x="272.0" y="735.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Kết xuất dữ liệu thô</text>
+<text x="272.0" y="747.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/admin/logs (activity_logs, lọc được) ·</text>
+<text x="272.0" y="758.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/api/documents/&lt;id&gt;/text (mọi kết xuất) ·</text>
+<text x="272.0" y="770.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">tải về .md / .txt / .json / .docx</text>
 <rect x="502.0" y="716.0" width="420.0" height="68.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="712.0" y="741.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL — build the comparison tables</text>
-<text x="712.0" y="752.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Accuracy per document group and engine;</text>
-<text x="712.0" y="764.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">no aggregation script exists in the repository.</text>
+<text x="712.0" y="741.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">THỦ CÔNG — lập bảng so sánh</text>
+<text x="712.0" y="752.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Độ chính xác theo nhóm tài liệu và theo công cụ;</text>
+<text x="712.0" y="764.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">kho mã nguồn không có kịch bản tổng hợp.</text>
 <rect x="942.0" y="716.0" width="416.0" height="68.0" rx="9" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="1150.0" y="741.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MANUAL — build the timing chart (Figure 4.5)</text>
-<text x="1150.0" y="752.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Separate the first-run model-loading time from the</text>
-<text x="1150.0" y="764.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">steady-state time, as the report requires.</text>
+<text x="1150.0" y="741.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">THỦ CÔNG — dựng biểu đồ thời gian (Hình 4.5)</text>
+<text x="1150.0" y="752.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tách riêng thời gian nạp mô hình lần đầu khỏi thời</text>
+<text x="1150.0" y="764.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">gian xử lý ở trạng thái ổn định như báo cáo yêu cầu.</text>
 <rect x="62.0" y="800.0" width="1296.0" height="68.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
-<text x="710.0" y="825.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Regression / smoke tests that do exist</text>
-<text x="710.0" y="836.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-ui: test_layout.py · test_regression.py (reading-order reconstruction) · test_vietocr.py · test_refactored_ocr.py (engine dispatch) · test_markdown_normalize.py (pytest)</text>
-<text x="710.0" y="848.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server: glmocr/tests/test_unit.py · test_integration.py (pytest, with conftest.py)   —   none of these measures OCR accuracy; they verify behaviour, not quality.</text>
+<text x="710.0" y="825.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Các kiểm thử hồi quy / kiểm tra nhanh thực sự có trong kho</text>
+<text x="710.0" y="836.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-ui: test_layout.py · test_regression.py (dựng lại thứ tự đọc) · test_vietocr.py · test_refactored_ocr.py (điều phối công cụ) · test_markdown_normalize.py (pytest)</text>
+<text x="710.0" y="848.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm-ocr-server: glmocr/tests/test_unit.py · test_integration.py (pytest, có conftest.py)   —   không tệp nào trong số đó đo độ chính xác OCR; chúng kiểm tra hành vi chứ không kiểm tra chất lượng.</text>
 <path d="M40.0,916.0 h1326.0 l14.0,14.0 v82.0 h-1340.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
 <path d="M1366.0,916.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
-<text x="710.0" y="954.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">ACCURACY NOTICE — the repository contains no OCR accuracy evaluation. There is no ground-truth data set, no CER/WER or layout-accuracy implementation (a repository-wide search for CER, WER, jiwer, levenshtein and edit_distance returns</text>
-<text x="710.0" y="967.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">nothing outside model vocabulary files), and no recorded measurement results. tools/eval_model.py and tools/ab_harness.py evaluate candidate Qwen chat/rewrite language models, not OCR, and they import services that no longer exist in this</text>
-<text x="710.0" y="979.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">build. Everything drawn as a red-outlined box must be produced manually before Chapter 4 can report numbers.</text>
+<text x="710.0" y="954.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">CẢNH BÁO VỀ TÍNH CHÍNH XÁC — kho mã nguồn không có phần đánh giá độ chính xác OCR. Không có tập dữ liệu chuẩn, không có phần tính CER/WER hay độ chính xác bố cục (tìm trên toàn kho các từ khóa CER, WER, jiwer, levenshtein và edit_distance</text>
+<text x="710.0" y="967.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">đều không ra kết quả nào ngoài các tệp từ vựng của mô hình), và không có kết quả đo nào được lưu lại. tools/eval_model.py và tools/ab_harness.py đánh giá các mô hình ngôn ngữ Qwen dùng cho trò chuyện / viết lại chứ không đánh giá OCR, và</text>
+<text x="710.0" y="979.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">chúng còn nạp những dịch vụ không còn tồn tại trong phiên bản này. Mọi khối viền đỏ đều phải làm thủ công trước khi chương 4 có thể nêu số liệu.</text>
 </svg>

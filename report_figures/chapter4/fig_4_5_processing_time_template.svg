@@ -6,27 +6,26 @@
 <rect x="0" y="0" width="1400" height="960" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 4.5 – So sánh thời gian xử lý theo công cụ và số trang  (khung biểu đồ, chưa có dữ liệu)</text>
 <line x1="40" y1="48" x2="1360" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">NO MEASUREMENT DATA EXISTS IN THE REPOSITORY — the chart frame is provided empty, together with the procedure for collecting the values</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">KHO MÃ NGUỒN KHÔNG CÓ SỐ LIỆU ĐO NÀO — khung biểu đồ được cung cấp ở dạng trống, kèm quy trình thu thập số liệu</text>
 <path d="M40.0,92.0 h1306.0 l14.0,14.0 v60.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
 <path d="M1346.0,92.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
-<text x="700.0" y="125.8" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">The repository contains no OCR benchmark results. There is no timing data set, no benchmark script for the OCR engines, and no stored measurement file. tools/eval_results/*.json holds latency figures for candidate Qwen</text>
-<text x="700.0" y="138.7" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">chat/rewrite language models, not for OCR. Plotting anything here without running the measurements would fabricate results, so the chart is delivered as an empty, editable frame.</text>
+<text x="700.0" y="125.8" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">Kho mã nguồn không có kết quả đo hiệu năng OCR. Không có tập số liệu thời gian, không có kịch bản đo cho các công cụ OCR, và không có tệp kết quả đo nào được lưu. Thư mục tools/eval_results/*.json chứa số liệu độ trễ của các</text>
+<text x="700.0" y="138.7" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">mô hình ngôn ngữ Qwen dùng cho trò chuyện / viết lại, không phải của OCR. Vẽ bất cứ điều gì ở đây khi chưa thực hiện phép đo sẽ là bịa số liệu, nên biểu đồ được giao ở dạng khung trống, chỉnh sửa được.</text>
 <rect x="140.0" y="210.0" width="600.0" height="390.0" rx="0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
 <text x="440.0" y="408.9" font-size="12.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <rect x="240.0" y="370.0" width="400.0" height="70.0" rx="0" fill="#FFFFFF" stroke="#B85450" stroke-width="1.6"/>
-<text x="440.0" y="395.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">NO DATA</text>
-<text x="440.0" y="408.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Draw one series per OCR engine here after running</text>
-<text x="440.0" y="421.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">the measurement procedure given below.</text>
+<text x="440.0" y="395.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">CHƯA CÓ DỮ LIỆU</text>
+<text x="440.0" y="408.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Vẽ mỗi công cụ OCR thành một đường / nhóm cột tại đây</text>
+<text x="440.0" y="421.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">sau khi thực hiện quy trình đo bên dưới.</text>
 <rect x="20.0" y="300.0" width="110.0" height="210.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
-<text x="75.0" y="359.3" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">Processing time</text>
-<text x="75.0" y="371.5" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">per document</text>
-<text x="75.0" y="383.7" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">(seconds)</text>
-<text x="75.0" y="395.9" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle"></text>
-<text x="75.0" y="408.1" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">vertical scale to</text>
-<text x="75.0" y="420.3" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">be</text>
-<text x="75.0" y="432.5" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">set from the</text>
-<text x="75.0" y="444.7" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">measured</text>
-<text x="75.0" y="456.9" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">values</text>
+<text x="75.0" y="365.4" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">Thời gian xử lý</text>
+<text x="75.0" y="377.6" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">mỗi tài liệu</text>
+<text x="75.0" y="389.8" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">(giây)</text>
+<text x="75.0" y="402.0" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle"></text>
+<text x="75.0" y="414.2" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">trục dọc được</text>
+<text x="75.0" y="426.4" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">chia</text>
+<text x="75.0" y="438.6" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">theo số liệu đo</text>
+<text x="75.0" y="450.8" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">thực tế</text>
 <rect x="150.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
 <text x="200.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">1</text>
 <rect x="270.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
@@ -38,9 +37,9 @@
 <rect x="630.0" y="606.0" width="100.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
 <text x="680.0" y="622.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">20</text>
 <rect x="340.0" y="640.0" width="200.0" height="30.0" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.6"/>
-<text x="440.0" y="658.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">Number of pages</text>
+<text x="440.0" y="658.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">Số trang</text>
 <rect x="780.0" y="210.0" width="300.0" height="190.0" rx="9" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
-<text x="930.0" y="271.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Series — one per OCR engine</text>
+<text x="930.0" y="271.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Chuỗi số liệu — mỗi công cụ OCR một chuỗi</text>
 <text x="930.0" y="283.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="930.0" y="295.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  PaddleOCR Legacy      (paddleocr)</text>
 <text x="930.0" y="308.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  PaddleOCR Modern    (paddleocr_modern)</text>
@@ -48,50 +47,53 @@
 <text x="930.0" y="332.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  GLM-OCR                     (glmocr)</text>
 <text x="930.0" y="344.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">■  GLM Layout + VietOCR (glm_vietocr)</text>
 <rect x="780.0" y="418.0" width="300.0" height="192.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
-<text x="930.0" y="461.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Report the first run separately</text>
-<text x="930.0" y="472.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="930.0" y="483.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">The first request with an engine also loads its model:</text>
-<text x="930.0" y="494.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• PaddleOCR / PP-StructureV3 download and initialise</text>
-<text x="930.0" y="505.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">their pipelines on first use</text>
-<text x="930.0" y="516.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• VietOCR loads the .pth weights</text>
-<text x="930.0" y="527.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• the MLX server holds GLM-OCR resident, but the</text>
-<text x="930.0" y="538.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glmocr subprocess and PP-DocLayoutV3 start per call</text>
-<text x="930.0" y="549.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="930.0" y="560.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Mixing that first measurement into the steady-state</text>
-<text x="930.0" y="571.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">curve distorts the scale.</text>
+<text x="930.0" y="450.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Trình bày riêng lần chạy đầu tiên</text>
+<text x="930.0" y="461.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="930.0" y="472.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Yêu cầu đầu tiên với mỗi công cụ còn kèm việc nạp mô</text>
+<text x="930.0" y="483.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">hình:</text>
+<text x="930.0" y="494.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• PaddleOCR / PP-StructureV3 tải và khởi tạo</text>
+<text x="930.0" y="505.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">pipeline ở lần dùng đầu</text>
+<text x="930.0" y="516.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• VietOCR nạp tệp trọng số .pth</text>
+<text x="930.0" y="527.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">• máy chủ MLX giữ GLM-OCR thường trú, nhưng tiến</text>
+<text x="930.0" y="538.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">trình con glmocr và PP-DocLayoutV3 khởi động lại</text>
+<text x="930.0" y="549.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">ở mỗi lần gọi</text>
+<text x="930.0" y="560.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="930.0" y="571.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Gộp phép đo đầu tiên vào đường ổn định sẽ làm</text>
+<text x="930.0" y="582.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">sai lệch tỷ lệ của biểu đồ.</text>
 <rect x="1120.0" y="210.0" width="240.0" height="400.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="1240.0" y="314.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Where the numbers come from</text>
-<text x="1240.0" y="325.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(already implemented)</text>
+<text x="1240.0" y="314.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Số liệu lấy từ đâu</text>
+<text x="1240.0" y="325.0" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">(đã có sẵn trong mã)</text>
 <text x="1240.0" y="335.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1240.0" y="346.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">1. Each adapter measures its own</text>
-<text x="1240.0" y="357.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">wall-clock time and returns</text>
+<text x="1240.0" y="346.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">1. Mỗi bộ thích nghi tự đo thời</text>
+<text x="1240.0" y="357.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">gian thực và trả về</text>
 <text x="1240.0" y="368.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">elapsed_ms.</text>
 <text x="1240.0" y="379.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1240.0" y="390.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">2. app.py copies it to</text>
-<text x="1240.0" y="401.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">processing_time_ms in the</text>
-<text x="1240.0" y="412.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">response for /api/ocr/page.</text>
+<text x="1240.0" y="390.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">2. app.py chép giá trị đó sang</text>
+<text x="1240.0" y="401.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">processing_time_ms trong</text>
+<text x="1240.0" y="412.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">phản hồi của /api/ocr/page.</text>
 <text x="1240.0" y="423.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1240.0" y="434.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">3. For /api/ocr/all the values are</text>
-<text x="1240.0" y="445.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">summed and written into the</text>
-<text x="1240.0" y="456.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">activity_logs detail string</text>
-<text x="1240.0" y="467.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">together with the engine and</text>
-<text x="1240.0" y="478.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">the page count.</text>
-<text x="1240.0" y="489.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1240.0" y="500.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">4. /admin/logs lists those rows and</text>
-<text x="1240.0" y="511.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">can be filtered by action = &quot;ocr&quot;.</text>
+<text x="1240.0" y="434.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">3. Với /api/ocr/all, các giá trị</text>
+<text x="1240.0" y="445.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">được cộng lại và ghi vào</text>
+<text x="1240.0" y="456.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">chuỗi detail của activity_logs</text>
+<text x="1240.0" y="467.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">cùng tên công cụ và số trang.</text>
+<text x="1240.0" y="478.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="1240.0" y="489.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">4. /admin/logs liệt kê các bản ghi</text>
+<text x="1240.0" y="500.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">đó và lọc được theo</text>
+<text x="1240.0" y="511.6" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">action = &quot;ocr&quot;.</text>
 <path d="M40.0,690.0 h1306.0 l14.0,14.0 v116.0 h-1320.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1346.0,690.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="700.0" y="709.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Measurement procedure to run before this figure can be completed</text>
-<text x="700.0" y="721.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="700.0" y="733.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">1.  Choose a fixed set of documents with 1, 2, 5, 10 and 20 pages and upload each one once.</text>
-<text x="700.0" y="745.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">2.  For every engine, warm it up on a throw-away document; record that first measurement separately.</text>
-<text x="700.0" y="758.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">3.  Run POST /api/ocr/all with the engine parameter set explicitly, three times per (document, engine) pair.</text>
-<text x="700.0" y="770.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">4.  Read processing_time_ms (or the summed value in the activity_logs detail string) and take the median.</text>
-<text x="700.0" y="782.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">5.  Record the fixed conditions with the numbers: machine model, cfg.DEVICE, OFFLINE flag, whether the MLX</text>
-<text x="700.0" y="794.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">server was already running, and the exact page size / resolution of the documents.</text>
-<text x="700.0" y="806.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">6.  Note that VietOCR falls back to PaddleOCR for PDF input, so its multi-page column measures the fallback.</text>
+<text x="700.0" y="703.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Quy trình đo cần thực hiện trước khi hoàn thiện hình này</text>
+<text x="700.0" y="715.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="700.0" y="727.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">1.  Chọn một tập tài liệu cố định có 1, 2, 5, 10 và 20 trang, mỗi tài liệu tải lên một lần.</text>
+<text x="700.0" y="739.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">2.  Với mỗi công cụ, chạy làm nóng trên một tài liệu bỏ đi; ghi riêng phép đo đầu tiên đó.</text>
+<text x="700.0" y="752.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">3.  Gọi POST /api/ocr/all với tham số engine chỉ định rõ, lặp ba lần cho mỗi cặp (tài liệu, công cụ).</text>
+<text x="700.0" y="764.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">4.  Đọc processing_time_ms (hoặc giá trị tổng trong chuỗi detail của activity_logs) và lấy trung vị.</text>
+<text x="700.0" y="776.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">5.  Ghi kèm các điều kiện cố định: đời máy, giá trị cfg.DEVICE, cờ OFFLINE, máy chủ MLX có đang chạy sẵn</text>
+<text x="700.0" y="788.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">hay không, và kích thước / độ phân giải chính xác của tài liệu.</text>
+<text x="700.0" y="800.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">6.  Lưu ý VietOCR chuyển sang PaddleOCR khi đầu vào là PDF, nên cột nhiều trang của VietOCR thực chất đo</text>
+<text x="700.0" y="813.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">nhánh thay thế đó.</text>
 <path d="M40.0,836.0 h1306.0 l14.0,14.0 v60.0 h-1320.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
 <path d="M1346.0,836.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
-<text x="700.0" y="870.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Fairness constraint that follows from the implementation: results are cached in memory per (file hash, page, file state, engine), so repeating the same page with the same engine in one server session returns the cached result instead of</text>
-<text x="700.0" y="882.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">re-running inference. Restart the application, or use different documents, between repetitions.</text>
+<text x="700.0" y="870.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Ràng buộc về tính công bằng suy ra từ mã nguồn: kết quả được lưu trong bộ nhớ theo khóa (băm tệp, số trang, trạng thái tệp, công cụ), nên lặp lại đúng trang đó với đúng công cụ trong cùng một phiên máy chủ sẽ trả về kết quả trong bộ nhớ</text>
+<text x="700.0" y="882.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">đệm thay vì chạy lại suy luận. Hãy khởi động lại ứng dụng, hoặc dùng tài liệu khác, giữa các lần lặp.</text>
 </svg>

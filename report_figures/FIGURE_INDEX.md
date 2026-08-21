@@ -14,6 +14,9 @@ inventing it — see `MANUAL_COMPLETION.md`.
   No raster or embedded-SVG image is used anywhere.
 * `.svg` files are plain vector graphics (no rasterization, no external font
   files, no scripts) sized for insertion into Microsoft Word.
+* All labels are in Vietnamese; identifiers taken from the code (file, class and
+  function names, API paths, environment variables, field and status values) are
+  left untranslated so they remain searchable in the source tree.
 
 ## Status values
 

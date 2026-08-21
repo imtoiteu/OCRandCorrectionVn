@@ -8,10 +8,10 @@
 <rect x="0" y="0" width="1300" height="1090" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.1 – Biểu đồ ca sử dụng tổng quát của hệ thống</text>
 <line x1="40" y1="48" x2="1260" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">General use case diagram — derived from the Flask routes in app.py, auth.py, admin_bp.py and correction_bp.py</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Rút ra từ các tuyến (route) Flask trong app.py, auth.py, admin_bp.py và correction_bp.py</text>
 <rect x="240" y="92" width="800" height="826" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
 <path d="M240.0,130.0 L240.0,103.0 A11,11 0 0 1 251.0,92.0 L1029.0,92.0 A11,11 0 0 1 1040.0,103.0 L1040.0,130.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="254.0" y="120.0" font-size="14.5" font-weight="700" fill="#10202E">SmartDocs Web Application  (glm-ocr-ui, Flask :5001)</text>
+<text x="254.0" y="120.0" font-size="14.5" font-weight="700" fill="#10202E">Ứng dụng web SmartDocs  (glm-ocr-ui, Flask :5001)</text>
 <path d="M190.0,378.0 L276.0,169.0" fill="none" stroke="#33475B" stroke-width="1.7"/>
 <path d="M190.0,378.0 L276.0,223.0" fill="none" stroke="#33475B" stroke-width="1.7"/>
 <path d="M190.0,378.0 L276.0,277.0" fill="none" stroke="#33475B" stroke-width="1.7"/>
@@ -32,82 +32,82 @@
 <path d="M1120.0,378.0 L1010.0,621.0" fill="none" stroke="#9673A6" stroke-width="1.7"/>
 <path d="M1120.0,378.0 L1010.0,717.0" fill="none" stroke="#9673A6" stroke-width="1.7"/>
 <path d="M1185.0,426.0 L1185.0,944.0 L125.0,944.0 L125.0,426.0" fill="none" stroke="#33475B" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_33475B)"/>
-<rect x="446.4" y="935.2" width="417.1" height="17.6" rx="3" fill="#FFFFFF" stroke="#33475B" stroke-width="0.8" opacity="0.96"/>
-<text x="655.0" y="947.2" font-size="10.5" fill="#243B4A" text-anchor="middle">«generalization» — an administrator also performs every User use case</text>
+<rect x="422.9" y="935.2" width="464.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#33475B" stroke-width="0.8" opacity="0.96"/>
+<text x="655.0" y="947.2" font-size="10.5" fill="#243B4A" text-anchor="middle">«generalization» — quản trị viên thực hiện được mọi ca sử dụng của người dùng</text>
 <circle cx="125.0" cy="343.0" r="8.0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
 <line x1="125.0" y1="351.0" x2="125.0" y2="369.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="113.0" y1="357.0" x2="137.0" y2="357.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="125.0" y1="369.0" x2="115.0" y2="381.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="125.0" y1="369.0" x2="135.0" y2="381.0" stroke="#33475B" stroke-width="1.6"/>
-<text x="125.0" y="395.0" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">User</text>
+<text x="125.0" y="395.0" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">Người dùng</text>
 <text x="125.0" y="408.8" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">(role = &quot;user&quot;)</text>
 <circle cx="1185.0" cy="343.0" r="8.0" fill="#FFFFFF" stroke="#33475B" stroke-width="1.6"/>
 <line x1="1185.0" y1="351.0" x2="1185.0" y2="369.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="1173.0" y1="357.0" x2="1197.0" y2="357.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="1185.0" y1="369.0" x2="1175.0" y2="381.0" stroke="#33475B" stroke-width="1.6"/>
 <line x1="1185.0" y1="369.0" x2="1195.0" y2="381.0" stroke="#33475B" stroke-width="1.6"/>
-<text x="1185.0" y="395.0" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">Administrator</text>
+<text x="1185.0" y="395.0" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">Quản trị viên</text>
 <text x="1185.0" y="408.8" font-size="12.0" font-weight="700" fill="#15202B" text-anchor="middle">(role = &quot;admin&quot;)</text>
 <ellipse cx="441.0" cy="169.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="166.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Log in / Log out</text>
+<text x="441.0" y="166.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Đăng nhập / Đăng xuất</text>
 <text x="441.0" y="177.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/login · /logout</text>
 <ellipse cx="441.0" cy="223.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="220.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Upload document</text>
+<text x="441.0" y="220.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tải tài liệu lên</text>
 <text x="441.0" y="231.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/upload</text>
 <ellipse cx="441.0" cy="277.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="274.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Preview page / navigate pages</text>
+<text x="441.0" y="274.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Xem trước và chuyển trang</text>
 <text x="441.0" y="285.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/page (preview_only)</text>
 <ellipse cx="441.0" cy="331.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="328.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Select OCR engine</text>
-<text x="441.0" y="339.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(engine parameter)</text>
+<text x="441.0" y="328.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Lựa chọn công cụ OCR</text>
+<text x="441.0" y="339.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(tham số engine)</text>
 <ellipse cx="441.0" cy="385.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="382.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Run OCR on one page</text>
+<text x="441.0" y="382.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thực hiện OCR một trang</text>
 <text x="441.0" y="393.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/page</text>
 <ellipse cx="441.0" cy="439.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="436.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Run OCR on all pages</text>
+<text x="441.0" y="436.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thực hiện OCR toàn bộ trang</text>
 <text x="441.0" y="447.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/all</text>
 <ellipse cx="441.0" cy="493.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="490.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Re-order a selected region</text>
+<text x="441.0" y="490.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Sắp xếp lại một vùng đã chọn</text>
 <text x="441.0" y="501.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/reconstruct-region</text>
 <ellipse cx="441.0" cy="547.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="544.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Read text from TXT / DOCX / PDF</text>
+<text x="441.0" y="544.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Đọc văn bản từ TXT / DOCX / PDF</text>
 <text x="441.0" y="555.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/read-text</text>
 <ellipse cx="441.0" cy="601.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="598.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">View results (Markdown · Raw ·</text>
+<text x="441.0" y="598.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Xem kết quả (Markdown · Raw ·</text>
 <text x="441.0" y="609.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Images · JSON)</text>
 <ellipse cx="441.0" cy="655.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="652.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Copy / download results</text>
+<text x="441.0" y="652.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Sao chép và tải kết quả</text>
 <text x="441.0" y="663.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">.md · .txt · .json · .docx</text>
 <ellipse cx="441.0" cy="709.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="706.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Manage own document library</text>
+<text x="441.0" y="706.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Quản lý tài liệu của mình</text>
 <text x="441.0" y="717.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GET/DELETE /api/documents</text>
 <ellipse cx="441.0" cy="763.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="760.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Run Vietnamese OCR correction</text>
+<text x="441.0" y="760.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Chạy hiệu chỉnh tiếng Việt</text>
 <text x="441.0" y="771.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/correction/run</text>
 <ellipse cx="441.0" cy="817.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="814.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Save / reload corrected result</text>
+<text x="441.0" y="814.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Lưu và mở lại bản đã hiệu chỉnh</text>
 <text x="441.0" y="825.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">/api/correction/save · /result</text>
 <ellipse cx="441.0" cy="871.0" rx="165.0" ry="23.0" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="441.0" y="868.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Switch UI language</text>
+<text x="441.0" y="868.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Đổi ngôn ngữ giao diện</text>
 <text x="441.0" y="879.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/set-lang</text>
 <ellipse cx="835.0" cy="333.0" rx="175.0" ry="33.0" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="835.0" y="330.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">View admin dashboard</text>
+<text x="835.0" y="330.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Xem trang tổng quan quản trị</text>
 <text x="835.0" y="341.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/</text>
 <ellipse cx="835.0" cy="429.0" rx="175.0" ry="33.0" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="835.0" y="420.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Manage user accounts</text>
-<text x="835.0" y="431.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">create · edit · reset password</text>
-<text x="835.0" y="443.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">enable/disable · delete</text>
+<text x="835.0" y="420.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Quản lý tài khoản người dùng</text>
+<text x="835.0" y="431.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">tạo · sửa · đặt lại mật khẩu</text>
+<text x="835.0" y="443.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">khóa/mở khóa · xóa</text>
 <ellipse cx="835.0" cy="525.0" rx="175.0" ry="33.0" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="835.0" y="522.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Oversee all documents</text>
+<text x="835.0" y="522.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Giám sát toàn bộ tài liệu</text>
 <text x="835.0" y="533.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/files</text>
 <ellipse cx="835.0" cy="621.0" rx="175.0" ry="33.0" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="835.0" y="618.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">View activity logs</text>
+<text x="835.0" y="618.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Xem nhật ký hoạt động</text>
 <text x="835.0" y="629.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GET /admin/logs</text>
 <ellipse cx="835.0" cy="717.0" rx="175.0" ry="33.0" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="835.0" y="714.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Access any user&#x27;s documents</text>
-<text x="835.0" y="725.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(admin override in ownership check)</text>
+<text x="835.0" y="714.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Truy cập tài liệu của mọi người dùng</text>
+<text x="835.0" y="725.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(ngoại lệ trong kiểm tra quyền sở hữu)</text>
 <path d="M240.0,1000.0 h786.0 l14.0,14.0 v48.0 h-800.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1026.0,1000.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="640.0" y="1028.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Scope note: the system has no in-application &quot;OCR configuration&quot; screen — engine defaults are set through environment variables read by</text>
-<text x="640.0" y="1040.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">config.py (OCR_ENGINE, VIETOCR_*, GLM_*, VI_CORRECTION_*). No such use case is shown.</text>
+<text x="640.0" y="1028.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Ghi chú phạm vi: hệ thống không có màn hình &quot;cấu hình OCR&quot; trong ứng dụng — các giá trị mặc định của công cụ OCR được đặt bằng biến môi trường</text>
+<text x="640.0" y="1040.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">do config.py đọc (OCR_ENGINE, VIETOCR_*, GLM_*, VI_CORRECTION_*). Vì vậy không có ca sử dụng tương ứng.</text>
 </svg>

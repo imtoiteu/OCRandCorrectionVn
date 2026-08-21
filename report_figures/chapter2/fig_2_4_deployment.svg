@@ -11,27 +11,27 @@
 <rect x="0" y="0" width="1340" height="800" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.4 – Kiến trúc triển khai của hệ thống</text>
 <line x1="40" y1="48" x2="1300" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Deployment view — processes, ports and communication paths defined by app.py, config.py, tools/glm_serve.sh and RUN_MACOS.md</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Góc nhìn triển khai — các tiến trình, cổng và đường trao đổi được xác định bởi app.py, config.py, tools/glm_serve.sh và RUN_MACOS.md</text>
 <rect x="50" y="100" width="300" height="230" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
 <path d="M50.0,134.0 L50.0,111.0 A11,11 0 0 1 61.0,100.0 L339.0,100.0 A11,11 0 0 1 350.0,111.0 L350.0,134.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="64.0" y="124.0" font-size="14.5" font-weight="700" fill="#10202E">Client device</text>
+<text x="64.0" y="124.0" font-size="14.5" font-weight="700" fill="#10202E">Máy người dùng</text>
 <rect x="430" y="100" width="800" height="530" rx="11" fill="#FFF5EB" stroke="#D79B00" stroke-width="1.6"/>
 <path d="M430.0,138.0 L430.0,111.0 A11,11 0 0 1 441.0,100.0 L1219.0,100.0 A11,11 0 0 1 1230.0,111.0 L1230.0,138.0 Z" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="444.0" y="128.0" font-size="14.5" font-weight="700" fill="#10202E">Application host  —  macOS Apple Silicon · Python 3.10  (RUN_MACOS.md)</text>
+<text x="444.0" y="128.0" font-size="14.5" font-weight="700" fill="#10202E">Máy chủ ứng dụng  —  macOS Apple Silicon · Python 3.10  (RUN_MACOS.md)</text>
 <rect x="460" y="516" width="740" height="96" rx="11" fill="#F8F8F8" stroke="#5A5A5A" stroke-width="1.6"/>
 <path d="M460.0,546.0 L460.0,527.0 A11,11 0 0 1 471.0,516.0 L1189.0,516.0 A11,11 0 0 1 1200.0,527.0 L1200.0,546.0 Z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="474.0" y="536.0" font-size="14.5" font-weight="700" fill="#10202E">Local storage on the host</text>
+<text x="474.0" y="536.0" font-size="14.5" font-weight="700" fill="#10202E">Lưu trữ cục bộ trên máy chủ</text>
 <path d="M324.0,190.0 L460.0,199.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
-<rect x="316.2" y="178.9" width="151.6" height="31.2" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
-<text x="392.0" y="190.9" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP  (localhost or LAN)</text>
-<text x="392.0" y="204.5" font-size="10.5" fill="#243B4A" text-anchor="middle">JSON + multipart upload</text>
+<rect x="286.7" y="178.9" width="210.6" height="31.2" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="392.0" y="190.9" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP  (localhost hoặc mạng nội bộ)</text>
+<text x="392.0" y="204.5" font-size="10.5" fill="#243B4A" text-anchor="middle">JSON + tải tệp multipart</text>
 <path d="M830.0,240.0 L830.0,254.0 L638.0,254.0 L638.0,268.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
-<rect x="684.8" y="245.2" width="98.5" height="17.6" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
-<text x="734.0" y="257.2" font-size="10.5" fill="#243B4A" text-anchor="middle">in-process call</text>
+<rect x="670.0" y="245.2" width="128.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#0E8088" stroke-width="0.8" opacity="0.96"/>
+<text x="734.0" y="257.2" font-size="10.5" fill="#243B4A" text-anchor="middle">gọi trong tiến trình</text>
 <path d="M830.0,240.0 L830.0,254.0 L1022.0,254.0 L1022.0,268.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
-<rect x="859.0" y="238.4" width="133.9" height="31.2" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
+<rect x="870.9" y="238.4" width="110.3" height="31.2" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
 <text x="926.0" y="250.4" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess.run()</text>
-<text x="926.0" y="264.0" font-size="10.5" fill="#243B4A" text-anchor="middle">sanitized environment</text>
+<text x="926.0" y="264.0" font-size="10.5" fill="#243B4A" text-anchor="middle">môi trường đã lọc</text>
 <path d="M1022.0,348.0 L1022.0,392.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
 <rect x="896.0" y="361.2" width="251.9" height="17.6" rx="3" fill="#FFFFFF" stroke="#D79B00" stroke-width="0.8" opacity="0.96"/>
 <text x="1022.0" y="373.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP localhost:8080  ·  /chat/completions</text>
@@ -39,39 +39,39 @@
 <rect x="382.1" y="306.7" width="139.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#999999" stroke-width="0.8" opacity="0.96"/>
 <text x="452.0" y="318.7" font-size="10.5" fill="#243B4A" text-anchor="middle">subprocess.run(pandoc)</text>
 <path d="M1200.0,199.0 L1216.0,199.0 L1216.0,564.0 L1200.0,564.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
-<rect x="1143.2" y="372.7" width="145.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
-<text x="1216.0" y="384.7" font-size="10.5" fill="#243B4A" text-anchor="middle">SQLAlchemy  ·  file I/O</text>
+<rect x="1131.3" y="372.7" width="169.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="1216.0" y="384.7" font-size="10.5" fill="#243B4A" text-anchor="middle">SQLAlchemy  ·  thao tác tệp</text>
 <path d="M638.0,348.0 L638.0,494.0 L1069.0,494.0 L1069.0,552.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
 <rect x="772.0" y="485.2" width="74.9" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
-<text x="809.5" y="497.2" font-size="10.5" fill="#243B4A" text-anchor="middle">model files</text>
+<text x="809.5" y="497.2" font-size="10.5" fill="#243B4A" text-anchor="middle">tệp mô hình</text>
 <rect x="76.0" y="152.0" width="248.0" height="76.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="200.0" y="180.4" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Web browser</text>
-<text x="200.0" y="193.3" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">SPA + server-rendered admin pages</text>
-<text x="200.0" y="206.1" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">(no frontend build step)</text>
+<text x="200.0" y="180.4" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Trình duyệt web</text>
+<text x="200.0" y="193.3" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">SPA + trang quản trị dựng phía máy chủ</text>
+<text x="200.0" y="206.1" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">(không cần bước build frontend)</text>
 <rect x="76.0" y="244.0" width="248.0" height="64.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
 <text x="200.0" y="267.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">http://&lt;host&gt;:5001</text>
-<text x="200.0" y="278.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Session cookie</text>
+<text x="200.0" y="278.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Cookie phiên làm việc</text>
 <text x="200.0" y="290.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(HttpOnly · SameSite=Lax)</text>
 <rect x="460.0" y="158.0" width="740.0" height="82.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
-<text x="830.0" y="189.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Process 1 · Flask application server</text>
+<text x="830.0" y="189.0" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Tiến trình 1 · Máy chủ ứng dụng Flask</text>
 <text x="830.0" y="202.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">glm-ocr-ui/.venv/bin/python app.py</text>
 <text x="830.0" y="215.8" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">app.run(host=cfg.HOST 0.0.0.0, port=cfg.PORT 5001, threaded=True, debug=False)</text>
 <rect x="460.0" y="268.0" width="356.0" height="80.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="638.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">In-process OCR runtimes</text>
-<text x="638.0" y="311.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(same interpreter as Flask)</text>
+<text x="638.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Công cụ OCR chạy trong tiến trình</text>
+<text x="638.0" y="311.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cùng trình thông dịch với Flask)</text>
 <text x="638.0" y="323.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR · PP-StructureV3 · VietOCR</text>
 <rect x="844.0" y="268.0" width="356.0" height="80.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1022.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Process 3 (transient) · GLM-OCR SDK</text>
+<text x="1022.0" y="298.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Tiến trình 3 (tạm thời) · GLM-OCR SDK</text>
 <text x="1022.0" y="311.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">.venv-sdk · python -m glmocr.cli parse</text>
-<text x="1022.0" y="323.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">spawned per OCR call · timeout GLM_TIMEOUT</text>
+<text x="1022.0" y="323.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">khởi tạo cho mỗi lần OCR · giới hạn GLM_TIMEOUT</text>
 <rect x="460.0" y="392.0" width="356.0" height="80.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
-<text x="638.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">pandoc executable (optional)</text>
-<text x="638.0" y="435.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">resolved with shutil.which() at import;</text>
-<text x="638.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">/api/ocr/export-docx returns 501 if absent</text>
+<text x="638.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Chương trình pandoc (tùy chọn)</text>
+<text x="638.0" y="435.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">tìm bằng shutil.which() lúc nạp mô-đun;</text>
+<text x="638.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">/api/ocr/export-docx trả 501 nếu không có</text>
 <rect x="844.0" y="392.0" width="356.0" height="80.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1022.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Process 2 · GLM-OCR MLX model server</text>
+<text x="1022.0" y="422.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Tiến trình 2 · Máy chủ mô hình GLM-OCR MLX</text>
 <text x="1022.0" y="435.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">.venv-mlx · python -m mlx_vlm.server</text>
-<text x="1022.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">listens on :8080 · model held resident</text>
+<text x="1022.0" y="447.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">lắng nghe cổng :8080 · mô hình nằm thường trú</text>
 <path d="M478.0,561.0 a113.0,9.0 0 0 0 226.0,0 v32.0 a113.0,9.0 0 0 1 -226.0,0 z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
 <ellipse cx="591.0" cy="561.0" rx="113.0" ry="9.0" fill="#F0F0F0" stroke="#5A5A5A" stroke-width="1.6"/>
 <text x="591.0" y="578.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
@@ -80,11 +80,11 @@
 <text x="830.0" y="574.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">uploads/ {uuid4}{suffix}</text>
 <text x="830.0" y="586.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cfg.UPLOAD_DIR)</text>
 <rect x="956.0" y="552.0" width="226.0" height="50.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="1069.0" y="574.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">models/ + HF cache</text>
+<text x="1069.0" y="574.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">models/ + bộ nhớ đệm HF</text>
 <text x="1069.0" y="586.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(cfg.MODEL_DIR)</text>
 <path d="M50.0,660.0 h1226.0 l14.0,14.0 v78.0 h-1240.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1276.0,660.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="670.0" y="696.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Deployment facts taken from the repository: there is no container, reverse proxy, production WSGI server, message queue or managed cloud service for the web application — app.py starts Flask&#x27;s own threaded development</text>
-<text x="670.0" y="709.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">server. The Dockerfiles and docker start scripts under glm-ocr-server/apps/ belong to the upstream GLM-OCR demo (FastAPI backend + React frontend) and are not used by SmartDocs. Processes 2 and 3 are optional: without them</text>
-<text x="670.0" y="721.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">only the PaddleOCR / VietOCR engines are available.</text>
+<text x="670.0" y="696.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Sự kiện triển khai lấy từ kho mã nguồn: ứng dụng web không dùng container, máy chủ proxy ngược, máy chủ WSGI cho môi trường thật, hàng đợi thông điệp hay dịch vụ đám mây nào — app.py khởi động chính máy chủ phát triển đa</text>
+<text x="670.0" y="709.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">luồng của Flask. Các tệp Dockerfile và kịch bản khởi động Docker trong glm-ocr-server/apps/ thuộc bản demo GLM-OCR gốc (FastAPI + React) và không được SmartDocs sử dụng. Tiến trình 2 và 3 là tùy chọn: nếu thiếu, chỉ còn</text>
+<text x="670.0" y="721.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">các công cụ PaddleOCR / VietOCR hoạt động.</text>
 </svg>

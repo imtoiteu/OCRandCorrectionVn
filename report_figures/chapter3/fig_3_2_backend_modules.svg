@@ -13,26 +13,26 @@
 <rect x="0" y="0" width="1420" height="1210" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 3.2 – Cấu trúc các mô-đun backend và luồng gọi API của hệ thống</text>
 <line x1="40" y1="48" x2="1380" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Every route below was read from app.py, auth.py, admin_bp.py and correction_bp.py</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Toàn bộ các tuyến dưới đây được đọc trực tiếp từ app.py, auth.py, admin_bp.py và correction_bp.py</text>
 <rect x="40" y="92" width="1340" height="104" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
 <path d="M40.0,124.0 L40.0,103.0 A11,11 0 0 1 51.0,92.0 L1369.0,92.0 A11,11 0 0 1 1380.0,103.0 L1380.0,124.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="54.0" y="114.0" font-size="14.5" font-weight="700" fill="#10202E">Clients  (HTTP)</text>
+<text x="54.0" y="114.0" font-size="14.5" font-weight="700" fill="#10202E">Phía gọi  (HTTP)</text>
 <rect x="40" y="720" width="1340" height="178" rx="11" fill="#EFF6EE" stroke="#82B366" stroke-width="1.6"/>
 <path d="M40.0,754.0 L40.0,731.0 A11,11 0 0 1 51.0,720.0 L1369.0,720.0 A11,11 0 0 1 1380.0,731.0 L1380.0,754.0 Z" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="54.0" y="744.0" font-size="14.5" font-weight="700" fill="#10202E">Service layer  (services/)</text>
+<text x="54.0" y="744.0" font-size="14.5" font-weight="700" fill="#10202E">Tầng dịch vụ  (services/)</text>
 <rect x="40" y="928" width="1340" height="130" rx="11" fill="#F8F8F8" stroke="#5A5A5A" stroke-width="1.6"/>
 <path d="M40.0,962.0 L40.0,939.0 A11,11 0 0 1 51.0,928.0 L1369.0,928.0 A11,11 0 0 1 1380.0,939.0 L1380.0,962.0 Z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="54.0" y="952.0" font-size="14.5" font-weight="700" fill="#10202E">Data and external resources</text>
+<text x="54.0" y="952.0" font-size="14.5" font-weight="700" fill="#10202E">Dữ liệu và tài nguyên bên ngoài</text>
 <path d="M272.0,182.0 L272.0,214.0 L560.0,214.0 L710.0,236.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
 <rect x="423.6" y="205.2" width="104.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
 <text x="475.8" y="217.2" font-size="10.5" fill="#243B4A" text-anchor="middle">JSON / multipart</text>
 <path d="M702.0,182.0 L702.0,214.0 L710.0,214.0 L710.0,236.0" fill="none" stroke="#9673A6" stroke-width="1.7" marker-end="url(#arr_9673A6)"/>
 <path d="M1140.0,182.0 L1140.0,214.0 L860.0,214.0 L710.0,236.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
-<rect x="888.0" y="205.2" width="104.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
-<text x="940.2" y="217.2" font-size="10.5" fill="#243B4A" text-anchor="middle">form POST / HTML</text>
+<rect x="876.2" y="205.2" width="128.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="940.2" y="217.2" font-size="10.5" fill="#243B4A" text-anchor="middle">POST biểu mẫu / HTML</text>
 <path d="M340.0,288.0 L400.0,288.0" fill="none" stroke="#999999" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_999999)"/>
-<rect x="347.3" y="279.2" width="45.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#999999" stroke-width="0.8" opacity="0.96"/>
-<text x="370.0" y="291.2" font-size="10.5" fill="#243B4A" text-anchor="middle">config</text>
+<rect x="341.4" y="279.2" width="57.2" height="17.6" rx="3" fill="#FFFFFF" stroke="#999999" stroke-width="0.8" opacity="0.96"/>
+<text x="370.0" y="291.2" font-size="10.5" fill="#243B4A" text-anchor="middle">cấu hình</text>
 <path d="M1020.0,288.0 L1080.0,288.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
 <rect x="1036.2" y="279.2" width="27.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
 <text x="1050.0" y="291.2" font-size="10.5" fill="#243B4A" text-anchor="middle">ORM</text>
@@ -41,67 +41,66 @@
 <path d="M710.0,340.0 L710.0,362.0 L890.0,362.0 L890.0,386.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
 <path d="M710.0,340.0 L710.0,362.0 L1230.0,362.0 L1230.0,386.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
 <path d="M205.0,672.0 L227.0,768.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
-<rect x="181.5" y="711.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#82B366" stroke-width="0.8" opacity="0.96"/>
-<text x="216.0" y="723.2" font-size="10.5" fill="#243B4A" text-anchor="middle">OCR routes</text>
+<rect x="184.4" y="711.2" width="63.1" height="17.6" rx="3" fill="#FFFFFF" stroke="#82B366" stroke-width="0.8" opacity="0.96"/>
+<text x="216.0" y="723.2" font-size="10.5" fill="#243B4A" text-anchor="middle">tuyến OCR</text>
 <path d="M370.0,529.0 L700.0,700.0 L882.0,700.0 L882.0,768.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
-<rect x="582.0" y="663.2" width="128.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#82B366" stroke-width="0.8" opacity="0.96"/>
-<text x="646.0" y="675.2" font-size="10.5" fill="#243B4A" text-anchor="middle">text / layout routes</text>
+<rect x="576.1" y="663.2" width="139.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#82B366" stroke-width="0.8" opacity="0.96"/>
+<text x="646.0" y="675.2" font-size="10.5" fill="#243B4A" text-anchor="middle">tuyến văn bản / bố cục</text>
 <path d="M1230.0,546.0 L1205.0,768.0" fill="none" stroke="#9673A6" stroke-width="1.7" marker-end="url(#arr_9673A6)"/>
 <path d="M392.0,822.0 L412.0,822.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M712.0,822.0 L732.0,822.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M227.0,876.0 L222.0,910.0 L552.0,910.0 L552.0,972.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
 <path d="M562.0,876.0 L562.0,912.0 L1200.0,912.0 L1200.0,972.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
 <path d="M1380.0,288.0 L1404.0,288.0 L1404.0,993.0 L1380.0,993.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
-<rect x="1328.2" y="631.7" width="151.6" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
-<text x="1404.0" y="643.7" font-size="10.5" fill="#243B4A" text-anchor="middle">INSERT / SELECT / DELETE</text>
 <rect x="62.0" y="130.0" width="420.0" height="52.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="272.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SmartDocs SPA — static/index.html + app.js</text>
-<text x="272.0" y="165.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">fetch() JSON + multipart</text>
+<text x="272.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SPA SmartDocs — static/index.html + app.js</text>
+<text x="272.0" y="165.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">fetch() JSON + tải tệp multipart</text>
 <rect x="502.0" y="130.0" width="400.0" height="52.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="702.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Correction page — static/correction.html</text>
+<text x="702.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Trang hiệu chỉnh — static/correction.html</text>
 <text x="702.0" y="165.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">+ correction.js</text>
 <rect x="922.0" y="130.0" width="436.0" height="52.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="1140.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Server-rendered admin pages and login form</text>
+<text x="1140.0" y="153.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Trang quản trị và biểu mẫu đăng nhập (dựng phía máy chủ)</text>
 <text x="1140.0" y="165.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">templates/admin/*.html · login.html</text>
 <rect x="40.0" y="236.0" width="300.0" height="104.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
 <text x="190.0" y="267.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">config.py</text>
-<text x="190.0" y="279.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">cfg singleton read at import:</text>
+<text x="190.0" y="279.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">đối tượng cfg đọc lúc nạp mô-đun:</text>
 <text x="190.0" y="290.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">HOST · PORT · DB_PATH · UPLOAD_DIR</text>
 <text x="190.0" y="302.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">MODEL_DIR · OFFLINE · DEVICE</text>
 <text x="190.0" y="314.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">OCR_ENGINE · GLM_* · VI_CORRECTION_*</text>
 <rect x="400.0" y="236.0" width="620.0" height="104.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
-<text x="710.0" y="272.8" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">app.py   —   Flask application object</text>
-<text x="710.0" y="285.0" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">SECRET_KEY · MAX_CONTENT_LENGTH · session-cookie flags · LoginManager + user_loader</text>
-<text x="710.0" y="297.2" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">unauthorized_handler (401 JSON / redirect) · RequestEntityTooLarge → 413 · after_request no-cache</text>
-<text x="710.0" y="309.4" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">register_blueprint(auth_bp, admin_bp, correction_bp) · vn_time Jinja filter</text>
-<rect x="1080.0" y="236.0" width="300.0" height="104.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="1230.0" y="273.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models.py</text>
-<text x="1230.0" y="285.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">db (SQLAlchemy) · User · Document</text>
-<text x="1230.0" y="296.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">DocumentArtifact · ActivityLog</text>
-<text x="1230.0" y="308.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">log_activity() · save_artifact() · seed_admin()</text>
+<text x="710.0" y="272.8" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">app.py   —   đối tượng ứng dụng Flask</text>
+<text x="710.0" y="285.0" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">SECRET_KEY · MAX_CONTENT_LENGTH · cờ cookie phiên · LoginManager + user_loader</text>
+<text x="710.0" y="297.2" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">unauthorized_handler (401 JSON / chuyển hướng) · RequestEntityTooLarge → 413 · after_request no-cache</text>
+<text x="710.0" y="309.4" font-size="10.0" font-weight="700" fill="#15202B" text-anchor="middle">register_blueprint(auth_bp, admin_bp, correction_bp) · bộ lọc Jinja vn_time</text>
+<rect x="1080.0" y="232.0" width="300.0" height="112.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
+<text x="1230.0" y="267.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models.py</text>
+<text x="1230.0" y="279.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">db (SQLAlchemy) · User · Document</text>
+<text x="1230.0" y="290.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">DocumentArtifact · ActivityLog</text>
+<text x="1230.0" y="302.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">log_activity() · save_artifact() · seed_admin()</text>
+<text x="1230.0" y="314.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">INSERT / SELECT / DELETE</text>
 <rect x="62.0" y="768.0" width="330.0" height="108.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="227.0" y="801.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">smart_ocr_service.run_ocr_pipeline()</text>
 <text x="227.0" y="813.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ ocr_service.run_ocr()</text>
 <text x="227.0" y="824.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="227.0" y="836.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">activity_registry.track(&quot;ocr&quot;)</text>
-<text x="227.0" y="848.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">_normalize_block() · overlay rendering</text>
+<text x="227.0" y="848.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">_normalize_block() · vẽ ảnh phủ vùng</text>
 <rect x="412.0" y="768.0" width="300.0" height="108.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="562.0" y="801.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">services/ocr_engines/router.py</text>
 <text x="562.0" y="813.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">normalize_engine_name() · get_engine()</text>
 <text x="562.0" y="824.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="562.0" y="836.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">five OCREngine adapters</text>
-<text x="562.0" y="848.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(see Figure 3.7)</text>
+<text x="562.0" y="836.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">năm bộ thích nghi OCREngine</text>
+<text x="562.0" y="848.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(xem Hình 3.7)</text>
 <rect x="732.0" y="768.0" width="300.0" height="108.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="882.0" y="801.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">layout_service / geometry_service</text>
-<text x="882.0" y="813.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">reading-order reconstruction</text>
+<text x="882.0" y="813.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">dựng lại thứ tự đọc</text>
 <text x="882.0" y="824.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="882.0" y="836.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">text_service.read_file()</text>
 <text x="882.0" y="848.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">markdown_normalize.repair_…()</text>
 <rect x="1052.0" y="768.0" width="306.0" height="108.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
 <text x="1205.0" y="807.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">vi_correction.run_correction()</text>
-<text x="1205.0" y="819.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">classification → masking → segmentation</text>
+<text x="1205.0" y="819.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">phân loại → che token → tách đơn vị</text>
 <text x="1205.0" y="830.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ provider.correct_batch()</text>
-<text x="1205.0" y="842.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ restore → validation → renderers</text>
+<text x="1205.0" y="842.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ khôi phục → kiểm tra → kết xuất</text>
 <path d="M62.0,981.0 a160.0,9.0 0 0 0 320.0,0 v48.0 a160.0,9.0 0 0 1 -320.0,0 z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
 <ellipse cx="222.0" cy="981.0" rx="160.0" ry="9.0" fill="#F0F0F0" stroke="#5A5A5A" stroke-width="1.6"/>
 <text x="222.0" y="1000.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">SQLite  paddleocr.db</text>
@@ -110,29 +109,29 @@
 <rect x="402.0" y="972.0" width="300.0" height="66.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
 <text x="552.0" y="996.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">uploads/</text>
 <text x="552.0" y="1007.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">{uuid4}{suffix}</text>
-<text x="552.0" y="1019.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">+ transient page .png files</text>
+<text x="552.0" y="1019.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">+ tệp .png tạm của từng trang</text>
 <rect x="722.0" y="972.0" width="300.0" height="66.0" rx="9" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="872.0" y="1002.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models/  ·  HF cache</text>
-<text x="872.0" y="1013.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleX cache  ·  VietOCR weights</text>
+<text x="872.0" y="1002.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">models/ · bộ nhớ đệm HF</text>
+<text x="872.0" y="1013.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">bộ nhớ đệm PaddleX · trọng số VietOCR</text>
 <rect x="1042.0" y="972.0" width="316.0" height="66.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1200.0" y="996.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">External processes</text>
+<text x="1200.0" y="996.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tiến trình bên ngoài</text>
 <text x="1200.0" y="1007.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glmocr CLI (.venv-sdk)  ·  MLX :8080</text>
 <text x="1200.0" y="1019.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">pandoc</text>
 <path d="M40.0,1078.0 h1326.0 l14.0,14.0 v62.0 h-1340.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1366.0,1078.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="710.0" y="1113.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Call-flow rule visible in the code: the browser never reaches a model or the database directly. Every request enters Flask, is checked by @login_required (and @admin_required for /admin), is resolved to an owned Document, and only then</text>
-<text x="710.0" y="1125.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">reaches the service layer; persistence happens exclusively through models.py. The OCR routes never import an OCR library themselves — they call smart_ocr_service → ocr_service → router → adapter.</text>
+<text x="710.0" y="1113.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Nguyên tắc gọi API thể hiện rõ trong mã: trình duyệt không bao giờ chạm trực tiếp vào mô hình hay cơ sở dữ liệu. Mọi yêu cầu đều vào Flask, được @login_required kiểm tra (và @admin_required với /admin), được phân giải về một Document thuộc</text>
+<text x="710.0" y="1125.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">quyền sở hữu, rồi mới xuống tầng dịch vụ; việc ghi dữ liệu chỉ diễn ra qua models.py. Bản thân các tuyến OCR không nạp thư viện OCR nào — chúng gọi smart_ocr_service → ocr_service → router → bộ thích nghi.</text>
 <rect x="40.0" y="386.0" width="330.0" height="286.0" rx="7" fill="#FFFFFF" stroke="#3F61A8" stroke-width="1.6"/>
 <path d="M40.0,414.0 L40.0,393.0 A7,7 0 0 1 47.0,386.0 L363.0,386.0 A7,7 0 0 1 370.0,393.0 L370.0,414.0 Z" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
-<text x="205.0" y="405.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">Core routes  (app.py)</text>
+<text x="205.0" y="405.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">Tuyến chính  (app.py)</text>
 <text x="49.0" y="429.0" font-size="11" fill="#243B4A">GET     /</text>
-<text x="362.0" y="429.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">SPA shell</text>
+<text x="362.0" y="429.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">vỏ SPA</text>
 <line x1="44.0" y1="435.0" x2="366.0" y2="435.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="450.0" font-size="11" fill="#243B4A">POST   /api/upload</text>
-<text x="362.0" y="450.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">intake</text>
+<text x="362.0" y="450.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">tiếp nhận</text>
 <line x1="44.0" y1="456.0" x2="366.0" y2="456.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="471.0" font-size="11" fill="#243B4A">POST   /api/read-text</text>
-<text x="362.0" y="471.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">text</text>
+<text x="362.0" y="471.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">văn bản</text>
 <line x1="44.0" y1="477.0" x2="366.0" y2="477.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="492.0" font-size="11" fill="#243B4A">POST   /api/ocr/page</text>
 <text x="362.0" y="492.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">OCR</text>
@@ -141,22 +140,22 @@
 <text x="362.0" y="513.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">OCR</text>
 <line x1="44.0" y1="519.0" x2="366.0" y2="519.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="534.0" font-size="11" fill="#243B4A">POST   /api/ocr/reconstruct-region</text>
-<text x="362.0" y="534.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">layout</text>
+<text x="362.0" y="534.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">bố cục</text>
 <line x1="44.0" y1="540.0" x2="366.0" y2="540.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="555.0" font-size="11" fill="#243B4A">GET     /api/documents</text>
-<text x="362.0" y="555.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">library</text>
+<text x="362.0" y="555.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">thư viện</text>
 <line x1="44.0" y1="561.0" x2="366.0" y2="561.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="576.0" font-size="11" fill="#243B4A">GET     /api/documents/&lt;id&gt;/text</text>
-<text x="362.0" y="576.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">artifacts</text>
+<text x="362.0" y="576.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">kết xuất</text>
 <line x1="44.0" y1="582.0" x2="366.0" y2="582.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="597.0" font-size="11" fill="#243B4A">GET     /api/documents/&lt;id&gt;/ocr-images</text>
-<text x="362.0" y="597.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">artifacts</text>
+<text x="362.0" y="597.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">kết xuất</text>
 <line x1="44.0" y1="603.0" x2="366.0" y2="603.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="618.0" font-size="11" fill="#243B4A">DELETE /api/documents/&lt;id&gt;</text>
-<text x="362.0" y="618.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">library</text>
+<text x="362.0" y="618.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">thư viện</text>
 <line x1="44.0" y1="624.0" x2="366.0" y2="624.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="639.0" font-size="11" fill="#243B4A">GET     /api/documents/&lt;id&gt;/download</text>
-<text x="362.0" y="639.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">library</text>
+<text x="362.0" y="639.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">thư viện</text>
 <line x1="44.0" y1="645.0" x2="366.0" y2="645.0" stroke="#3F61A8" stroke-width="0.5" opacity="0.5"/>
 <text x="49.0" y="660.0" font-size="11" fill="#243B4A">POST   /api/ocr/export-docx</text>
 <text x="362.0" y="660.0" font-size="9.5" font-weight="700" fill="#3F61A8" text-anchor="end">pandoc</text>
@@ -165,19 +164,19 @@
 <path d="M400.0,414.0 L400.0,393.0 A7,7 0 0 1 407.0,386.0 L693.0,386.0 A7,7 0 0 1 700.0,393.0 L700.0,414.0 Z" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="550.0" y="405.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">auth_bp  (auth.py)</text>
 <text x="409.0" y="429.0" font-size="11" fill="#243B4A">GET / POST   /login</text>
-<text x="692.0" y="429.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">session</text>
+<text x="692.0" y="429.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">phiên</text>
 <line x1="404.0" y1="435.0" x2="696.0" y2="435.0" stroke="#82B366" stroke-width="0.5" opacity="0.5"/>
 <text x="409.0" y="450.0" font-size="11" fill="#243B4A">GET     /logout</text>
-<text x="692.0" y="450.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">session</text>
+<text x="692.0" y="450.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">phiên</text>
 <line x1="404.0" y1="456.0" x2="696.0" y2="456.0" stroke="#82B366" stroke-width="0.5" opacity="0.5"/>
 <text x="409.0" y="471.0" font-size="11" fill="#243B4A">GET     /api/auth/me</text>
-<text x="692.0" y="471.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">identity</text>
+<text x="692.0" y="471.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">định danh</text>
 <line x1="404.0" y1="477.0" x2="696.0" y2="477.0" stroke="#82B366" stroke-width="0.5" opacity="0.5"/>
 <text x="409.0" y="492.0" font-size="11" fill="#243B4A">POST   /api/set-lang</text>
-<text x="692.0" y="492.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">UI language</text>
+<text x="692.0" y="492.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">ngôn ngữ</text>
 <line x1="404.0" y1="498.0" x2="696.0" y2="498.0" stroke="#82B366" stroke-width="0.5" opacity="0.5"/>
 <text x="409.0" y="513.0" font-size="11" fill="#243B4A">GET     /api/admin/users</text>
-<text x="692.0" y="513.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">admin only</text>
+<text x="692.0" y="513.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">chỉ quản trị</text>
 <line x1="404.0" y1="519.0" x2="696.0" y2="519.0" stroke="#82B366" stroke-width="0.5" opacity="0.5"/>
 <text x="409.0" y="534.0" font-size="11" fill="#243B4A">app_errorhandler(403)</text>
 <text x="692.0" y="534.0" font-size="9.5" font-weight="700" fill="#82B366" text-anchor="end">403.html</text>
@@ -186,46 +185,51 @@
 <path d="M730.0,414.0 L730.0,393.0 A7,7 0 0 1 737.0,386.0 L1043.0,386.0 A7,7 0 0 1 1050.0,393.0 L1050.0,414.0 Z" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
 <text x="890.0" y="405.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">admin_bp  (url_prefix = /admin)</text>
 <text x="739.0" y="429.0" font-size="11" fill="#243B4A">GET     /admin/</text>
-<text x="1042.0" y="429.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">dashboard</text>
+<text x="1042.0" y="429.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">tổng quan</text>
 <line x1="734.0" y1="435.0" x2="1046.0" y2="435.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="450.0" font-size="11" fill="#243B4A">GET     /admin/users</text>
-<text x="1042.0" y="450.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">list</text>
+<text x="1042.0" y="450.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">danh sách</text>
 <line x1="734.0" y1="456.0" x2="1046.0" y2="456.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="471.0" font-size="11" fill="#243B4A">POST   /admin/users/create</text>
+<text x="1042.0" y="471.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">tạo</text>
 <line x1="734.0" y1="477.0" x2="1046.0" y2="477.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="492.0" font-size="11" fill="#243B4A">POST   /admin/users/&lt;uid&gt;/edit</text>
+<text x="1042.0" y="492.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">sửa</text>
 <line x1="734.0" y1="498.0" x2="1046.0" y2="498.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="513.0" font-size="11" fill="#243B4A">POST   /admin/users/&lt;uid&gt;/reset-password</text>
+<text x="1042.0" y="513.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">mật khẩu</text>
 <line x1="734.0" y1="519.0" x2="1046.0" y2="519.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="534.0" font-size="11" fill="#243B4A">POST   /admin/users/&lt;uid&gt;/toggle</text>
+<text x="1042.0" y="534.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">khóa/mở</text>
 <line x1="734.0" y1="540.0" x2="1046.0" y2="540.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="555.0" font-size="11" fill="#243B4A">POST   /admin/users/&lt;uid&gt;/delete</text>
+<text x="1042.0" y="555.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">xóa</text>
 <line x1="734.0" y1="561.0" x2="1046.0" y2="561.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="576.0" font-size="11" fill="#243B4A">GET     /admin/logs</text>
-<text x="1042.0" y="576.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">filters</text>
+<text x="1042.0" y="576.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">bộ lọc</text>
 <line x1="734.0" y1="582.0" x2="1046.0" y2="582.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <text x="739.0" y="597.0" font-size="11" fill="#243B4A">GET     /admin/files</text>
-<text x="1042.0" y="597.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">filters</text>
+<text x="1042.0" y="597.0" font-size="9.5" font-weight="700" fill="#9673A6" text-anchor="end">bộ lọc</text>
 <line x1="734.0" y1="603.0" x2="1046.0" y2="603.0" stroke="#9673A6" stroke-width="0.5" opacity="0.5"/>
 <rect x="1080.0" y="386.0" width="300.0" height="160.0" rx="7" fill="#FFFFFF" stroke="#0E8088" stroke-width="1.6"/>
 <path d="M1080.0,414.0 L1080.0,393.0 A7,7 0 0 1 1087.0,386.0 L1373.0,386.0 A7,7 0 0 1 1380.0,393.0 L1380.0,414.0 Z" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="1230.0" y="405.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">correction_bp</text>
 <text x="1089.0" y="429.0" font-size="11" fill="#243B4A">GET     /correction</text>
-<text x="1372.0" y="429.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">page</text>
+<text x="1372.0" y="429.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">trang</text>
 <line x1="1084.0" y1="435.0" x2="1376.0" y2="435.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 <text x="1089.0" y="450.0" font-size="11" fill="#243B4A">GET     /api/correction/config</text>
-<text x="1372.0" y="450.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">providers</text>
+<text x="1372.0" y="450.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">mô hình</text>
 <line x1="1084.0" y1="456.0" x2="1376.0" y2="456.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 <text x="1089.0" y="471.0" font-size="11" fill="#243B4A">GET     /api/correction/documents</text>
-<text x="1372.0" y="471.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">picker</text>
+<text x="1372.0" y="471.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">chọn tài liệu</text>
 <line x1="1084.0" y1="477.0" x2="1376.0" y2="477.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 <text x="1089.0" y="492.0" font-size="11" fill="#243B4A">POST   /api/correction/run</text>
-<text x="1372.0" y="492.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">model run</text>
+<text x="1372.0" y="492.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">chạy mô hình</text>
 <line x1="1084.0" y1="498.0" x2="1376.0" y2="498.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 <text x="1089.0" y="513.0" font-size="11" fill="#243B4A">POST   /api/correction/save</text>
-<text x="1372.0" y="513.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">artifacts</text>
+<text x="1372.0" y="513.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">lưu kết xuất</text>
 <line x1="1084.0" y1="519.0" x2="1376.0" y2="519.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 <text x="1089.0" y="534.0" font-size="11" fill="#243B4A">GET     /api/correction/result/&lt;doc_id&gt;</text>
-<text x="1372.0" y="534.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">reload</text>
+<text x="1372.0" y="534.0" font-size="9.5" font-weight="700" fill="#0E8088" text-anchor="end">mở lại</text>
 <line x1="1084.0" y1="540.0" x2="1376.0" y2="540.0" stroke="#0E8088" stroke-width="0.5" opacity="0.5"/>
 </svg>

@@ -11,24 +11,24 @@
 <rect x="0" y="0" width="1440" height="1080" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 3.7 – Cơ chế tích hợp và điều phối các công cụ OCR</text>
 <line x1="40" y1="48" x2="1400" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">services/ocr_engines/ — one abstract interface, five adapters, one common result contract</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">services/ocr_engines/ — một giao diện trừu tượng, năm bộ thích nghi, một hợp đồng kết quả chung</text>
 <path d="M700.0,242.0 L700.0,292.0 L195.0,292.0 L195.0,316.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M700.0,242.0 L700.0,292.0 L545.0,292.0 L545.0,316.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M700.0,242.0 L700.0,292.0 L895.0,292.0 L895.0,316.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M700.0,242.0 L700.0,292.0 L1245.0,292.0 L1245.0,316.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M195.0,484.0 L370.0,512.0" fill="none" stroke="#9673A6" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_9673A6)"/>
 <path d="M1245.0,484.0 L1245.0,500.0 L370.0,500.0 L370.0,512.0" fill="none" stroke="#9673A6" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_9673A6)"/>
-<rect x="745.5" y="491.2" width="128.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
-<text x="809.5" y="503.2" font-size="10.5" fill="#243B4A" text-anchor="middle">reuses both adapters</text>
+<rect x="719.0" y="491.2" width="181.1" height="17.6" rx="3" fill="#FFFFFF" stroke="#9673A6" stroke-width="0.8" opacity="0.96"/>
+<text x="809.5" y="503.2" font-size="10.5" fill="#243B4A" text-anchor="middle">dùng lại cả hai bộ thích nghi</text>
 <path d="M1070.0,702.0 L1070.0,726.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
 <path d="M340.0,185.0 L420.0,185.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M1060.0,185.0 L980.0,185.0" fill="none" stroke="#3F61A8" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_3F61A8)"/>
-<rect x="985.5" y="176.2" width="69.0" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
-<text x="1020.0" y="188.2" font-size="10.5" fill="#243B4A" text-anchor="middle">implements</text>
+<rect x="988.5" y="176.2" width="63.1" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
+<text x="1020.0" y="188.2" font-size="10.5" fill="#243B4A" text-anchor="middle">hiện thực</text>
 <path d="M895.0,484.0 L895.0,712.0 L370.0,712.0 L370.0,726.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M1245.0,484.0 L1245.0,498.0 L1070.0,498.0 L1070.0,512.0" fill="none" stroke="#D79B00" stroke-width="1.7" marker-end="url(#arr_D79B00)"/>
 <rect x="40.0" y="110.0" width="300.0" height="150.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="190.0" y="145.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Request from the OCR service</text>
+<text x="190.0" y="145.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Yêu cầu từ dịch vụ OCR</text>
 <text x="190.0" y="157.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="190.0" y="169.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">smart_ocr_service.run_ocr_pipeline(</text>
 <text x="190.0" y="182.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">image_path,</text>
@@ -37,92 +37,94 @@
 <text x="190.0" y="218.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">→ ocr_service.run_ocr()</text>
 <text x="190.0" y="230.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">activity_registry.track(&quot;ocr&quot;)</text>
 <rect x="420.0" y="128.0" width="560.0" height="114.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="700.0" y="162.6" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">OCR ROUTER   services/ocr_engines/router.py</text>
+<text x="700.0" y="162.6" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">BỘ ĐỊNH TUYẾN OCR   services/ocr_engines/router.py</text>
 <text x="700.0" y="175.4" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle"></text>
 <text x="700.0" y="188.3" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">_ENGINES = {paddleocr, vietocr, paddleocr_modern, glmocr, glm_vietocr}</text>
 <text x="700.0" y="201.1" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">_ALIASES  (paddle, auto, modern, ppstructure, glm, glm_ocr, glm_layout_vietocr)</text>
 <text x="700.0" y="213.9" font-size="10.5" font-weight="700" fill="#15202B" text-anchor="middle">normalize_engine_name() → get_engine() → engine.run(image_path)</text>
 <rect x="1060.0" y="128.0" width="340.0" height="114.0" rx="9" fill="#D4E1F5" stroke="#3F61A8" stroke-width="1.6"/>
-<text x="1230.0" y="157.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Abstract interface</text>
+<text x="1230.0" y="157.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Giao diện trừu tượng</text>
 <text x="1230.0" y="169.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">services/ocr_engines/base.py</text>
 <text x="1230.0" y="182.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="1230.0" y="194.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">class OCREngine(ABC):</text>
 <text x="1230.0" y="206.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">engine_name: str</text>
 <text x="1230.0" y="218.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">def run(self, image_path) -&gt; dict</text>
 <rect x="40.0" y="316.0" width="310.0" height="168.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="195.0" y="369.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Legacy adapter</text>
-<text x="195.0" y="380.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">paddle_adapter.py · engine_name = &quot;paddleocr&quot;</text>
-<text x="195.0" y="391.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="195.0" y="402.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">lazy PaddleOCR(ocr_version=&quot;PP-OCRv5&quot;,</text>
-<text x="195.0" y="413.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_orientation_classify=False,</text>
-<text x="195.0" y="424.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_unwarping=False)</text>
-<text x="195.0" y="435.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">in-process · returns rec_texts / rec_scores / det_polys</text>
+<text x="195.0" y="364.4" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Bộ thích nghi PaddleOCR Legacy</text>
+<text x="195.0" y="375.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">paddle_adapter.py · engine_name = &quot;paddleocr&quot;</text>
+<text x="195.0" y="386.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="195.0" y="397.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">khởi tạo trễ PaddleOCR(ocr_version=&quot;PP-OCRv5&quot;,</text>
+<text x="195.0" y="408.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_orientation_classify=False,</text>
+<text x="195.0" y="419.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_unwarping=False)</text>
+<text x="195.0" y="430.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">chạy trong tiến trình · trả rec_texts / rec_scores /</text>
+<text x="195.0" y="441.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">det_polys</text>
 <rect x="390.0" y="316.0" width="310.0" height="168.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="545.0" y="364.4" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Modern adapter</text>
-<text x="545.0" y="375.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">paddle_modern_adapter.py · &quot;paddleocr_modern&quot;</text>
-<text x="545.0" y="386.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="545.0" y="397.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">lazy PPStructureV3(use_doc_orientation_classify=True,</text>
-<text x="545.0" y="408.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_unwarping=True,</text>
-<text x="545.0" y="419.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">text_detection_model_name=&quot;PP-OCRv6_medium_det&quot;,</text>
-<text x="545.0" y="430.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">text_recognition_model_name=&quot;PP-OCRv6_medium_rec&quot;)</text>
-<text x="545.0" y="441.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">adds markdown · html · tables_html · layout_blocks</text>
+<text x="545.0" y="358.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Bộ thích nghi PaddleOCR Modern</text>
+<text x="545.0" y="369.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">paddle_modern_adapter.py · &quot;paddleocr_modern&quot;</text>
+<text x="545.0" y="380.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
+<text x="545.0" y="391.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">khởi tạo trễ</text>
+<text x="545.0" y="402.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">PPStructureV3(use_doc_orientation_classify=True,</text>
+<text x="545.0" y="413.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">use_doc_unwarping=True,</text>
+<text x="545.0" y="424.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">text_detection_model_name=&quot;PP-OCRv6_medium_det&quot;,</text>
+<text x="545.0" y="435.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">text_recognition_model_name=&quot;PP-OCRv6_medium_rec&quot;)</text>
+<text x="545.0" y="446.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">bổ sung markdown · html · tables_html · layout_blocks</text>
 <rect x="740.0" y="316.0" width="310.0" height="168.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="895.0" y="364.4" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR adapter</text>
+<text x="895.0" y="364.4" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Bộ thích nghi VietOCR</text>
 <text x="895.0" y="375.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">vietocr_adapter.py · engine_name = &quot;vietocr&quot;</text>
 <text x="895.0" y="386.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="895.0" y="397.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR PP-OCRv5 used as the line DETECTOR;</text>
-<text x="895.0" y="408.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">each polygon crop is recognised by</text>
+<text x="895.0" y="397.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR PP-OCRv5 đóng vai trò BỘ PHÁT HIỆN dòng;</text>
+<text x="895.0" y="408.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">mỗi vùng cắt được nhận dạng bằng</text>
 <text x="895.0" y="419.3" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">vietocr Predictor (vgg_transformer, cfg.VIETOCR_DEVICE)</text>
-<text x="895.0" y="430.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">config from VIETOCR_CONFIG_PATH → MODEL_DIR → built-in</text>
-<text x="895.0" y="441.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">defaults</text>
+<text x="895.0" y="430.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">cấu hình lấy theo VIETOCR_CONFIG_PATH → MODEL_DIR → mặc</text>
+<text x="895.0" y="441.2" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">định nội bộ</text>
 <rect x="1090.0" y="316.0" width="310.0" height="168.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1245.0" y="369.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR adapter</text>
+<text x="1245.0" y="369.9" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">Bộ thích nghi GLM-OCR</text>
 <text x="1245.0" y="380.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">glm_adapter.py · engine_name = &quot;glmocr&quot;</text>
 <text x="1245.0" y="391.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1245.0" y="402.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">out-of-process client — see the panel below</text>
-<text x="1245.0" y="413.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">layout_native = True (no geometric reordering)</text>
-<text x="1245.0" y="424.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">returns markdown · tables_html · layout_blocks</text>
-<text x="1245.0" y="435.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">· images (layout_vis + crops) · raw_json</text>
+<text x="1245.0" y="402.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">chạy ngoài tiến trình — xem khung bên dưới</text>
+<text x="1245.0" y="413.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">layout_native = True (không sắp lại theo hình học)</text>
+<text x="1245.0" y="424.8" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">trả markdown · tables_html · layout_blocks</text>
+<text x="1245.0" y="435.7" font-size="9.0" font-weight="400" fill="#15202B" text-anchor="middle">· images (layout_vis + ảnh cắt) · raw_json</text>
 <rect x="40.0" y="512.0" width="660.0" height="118.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="370.0" y="550.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Hybrid adapter — glm_vietocr_adapter.py · engine_name = &quot;glm_vietocr&quot;</text>
+<text x="370.0" y="550.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Bộ thích nghi lai — glm_vietocr_adapter.py · engine_name = &quot;glm_vietocr&quot;</text>
 <text x="370.0" y="562.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="370.0" y="573.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">composes GLMOCREngine (layout, reading order, labels, layout_vis) with VietOCREngine (line-level Vietnamese recognition on</text>
-<text x="370.0" y="585.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">the same page image); every VietOCR line is assigned to the GLM block whose pixel box contains the line centre, lines are</text>
-<text x="370.0" y="597.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">sorted top→bottom / left→right, and each block records recognition_source ∈ {vietocr, glm, fallback} plus fallback_reason.</text>
+<text x="370.0" y="573.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">kết hợp GLMOCREngine (bố cục, thứ tự đọc, nhãn vùng, layout_vis) với VietOCREngine (nhận dạng tiếng Việt ở mức dòng trên</text>
+<text x="370.0" y="585.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">cùng ảnh trang); mỗi dòng VietOCR được gán vào khối GLM có khung bao chứa tâm dòng, các dòng được sắp trên→dưới /</text>
+<text x="370.0" y="597.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">trái→phải, và mỗi khối ghi lại recognition_source ∈ {vietocr, glm, fallback} kèm fallback_reason.</text>
 <rect x="740.0" y="512.0" width="660.0" height="190.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1070.0" y="552.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Out-of-process GLM-OCR integration  (glm_adapter.py)</text>
+<text x="1070.0" y="552.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tích hợp GLM-OCR ngoài tiến trình  (glm_adapter.py)</text>
 <text x="1070.0" y="563.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1070.0" y="575.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">1.  Path(cfg.GLM_SDK_PYTHON).exists()  —  otherwise a structured error is returned</text>
-<text x="1070.0" y="586.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">2.  TCP connect to cfg.GLM_OCR_API_URL (default http://localhost:8080), timeout 3 s</text>
-<text x="1070.0" y="598.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">3.  child environment: HF_HOME / HF_HUB_CACHE / TRANSFORMERS_CACHE removed,</text>
-<text x="1070.0" y="609.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">HF_HUB_OFFLINE = 1, TRANSFORMERS_OFFLINE = 1</text>
-<text x="1070.0" y="621.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">4.  subprocess.run([GLM_SDK_PYTHON, &quot;-m&quot;, &quot;glmocr.cli&quot;, &quot;parse&quot;, &lt;image&gt;,</text>
-<text x="1070.0" y="633.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">&quot;--config&quot;, GLM_CONFIG_YAML, &quot;--mode&quot;, &quot;selfhosted&quot;, &quot;--output&quot;, &lt;tmpdir&gt;],</text>
+<text x="1070.0" y="575.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">1.  Path(cfg.GLM_SDK_PYTHON).exists()  —  nếu không thì trả về lỗi có cấu trúc</text>
+<text x="1070.0" y="586.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">2.  kết nối TCP tới cfg.GLM_OCR_API_URL (mặc định http://localhost:8080), timeout 3 giây</text>
+<text x="1070.0" y="598.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">3.  môi trường tiến trình con: gỡ HF_HOME / HF_HUB_CACHE / TRANSFORMERS_CACHE,</text>
+<text x="1070.0" y="609.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">đặt HF_HUB_OFFLINE = 1 và TRANSFORMERS_OFFLINE = 1</text>
+<text x="1070.0" y="621.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">4.  subprocess.run([GLM_SDK_PYTHON, &quot;-m&quot;, &quot;glmocr.cli&quot;, &quot;parse&quot;, &lt;ảnh&gt;,</text>
+<text x="1070.0" y="633.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">&quot;--config&quot;, GLM_CONFIG_YAML, &quot;--mode&quot;, &quot;selfhosted&quot;, &quot;--output&quot;, &lt;thư mục tạm&gt;],</text>
 <text x="1070.0" y="644.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">cwd = GLM_ROOT, timeout = cfg.GLM_TIMEOUT)</text>
-<text x="1070.0" y="656.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">5.  read &lt;tmpdir&gt;/&lt;stem&gt;/: *.json (regions), *.md, layout_vis/*, imgs/*  → temp dir removed</text>
-<text x="1070.0" y="667.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">6.  boxes converted from the 0–1000 normalised space to image pixels (_scale_box)</text>
+<text x="1070.0" y="656.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">5.  đọc &lt;tmp&gt;/&lt;stem&gt;/: *.json (vùng), *.md, layout_vis/*, imgs/*  → xóa thư mục tạm</text>
+<text x="1070.0" y="667.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">6.  quy đổi khung bao từ hệ chuẩn hóa 0–1000 sang pixel ảnh (_scale_box)</text>
 <rect x="740.0" y="726.0" width="660.0" height="74.0" rx="9" fill="#FFE6CC" stroke="#D79B00" stroke-width="1.6"/>
-<text x="1070.0" y="754.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glmocr SDK internals (glm-ocr-server): PageLoader → PP-DocLayoutV3 layout detection →</text>
-<text x="1070.0" y="765.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">per-region OCR request to the MLX server (OpenAI-compatible /chat/completions,</text>
-<text x="1070.0" y="777.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">model mlx-community/GLM-OCR-bf16) → ResultFormatter (json + markdown)</text>
+<text x="1070.0" y="754.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Bên trong SDK glmocr (glm-ocr-server): PageLoader → phát hiện bố cục PP-DocLayoutV3 →</text>
+<text x="1070.0" y="765.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">gửi yêu cầu OCR theo từng vùng tới máy chủ MLX (chuẩn OpenAI /chat/completions,</text>
+<text x="1070.0" y="777.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">mô hình mlx-community/GLM-OCR-bf16) → ResultFormatter (json + markdown)</text>
 <rect x="40.0" y="726.0" width="660.0" height="200.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="370.0" y="753.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Common result normalisation  (ocr_service.run_ocr)</text>
+<text x="370.0" y="753.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Chuẩn hóa kết quả dùng chung  (ocr_service.run_ocr)</text>
 <text x="370.0" y="765.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="370.0" y="776.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• _normalize_block(): guarantees text, content, box, confidence on every block</text>
-<text x="370.0" y="788.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• raw_results keeps the engine&#x27;s original order</text>
-<text x="370.0" y="800.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• blocks WITH geometry → layout_service.reconstruct_layout(); blocks WITHOUT geometry are</text>
-<text x="370.0" y="811.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">appended afterwards so no text is silently dropped</text>
-<text x="370.0" y="823.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• layout_native = True (Modern, GLM, hybrid) skips the geometric reordering</text>
-<text x="370.0" y="834.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• engines that produce no visual artifact get a generated overlay image</text>
-<text x="370.0" y="846.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(_render_overlay_image, colour-coded by confidence)</text>
+<text x="370.0" y="776.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• _normalize_block(): bảo đảm mọi khối đều có text, content, box, confidence</text>
+<text x="370.0" y="788.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• raw_results giữ lại thứ tự gốc do công cụ trả về</text>
+<text x="370.0" y="800.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• khối CÓ tọa độ → layout_service.reconstruct_layout(); khối KHÔNG có tọa độ được</text>
+<text x="370.0" y="811.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">nối vào sau nên không đoạn văn bản nào bị bỏ sót</text>
+<text x="370.0" y="823.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• layout_native = True (Modern, GLM, lai) thì bỏ qua bước sắp lại theo hình học</text>
+<text x="370.0" y="834.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">• công cụ không tự sinh ảnh minh họa sẽ được vẽ ảnh phủ vùng</text>
+<text x="370.0" y="846.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(_render_overlay_image, tô màu theo độ tin cậy)</text>
 <text x="370.0" y="857.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="370.0" y="869.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Contract returned to app.py:</text>
+<text x="370.0" y="869.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Hợp đồng trả về cho app.py:</text>
 <text x="370.0" y="881.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">{success, results[{text, content, box, confidence, index}], img_width, img_height,</text>
 <text x="370.0" y="892.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">elapsed_ms, ocr_engine, inference_status, layout_native?, markdown?, html?,</text>
 <text x="370.0" y="904.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">tables_html?, layout_blocks?, images?, raw_json?}</text>
 <path d="M40.0,950.0 h1346.0 l14.0,14.0 v78.0 h-1360.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1386.0,950.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="720.0" y="986.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Integration facts: the five adapters are instantiated once at import time in router.py, so heavy models are loaded lazily on first use and then reused. Adding or replacing an engine means adding one OCREngine subclass and one entry in _ENGINES</text>
-<text x="720.0" y="999.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">/ _ALIASES — the upload API, the persistence code and the database schema are unaffected, because every engine returns the same result contract. The GLM path is the only one that leaves the Flask process, and it is also the only one that can</text>
-<text x="720.0" y="1011.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">fail because of a missing environment (SDK venv) or an unavailable model server.</text>
+<text x="720.0" y="986.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Dữ kiện về tích hợp: năm bộ thích nghi được khởi tạo một lần lúc nạp router.py, nên các mô hình nặng chỉ được nạp ở lần dùng đầu tiên rồi tái sử dụng. Thêm hoặc thay một công cụ OCR chỉ cần thêm một lớp con OCREngine và một mục trong _ENGINES /</text>
+<text x="720.0" y="999.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">_ALIASES — API tải tệp, phần lưu trữ và lược đồ cơ sở dữ liệu đều không đổi, vì mọi công cụ trả về cùng một hợp đồng kết quả. Nhánh GLM là nhánh duy nhất rời khỏi tiến trình Flask, và cũng là nhánh duy nhất có thể hỏng vì thiếu môi trường (venv</text>
+<text x="720.0" y="1011.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">SDK) hoặc vì máy chủ mô hình không chạy.</text>
 </svg>

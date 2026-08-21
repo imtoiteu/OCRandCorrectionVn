@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Insert the generated report figures into the report, each directly above its
-own "Hình X.Y." caption paragraph. Existing content is never removed."""
+"""Chèn các hình đã sinh vào báo cáo, mỗi hình nằm ngay phía trên đoạn chú thích
+"Hình X.Y." tương ứng. Không xóa bất kỳ nội dung nào đang có.
+
+Đoạn chứa ảnh được đặt keep_with_next để ảnh và chú thích không bị tách trang."""
 import re, sys, os, docx
 from docx.shared import Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
@@ -49,6 +51,9 @@ for num, stem in sorted(FIGURES.items(), key=lambda kv: [int(x) for x in kv[0].s
     para.alignment = WD_ALIGN_PARAGRAPH.CENTER
     para.paragraph_format.space_before = Inches(0.06)
     para.paragraph_format.space_after = Inches(0.04)
+    # Keep the picture on the same page as the caption that follows it.
+    para.paragraph_format.keep_with_next = True
+    para.paragraph_format.keep_together = True
     para.add_run().add_picture(png, width=WIDTH)
     inserted += 1
     print('  Hình %-5s -> %s' % (num, stem + '.png'))

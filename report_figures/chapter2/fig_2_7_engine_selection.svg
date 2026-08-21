@@ -10,7 +10,7 @@
 <rect x="0" y="0" width="1340" height="1000" fill="#FFFFFF"/>
 <text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 2.7 – Cơ chế lựa chọn công cụ OCR theo đặc điểm tài liệu</text>
 <line x1="40" y1="48" x2="1300" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">The mechanism as implemented — app.py::_resolve_selected_engine(), router.py::normalize_engine_name(), glm_vietocr_adapter.py</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Cơ chế đúng như đã hiện thực hóa — app.py::_resolve_selected_engine(), router.py::normalize_engine_name(), glm_vietocr_adapter.py</text>
 <path d="M670.0,624.0 L158.0,660.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M670.0,624.0 L414.0,660.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
 <path d="M670.0,624.0 L670.0,660.0" fill="none" stroke="#0E8088" stroke-width="1.7" marker-end="url(#arr_0E8088)"/>
@@ -19,88 +19,88 @@
 <path d="M1182.0,744.0 L660.0,846.0" fill="none" stroke="#9673A6" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_9673A6)"/>
 <path d="M670.0,242.0 L670.0,268.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
 <path d="M440.0,302.0 L380.0,309.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
-<rect x="399.1" y="296.7" width="21.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
-<text x="410.0" y="308.7" font-size="10.5" fill="#243B4A" text-anchor="middle">no</text>
+<rect x="390.2" y="296.7" width="39.5" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
+<text x="410.0" y="308.7" font-size="10.5" fill="#243B4A" text-anchor="middle">không</text>
 <path d="M900.0,302.0 L960.0,309.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
-<rect x="916.1" y="296.7" width="27.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
-<text x="930.0" y="308.7" font-size="10.5" fill="#243B4A" text-anchor="middle">yes</text>
+<rect x="919.1" y="296.7" width="21.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
+<text x="930.0" y="308.7" font-size="10.5" fill="#243B4A" text-anchor="middle">có</text>
 <path d="M210.0,340.0 L440.0,401.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
 <path d="M1130.0,364.0 L900.0,401.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
 <path d="M670.0,336.0 L670.0,368.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
 <path d="M900.0,401.0 L960.0,403.0" fill="none" stroke="#B85450" stroke-width="1.7" marker-end="url(#arr_B85450)"/>
-<rect x="904.4" y="393.2" width="51.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#B85450" stroke-width="0.8" opacity="0.96"/>
-<text x="930.0" y="405.2" font-size="10.5" fill="#243B4A" text-anchor="middle">invalid</text>
+<rect x="889.6" y="393.2" width="80.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#B85450" stroke-width="0.8" opacity="0.96"/>
+<text x="930.0" y="405.2" font-size="10.5" fill="#243B4A" text-anchor="middle">không hợp lệ</text>
 <path d="M670.0,434.0 L670.0,466.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
 <path d="M920.0,504.0 L960.0,505.0" fill="none" stroke="#B85450" stroke-width="1.7" marker-end="url(#arr_B85450)"/>
-<rect x="926.1" y="495.7" width="27.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#B85450" stroke-width="0.8" opacity="0.96"/>
-<text x="940.0" y="507.7" font-size="10.5" fill="#243B4A" text-anchor="middle">yes</text>
+<rect x="929.1" y="495.7" width="21.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#B85450" stroke-width="0.8" opacity="0.96"/>
+<text x="940.0" y="507.7" font-size="10.5" fill="#243B4A" text-anchor="middle">có</text>
 <path d="M1130.0,534.0 L900.0,601.0" fill="none" stroke="#B85450" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_B85450)"/>
 <path d="M670.0,542.0 L670.0,578.0" fill="none" stroke="#4B6E9C" stroke-width="1.7" marker-end="url(#arr_4B6E9C)"/>
-<rect x="659.1" y="551.2" width="21.8" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
-<text x="670.0" y="563.2" font-size="10.5" fill="#243B4A" text-anchor="middle">no</text>
+<rect x="650.2" y="551.2" width="39.5" height="17.6" rx="3" fill="#FFFFFF" stroke="#4B6E9C" stroke-width="0.8" opacity="0.96"/>
+<text x="670.0" y="563.2" font-size="10.5" fill="#243B4A" text-anchor="middle">không</text>
 <path d="M40.0,92.0 h1246.0 l14.0,14.0 v60.0 h-1260.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
 <path d="M1286.0,92.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
-<text x="670.0" y="125.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">IMPORTANT — the system does NOT implement automatic engine selection from document content. No code inspects layout complexity, language or image quality to choose an engine. The engine is chosen by the</text>
-<text x="670.0" y="139.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">user (UI drop-down) or by configuration; only two rule-based decisions exist, and both are shown below.</text>
+<text x="670.0" y="125.7" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">LƯU Ý QUAN TRỌNG — hệ thống KHÔNG hiện thực hóa cơ chế tự động chọn công cụ theo nội dung tài liệu. Không có đoạn mã nào xét độ phức tạp bố cục, ngôn ngữ hay chất lượng ảnh để chọn công cụ. Công cụ do</text>
+<text x="670.0" y="139.1" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">người dùng chọn (hộp thả xuống) hoặc do cấu hình quyết định; chỉ tồn tại hai quyết định theo quy tắc, cả hai đều được thể hiện dưới đây.</text>
 <rect x="460.0" y="196.0" width="420.0" height="46.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
-<text x="670.0" y="222.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">OCR request:  {file_id, page, engine?}</text>
+<text x="670.0" y="222.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">Yêu cầu OCR:  {file_id, page, engine?}</text>
 <polygon points="670.0,268.0 900.0,302.0 670.0,336.0 440.0,302.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
-<text x="670.0" y="298.9" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Was an &quot;engine&quot; value sent</text>
-<text x="670.0" y="311.7" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">with the request?</text>
+<text x="670.0" y="298.9" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">Yêu cầu có kèm giá trị</text>
+<text x="670.0" y="311.7" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">tham số &quot;engine&quot; không?</text>
 <rect x="40.0" y="278.0" width="340.0" height="62.0" rx="9" fill="#F2F7FD" stroke="#4B6E9C" stroke-width="1.6"/>
-<text x="210.0" y="306.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">No → fall back to cfg.OCR_ENGINE</text>
-<text x="210.0" y="318.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(env OCR_ENGINE, default &quot;paddle&quot;)</text>
+<text x="210.0" y="306.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Không → dùng cfg.OCR_ENGINE</text>
+<text x="210.0" y="318.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(biến OCR_ENGINE, mặc định &quot;paddle&quot;)</text>
 <rect x="960.0" y="254.0" width="340.0" height="110.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="1130.0" y="287.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Yes → the value chosen in the SPA drop-down</text>
+<text x="1130.0" y="287.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Có → giá trị người dùng chọn trên SPA</text>
 <text x="1130.0" y="299.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">&quot;Recommended&quot;  → glmocr</text>
 <text x="1130.0" y="312.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">&quot;GLM Layout + VietOCR Text&quot;  → glm_vietocr</text>
 <text x="1130.0" y="324.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">&quot;Vietnamese&quot;  → vietocr</text>
 <text x="1130.0" y="336.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">&quot;Standard&quot;  → paddleocr</text>
 <rect x="440.0" y="368.0" width="460.0" height="66.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="670.0" y="392.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">normalize_engine_name(): alias table</text>
+<text x="670.0" y="392.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">normalize_engine_name(): bảng bí danh</text>
 <text x="670.0" y="403.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">paddle|auto→paddleocr · modern|ppstructure→paddleocr_modern</text>
 <text x="670.0" y="415.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">glm|glm_ocr→glmocr · glm_layout_vietocr→glm_vietocr</text>
 <rect x="960.0" y="380.0" width="340.0" height="46.0" rx="9" fill="#F8CECC" stroke="#B85450" stroke-width="1.6"/>
-<text x="1130.0" y="406.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Unknown alias → ValueError → HTTP 400</text>
+<text x="1130.0" y="406.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Bí danh không hợp lệ → ValueError → HTTP 400</text>
 <polygon points="670.0,466.0 920.0,504.0 670.0,542.0 420.0,504.0" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.6"/>
-<text x="670.0" y="500.9" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">RULE 1 (file-type rule)</text>
-<text x="670.0" y="513.7" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">selected == &quot;vietocr&quot;  AND  file suffix == &quot;.pdf&quot; ?</text>
+<text x="670.0" y="500.9" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">QUY TẮC 1 (theo loại tệp)</text>
+<text x="670.0" y="513.7" font-size="10.5" font-weight="400" fill="#15202B" text-anchor="middle">engine đã chọn == &quot;vietocr&quot;  VÀ  phần mở rộng == &quot;.pdf&quot; ?</text>
 <rect x="960.0" y="476.0" width="340.0" height="58.0" rx="9" fill="#F8CECC" stroke="#B85450" stroke-width="1.6"/>
-<text x="1130.0" y="502.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">effective = &quot;paddleocr&quot;</text>
+<text x="1130.0" y="502.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">engine thực thi = &quot;paddleocr&quot;</text>
 <text x="1130.0" y="514.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">inference_status = &quot;fallback_to_paddle_for_pdf&quot;</text>
 <rect x="440.0" y="578.0" width="460.0" height="46.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="670.0" y="604.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">effective engine → router.get_engine(name).run(image)</text>
+<text x="670.0" y="604.4" font-size="11.0" font-weight="700" fill="#15202B" text-anchor="middle">engine thực thi → router.get_engine(name).run(image)</text>
 <rect x="40.0" y="660.0" width="236.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="158.0" y="693.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCREngine</text>
 <text x="158.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-OCRv5</text>
-<text x="158.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(text lines + boxes)</text>
+<text x="158.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(dòng văn bản + khung bao)</text>
 <rect x="296.0" y="660.0" width="236.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="414.0" y="693.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCRModernEngine</text>
 <text x="414.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-StructureV3 + PP-OCRv6</text>
-<text x="414.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(markdown/html/tables)</text>
+<text x="414.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(markdown/html/bảng)</text>
 <rect x="552.0" y="660.0" width="236.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="670.0" y="693.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCREngine</text>
-<text x="670.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-OCRv5 detector +</text>
-<text x="670.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR recognizer</text>
+<text x="670.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-OCRv5 phát hiện dòng +</text>
+<text x="670.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR nhận dạng</text>
 <rect x="808.0" y="660.0" width="236.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="926.0" y="693.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLMOCREngine</text>
-<text x="926.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-DocLayoutV3 + GLM-OCR</text>
-<text x="926.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VLM (subprocess)</text>
+<text x="926.0" y="704.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PP-DocLayoutV3 + mô hình</text>
+<text x="926.0" y="716.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR (tiến trình con)</text>
 <rect x="1064.0" y="660.0" width="236.0" height="84.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
 <text x="1182.0" y="699.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLMVietOCREngine</text>
-<text x="1182.0" y="710.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM layout + VietOCR text</text>
+<text x="1182.0" y="710.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Bố cục GLM + văn bản VietOCR</text>
 <rect x="40.0" y="782.0" width="620.0" height="128.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="350.0" y="824.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">RULE 2 (per-block rule, only inside GLMVietOCREngine)</text>
-<text x="350.0" y="836.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• block label ∈ {table, figure, image, equation, formula, code} → keep the GLM text verbatim</text>
-<text x="350.0" y="849.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• otherwise assign the VietOCR text lines whose centre falls inside the GLM block box</text>
-<text x="350.0" y="861.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• sanity check: if len(GLM text) &gt; 40 chars and the VietOCR text is &lt; 25 % of that length,</text>
-<text x="350.0" y="873.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">reject it and fall back to the GLM text (recognition_source = &quot;glm&quot; / &quot;fallback&quot;)</text>
+<text x="350.0" y="824.7" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">QUY TẮC 2 (theo từng khối, chỉ bên trong GLMVietOCREngine)</text>
+<text x="350.0" y="836.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• nhãn khối ∈ {table, figure, image, equation, formula, code} → giữ nguyên văn bản của GLM</text>
+<text x="350.0" y="849.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• ngược lại, gán các dòng VietOCR có tâm nằm trong khung bao của khối GLM</text>
+<text x="350.0" y="861.3" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• kiểm tra hợp lý: nếu độ dài văn bản GLM &gt; 40 ký tự và văn bản VietOCR &lt; 25 % độ dài đó</text>
+<text x="350.0" y="873.5" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">thì loại bỏ và quay về văn bản GLM (recognition_source = &quot;glm&quot; / &quot;fallback&quot;)</text>
 <path d="M700.0,782.0 h586.0 l14.0,14.0 v114.0 h-600.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1286.0,782.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="1000.0" y="818.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Additional facts from the source</text>
-<text x="1000.0" y="830.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• paddleocr_modern is registered in router.py and reachable through the API, but it is not</text>
-<text x="1000.0" y="843.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">offered in the SPA drop-down (static/index.html).</text>
-<text x="1000.0" y="855.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• The chosen engine is recorded per request: res[&quot;selected_engine&quot;], res[&quot;ocr_engine&quot;] and the</text>
-<text x="1000.0" y="867.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">ActivityLog detail string, so repeated runs on one document can be compared afterwards.</text>
-<text x="1000.0" y="879.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• The user&#x27;s manual choice is preserved for the whole session (OCRView._sessionEngine).</text>
+<text x="1000.0" y="818.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Một số dữ kiện khác từ mã nguồn</text>
+<text x="1000.0" y="830.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• paddleocr_modern có đăng ký trong router.py và gọi được qua API, nhưng không xuất hiện</text>
+<text x="1000.0" y="843.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">trong hộp thả xuống của SPA (static/index.html).</text>
+<text x="1000.0" y="855.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• Công cụ đã dùng được ghi lại theo từng yêu cầu: res[&quot;selected_engine&quot;], res[&quot;ocr_engine&quot;] và</text>
+<text x="1000.0" y="867.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">chuỗi mô tả trong ActivityLog, nhờ đó có thể so sánh nhiều lần xử lý trên cùng một tài liệu.</text>
+<text x="1000.0" y="879.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">• Lựa chọn thủ công của người dùng được giữ trong suốt phiên (OCRView._sessionEngine).</text>
 </svg>

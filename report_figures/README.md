@@ -94,6 +94,10 @@ Two details worth knowing:
 | Red outline on white | not implemented / manual completion required |
 
 Solid arrows are calls or data flow; dashed arrows are optional, conditional or
-informational relationships. Titles carry the report's own figure numbering in
-Vietnamese; the diagram bodies use English so that the labels match the identifiers
-in the source code.
+informational relationships.
+
+**Language.** All figure labels are in Vietnamese, matching the report. Identifiers
+taken from the code are deliberately left untranslated — file and module names,
+class and function names, API paths, environment variables, model names, field names
+and status values (`layout_native`, `elapsed_ms`, `fallback_to_paddle_for_pdf`, …) —
+so every label in a diagram can still be grepped for in the source tree.

@@ -7,15 +7,15 @@
 <marker id="arr_82B366" markerWidth="11" markerHeight="11" refX="8.5" refY="3.2" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.2 L0,6.4 Z" fill="#82B366"/></marker>
 </defs>
 <rect x="0" y="0" width="1440" height="1030" fill="#FFFFFF"/>
-<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 3.8 – Kết quả OCR dạng văn bản và dữ liệu có cấu trúc</text>
+<text x="40" y="38" font-size="20" font-weight="700" fill="#10202E">Hình 3.8 – Kết quả OCR theo văn bản và dữ liệu có cấu trúc</text>
 <line x1="40" y1="48" x2="1400" y2="48" stroke="#10202E" stroke-width="1.5"/>
-<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Data flow behind the result view — which engine produces which representation, how it is persisted and how it is delivered</text>
+<text x="40" y="64" font-size="11.5" fill="#5A6B7B">Luồng dữ liệu phía sau màn hình kết quả — công cụ nào sinh ra dạng biểu diễn nào, được lưu ra sao và trả về bằng cách nào</text>
 <rect x="40" y="420" width="700" height="300" rx="11" fill="#F0F6FD" stroke="#6C8EBF" stroke-width="1.6"/>
 <path d="M40.0,454.0 L40.0,431.0 A11,11 0 0 1 51.0,420.0 L729.0,420.0 A11,11 0 0 1 740.0,431.0 L740.0,454.0 Z" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="54.0" y="444.0" font-size="14.5" font-weight="700" fill="#10202E">Delivery to the browser   (static/app.js — OCRView)</text>
+<text x="54.0" y="444.0" font-size="14.5" font-weight="700" fill="#10202E">Hiển thị trên trình duyệt   (static/app.js — OCRView)</text>
 <rect x="780" y="420" width="620" height="300" rx="11" fill="#EFF6EE" stroke="#82B366" stroke-width="1.6"/>
 <path d="M780.0,454.0 L780.0,431.0 A11,11 0 0 1 791.0,420.0 L1389.0,420.0 A11,11 0 0 1 1400.0,431.0 L1400.0,454.0 Z" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="794.0" y="444.0" font-size="14.5" font-weight="700" fill="#10202E">Export and downstream use</text>
+<text x="794.0" y="444.0" font-size="14.5" font-weight="700" fill="#10202E">Kết xuất và sử dụng tiếp</text>
 <path d="M360.0,194.0 L420.0,138.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M360.0,194.0 L420.0,228.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <path d="M360.0,194.0 L420.0,330.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
@@ -23,18 +23,18 @@
 <path d="M720.0,228.0 L800.0,197.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
 <path d="M720.0,330.0 L800.0,197.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
 <path d="M1180.0,197.0 L1240.0,209.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" marker-end="url(#arr_5A5A5A)"/>
-<rect x="1187.3" y="194.2" width="45.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
-<text x="1210.0" y="206.2" font-size="10.5" fill="#243B4A" text-anchor="middle">upsert</text>
+<rect x="1196.2" y="194.2" width="27.7" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="1210.0" y="206.2" font-size="10.5" fill="#243B4A" text-anchor="middle">ghi</text>
 <path d="M200.0,278.0 L200.0,400.0 L390.0,400.0 L390.0,420.0" fill="none" stroke="#3F61A8" stroke-width="1.7" marker-end="url(#arr_3F61A8)"/>
 <rect x="100.3" y="391.2" width="287.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#3F61A8" stroke-width="0.8" opacity="0.96"/>
-<text x="244.0" y="403.2" font-size="10.5" fill="#243B4A" text-anchor="middle">HTTP response of /api/ocr/page and /api/ocr/all</text>
+<text x="244.0" y="403.2" font-size="10.5" fill="#243B4A" text-anchor="middle">phản hồi HTTP của /api/ocr/page và /api/ocr/all</text>
 <path d="M1320.0,322.0 L1320.0,400.0 L390.0,400.0 L390.0,420.0" fill="none" stroke="#5A5A5A" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arr_5A5A5A)"/>
-<rect x="651.9" y="391.2" width="464.3" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
-<text x="884.0" y="403.2" font-size="10.5" fill="#243B4A" text-anchor="middle">GET /api/documents/&lt;id&gt;/text  and  /ocr-images   (reopening a saved document)</text>
+<rect x="654.8" y="391.2" width="458.4" height="17.6" rx="3" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="0.8" opacity="0.96"/>
+<text x="884.0" y="403.2" font-size="10.5" fill="#243B4A" text-anchor="middle">GET /api/documents/&lt;id&gt;/text  và  /ocr-images   (khi mở lại tài liệu đã lưu)</text>
 <path d="M740.0,570.0 L780.0,570.0" fill="none" stroke="#82B366" stroke-width="1.7" marker-end="url(#arr_82B366)"/>
 <rect x="40.0" y="110.0" width="320.0" height="168.0" rx="9" fill="#B0E3E6" stroke="#0E8088" stroke-width="1.6"/>
-<text x="200.0" y="154.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Engine result dict</text>
-<text x="200.0" y="166.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(one per page)</text>
+<text x="200.0" y="154.4" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">Từ điển kết quả của công cụ</text>
+<text x="200.0" y="166.6" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">(một từ điển cho mỗi trang)</text>
 <text x="200.0" y="178.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle"></text>
 <text x="200.0" y="191.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">results[] · img_width / img_height</text>
 <text x="200.0" y="203.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">elapsed_ms · ocr_engine</text>
@@ -43,10 +43,10 @@
 <text x="200.0" y="239.8" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">layout_blocks? · images? · raw_json?</text>
 <rect x="420.0" y="100.0" width="300.0" height="76.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="570.0" y="135.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">_ocr_pages_to_text()</text>
-<text x="570.0" y="147.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">join every block text across pages</text>
+<text x="570.0" y="147.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">nối văn bản mọi khối trên mọi trang</text>
 <rect x="420.0" y="190.0" width="300.0" height="76.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="570.0" y="225.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">_build_ocr_layout()</text>
-<text x="570.0" y="237.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">boxes · confidence · size · timing</text>
+<text x="570.0" y="237.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">khung bao · độ tin cậy · kích thước · thời gian</text>
 <rect x="420.0" y="280.0" width="300.0" height="100.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
 <text x="570.0" y="320.9" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">_persist_ocr_structured()</text>
 <text x="570.0" y="333.1" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">markdown → markdown_normalize</text>
@@ -59,71 +59,71 @@
 <text x="1320.0" y="210.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">UNIQUE</text>
 <text x="1320.0" y="222.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(document_id, kind)</text>
 <text x="1320.0" y="233.8" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="1320.0" y="245.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">upserted by</text>
+<text x="1320.0" y="245.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">ghi đè bằng</text>
 <text x="1320.0" y="257.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">save_artifact()</text>
 <rect x="62.0" y="470.0" width="320.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="222.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Markdown tab</text>
-<text x="222.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">vendored marked + KaTeX + sanitizeHtml()</text>
+<text x="222.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thẻ Markdown</text>
+<text x="222.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">marked + KaTeX nội bộ + sanitizeHtml()</text>
 <rect x="62.0" y="538.0" width="320.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="222.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Raw tab</text>
-<text x="222.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">plain text joined from results[]</text>
+<text x="222.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thẻ Raw</text>
+<text x="222.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">văn bản thuần nối từ results[]</text>
 <rect x="62.0" y="606.0" width="320.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="222.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Images tab</text>
-<text x="222.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">layout overlays and cropped regions</text>
+<text x="222.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thẻ Images</text>
+<text x="222.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">ảnh phủ bố cục và ảnh cắt từng vùng</text>
 <rect x="402.0" y="470.0" width="316.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="560.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">JSON tab</text>
-<text x="560.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">structured per-page regions</text>
+<text x="560.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Thẻ JSON</text>
+<text x="560.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">vùng nhận dạng theo từng trang</text>
 <rect x="402.0" y="538.0" width="316.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="560.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Canvas overlay (ocr-canvas.js)</text>
-<text x="560.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">boxes drawn over the page image</text>
+<text x="560.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Lớp phủ canvas (ocr-canvas.js)</text>
+<text x="560.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">khung bao vẽ trên ảnh trang</text>
 <rect x="402.0" y="606.0" width="316.0" height="56.0" rx="9" fill="#DAE8FC" stroke="#6C8EBF" stroke-width="1.6"/>
-<text x="560.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Statistics strip</text>
-<text x="560.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">regions · mean confidence · time · pages</text>
+<text x="560.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Dải thống kê</text>
+<text x="560.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">số vùng · độ tin cậy TB · thời gian · số trang</text>
 <rect x="802.0" y="470.0" width="280.0" height="56.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="942.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Download .md</text>
-<text x="942.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(real Markdown when available)</text>
+<text x="942.0" y="495.2" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tải về .md</text>
+<text x="942.0" y="506.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">(Markdown thật khi có)</text>
 <rect x="802.0" y="538.0" width="280.0" height="56.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="942.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Download .txt</text>
-<text x="942.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">plain OCR text</text>
+<text x="942.0" y="563.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tải về .txt</text>
+<text x="942.0" y="574.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">văn bản OCR thuần</text>
 <rect x="802.0" y="606.0" width="280.0" height="56.0" rx="9" fill="#D5E8D4" stroke="#82B366" stroke-width="1.6"/>
-<text x="942.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Download .json</text>
-<text x="942.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">structured output, all pages</text>
+<text x="942.0" y="631.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Tải về .json</text>
+<text x="942.0" y="642.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">dữ liệu có cấu trúc, mọi trang</text>
 <rect x="1102.0" y="470.0" width="278.0" height="90.0" rx="9" fill="#F5F5F5" stroke="#999999" stroke-width="1.6"/>
 <text x="1241.0" y="506.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">POST /api/ocr/export-docx</text>
 <text x="1241.0" y="517.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">pandoc  markdown+smart+tex_math_dollars</text>
-<text x="1241.0" y="529.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ .docx  (timeout 30 s)</text>
+<text x="1241.0" y="529.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">→ .docx  (timeout 30 giây)</text>
 <rect x="1102.0" y="578.0" width="278.0" height="84.0" rx="9" fill="#E1D5E7" stroke="#9673A6" stroke-width="1.6"/>
-<text x="1241.0" y="611.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Vietnamese correction</text>
-<text x="1241.0" y="622.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">consumes the ocr_json artifact →</text>
+<text x="1241.0" y="611.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Hiệu chỉnh tiếng Việt</text>
+<text x="1241.0" y="622.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">đọc kết xuất ocr_json →</text>
 <text x="1241.0" y="634.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">corrected_json / corrected_md</text>
 <path d="M40.0,748.0 h1346.0 l14.0,14.0 v114.0 h-1360.0 z" fill="#FFF2CC" stroke="#D6B656" stroke-width="1.4"/>
 <path d="M1386.0,748.0 l14.0,14.0 h-14.0 z" fill="#FFF6DD" stroke="#D6B656" stroke-width="1.2"/>
-<text x="720.0" y="774.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Engine capability matrix (from the adapters)</text>
+<text x="720.0" y="774.4" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">Bảng năng lực của từng công cụ (rút ra từ các bộ thích nghi)</text>
 <text x="720.0" y="786.0" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle"></text>
-<text x="720.0" y="797.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Legacy   →  results + confidence + boxes;  ocr_json holds results + layout_blocks;  generated overlay image</text>
-<text x="720.0" y="809.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR                    →  results + boxes (confidence = None);  ocr_json fallback shape;  generated overlay image</text>
-<text x="720.0" y="820.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Modern  →  results + confidence + boxes  +  markdown, html, tables_html, layout_blocks, labelled overlay</text>
-<text x="720.0" y="832.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR                  →  results + boxes (confidence = None)  +  markdown, tables_html, layout_blocks, raw_json,</text>
-<text x="720.0" y="843.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">layout_vis images and cropped region images</text>
-<text x="720.0" y="855.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM + VietOCR        →  GLM structure with VietOCR text, plus per-block recognition_source and fallback_reason</text>
+<text x="720.0" y="797.6" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Legacy   →  kết quả + độ tin cậy + khung bao;  ocr_json chứa results + layout_blocks;  ảnh phủ tự sinh</text>
+<text x="720.0" y="809.1" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">VietOCR                    →  kết quả + khung bao (độ tin cậy = None);  ocr_json dạng dự phòng;  ảnh phủ tự sinh</text>
+<text x="720.0" y="820.7" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">PaddleOCR Modern  →  kết quả + độ tin cậy + khung bao  +  markdown, html, tables_html, layout_blocks, ảnh phủ có nhãn</text>
+<text x="720.0" y="832.3" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM-OCR                  →  kết quả + khung bao (độ tin cậy = None)  +  markdown, tables_html, layout_blocks, raw_json,</text>
+<text x="720.0" y="843.9" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">ảnh layout_vis và ảnh cắt từng vùng</text>
+<text x="720.0" y="855.5" font-size="9.5" font-weight="400" fill="#15202B" text-anchor="middle">GLM + VietOCR        →  bố cục của GLM với văn bản của VietOCR, kèm recognition_source và fallback_reason theo khối</text>
 <path d="M40.0,900.0 h1346.0 l14.0,14.0 v82.0 h-1360.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.4"/>
 <path d="M1386.0,900.0 l14.0,14.0 h-14.0 z" fill="#FFFFFF" stroke="#B85450" stroke-width="1.2"/>
-<text x="720.0" y="945.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">PARTIAL — the report presents Figure 3.8 as a screen capture of the result view. The diagram above is the architecture and data flow behind that screen, which is what the source code supports. If the report needs the screen itself, capture the</text>
-<text x="720.0" y="957.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">OCR workspace of one document with the Markdown, Raw, Images and JSON tabs visible next to the page canvas (see MANUAL_COMPLETION.md, Figure 3.8).</text>
+<text x="720.0" y="945.0" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">MỘT PHẦN — phần thuyết minh trình bày Hình 3.8 dưới dạng ảnh chụp màn hình kết quả. Hình ở trên là kiến trúc và luồng dữ liệu phía sau màn hình đó, tức là phần mà mã nguồn hỗ trợ. Nếu báo cáo cần chính màn hình, hãy chụp khu vực làm việc OCR</text>
+<text x="720.0" y="957.2" font-size="10.0" font-weight="400" fill="#15202B" text-anchor="middle">của một tài liệu với các thẻ Markdown, Raw, Images và JSON hiển thị cạnh ảnh trang (xem MANUAL_COMPLETION.md, Hình 3.8).</text>
 <rect x="800.0" y="96.0" width="380.0" height="202.0" rx="7" fill="#FFFFFF" stroke="#5A5A5A" stroke-width="1.6"/>
 <path d="M800.0,124.0 L800.0,103.0 A7,7 0 0 1 807.0,96.0 L1173.0,96.0 A7,7 0 0 1 1180.0,103.0 L1180.0,124.0 Z" fill="#EDEDED" stroke="#5A5A5A" stroke-width="1.6"/>
-<text x="990.0" y="115.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">document_artifacts written by app.py</text>
-<text x="809.0" y="139.0" font-size="11" fill="#243B4A">ocr                 plain text</text>
-<text x="1172.0" y="139.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">all engines</text>
+<text x="990.0" y="115.0" font-size="13" font-weight="700" fill="#10202E" text-anchor="middle">Các kết xuất document_artifacts do app.py ghi</text>
+<text x="809.0" y="139.0" font-size="11" fill="#243B4A">ocr                 văn bản thuần</text>
+<text x="1172.0" y="139.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">mọi công cụ</text>
 <line x1="804.0" y1="145.0" x2="1176.0" y2="145.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
-<text x="809.0" y="160.0" font-size="11" fill="#243B4A">ocr_layout      JSON boxes / confidence</text>
-<text x="1172.0" y="160.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">all engines</text>
+<text x="809.0" y="160.0" font-size="11" fill="#243B4A">ocr_layout      JSON khung bao / độ tin cậy</text>
+<text x="1172.0" y="160.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">mọi công cụ</text>
 <line x1="804.0" y1="166.0" x2="1176.0" y2="166.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
-<text x="809.0" y="181.0" font-size="11" fill="#243B4A">ocr_images    JSON base64 overlays + crops</text>
-<text x="1172.0" y="181.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">all engines</text>
+<text x="809.0" y="181.0" font-size="11" fill="#243B4A">ocr_images    JSON ảnh phủ + ảnh cắt (base64)</text>
+<text x="1172.0" y="181.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">mọi công cụ</text>
 <line x1="804.0" y1="187.0" x2="1176.0" y2="187.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
-<text x="809.0" y="202.0" font-size="11" fill="#243B4A">ocr_json         JSON per-page regions</text>
-<text x="1172.0" y="202.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">all engines</text>
+<text x="809.0" y="202.0" font-size="11" fill="#243B4A">ocr_json         JSON vùng theo từng trang</text>
+<text x="1172.0" y="202.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">mọi công cụ</text>
 <line x1="804.0" y1="208.0" x2="1176.0" y2="208.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
 <text x="809.0" y="223.0" font-size="11" fill="#243B4A">ocr_markdown  Markdown</text>
 <text x="1172.0" y="223.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">GLM · Modern</text>
@@ -131,10 +131,10 @@
 <text x="809.0" y="244.0" font-size="11" fill="#243B4A">ocr_html         HTML</text>
 <text x="1172.0" y="244.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">Modern</text>
 <line x1="804.0" y1="250.0" x2="1176.0" y2="250.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
-<text x="809.0" y="265.0" font-size="11" fill="#243B4A">ocr_tables      JSON list of table HTML</text>
+<text x="809.0" y="265.0" font-size="11" fill="#243B4A">ocr_tables      JSON danh sách bảng HTML</text>
 <text x="1172.0" y="265.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">GLM · Modern</text>
 <line x1="804.0" y1="271.0" x2="1176.0" y2="271.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
-<text x="809.0" y="286.0" font-size="11" fill="#243B4A">ocr_blocks     JSON label / content / bbox / order</text>
+<text x="809.0" y="286.0" font-size="11" fill="#243B4A">ocr_blocks     JSON nhãn / nội dung / bbox / thứ tự</text>
 <text x="1172.0" y="286.0" font-size="9.5" font-weight="700" fill="#5A5A5A" text-anchor="end">GLM · Modern</text>
 <line x1="804.0" y1="292.0" x2="1176.0" y2="292.0" stroke="#5A5A5A" stroke-width="0.5" opacity="0.5"/>
 </svg>
