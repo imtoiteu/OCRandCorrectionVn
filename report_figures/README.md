@@ -1,7 +1,8 @@
 # Report figures — OCRandCorrectionVn
 
-Editable diagrams for `BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx`, generated from the
-source code of the repository (not from the report text).
+Editable diagrams for [`BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx`](../BAO_CAO_DE_TAI_OCR_DA_HIEU_CHINH.docx)
+(at the repository root), generated from the source code of the repository — not
+from the report text.
 
 ```
 report_figures/
